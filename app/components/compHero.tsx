@@ -47,7 +47,7 @@ export default function compHero() {
                         <p className={"pt-8"}>
                             <span className={"text-red-500"}>1 slot left. </span>
                             <span className={"text-slate-500"}>Want to talk first? </span>
-                            <span className={"underline"}><Link href={"mailto:orenjistudio@outlook.com"}> in touch 👋</Link></span>
+                            <span className={"underline"}><Link href={"mailto:orenjistudio@outlook.com"}>Get in touch 👋</Link></span>
                         </p>
                     </div>
                 </div>
