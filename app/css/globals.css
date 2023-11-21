@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* This should be the total width of a single set of the content */
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 60s linear infinite;
+}
