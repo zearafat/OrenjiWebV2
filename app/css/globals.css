@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    object-fit: cover; /* Firefox need this. Or 'contain', depending on your needs */
+}
+
 @keyframes marquee {
     0% {
         transform: translateX(0);
@@ -12,7 +16,18 @@
     }
 }
 
-.animate-marquee {
+.animate-marquee-top {
     display: flex;
     animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-bottom {
+    display: flex;
+    animation: marquee 80s linear infinite;
+}
+
+@layer components {
+    .btn-gradient-orenji {
+        @apply text-white bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-xl
+    }
 }

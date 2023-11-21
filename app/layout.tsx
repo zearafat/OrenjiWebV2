@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
-import './css/globals.css'
+import './css/globals.css';
 import React from "react";
 
 export const metadata: Metadata = {
