@@ -167,8 +167,9 @@ export default function CompHeroImages() {
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
 
                 {/* Your floating button */}
-                <Link href={""} className="absolute bottom-0 mb-10 left-1/2 transform -translate-x-1/2 px-6 py-4 bg-white
-                text-black text-xl font-semibold rounded-xl shadow-lg hover:bg-orange-50 hover:-translate-y-1 duration-300">
+                <Link href={""} className="backdrop-filter backdrop-blur-lg bg-white/30 absolute bottom-0 mb-10
+                left-1/2 transform -translate-x-1/2 px-6 py-4 bg-white text-black text-xl font-medium
+                rounded-xl shadow-md hover:bg-orange-50 hover:-translate-y-1 duration-300">
                     View Portfolio  ⤍
                 </Link>
             </div>
