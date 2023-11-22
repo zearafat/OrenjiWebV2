@@ -34,7 +34,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 1`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -42,7 +41,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 2`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -50,7 +48,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 3`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -58,7 +55,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 4`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -66,7 +62,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 5`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -74,7 +69,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 6`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -82,7 +76,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 7`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -90,7 +83,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 8`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                     </div>
@@ -102,7 +94,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 9`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -110,7 +101,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 10`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -118,7 +108,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 11`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -126,7 +115,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 12`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -134,7 +122,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 13`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -142,7 +129,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 14`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -150,7 +136,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 15`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                         <Image
@@ -158,7 +143,6 @@ export default function CompHeroImages() {
                             alt={`Portfolio 16`}
                             width={660}
                             height={550}
-                            layout="fixed"
                             className={"rounded-lg"}
                         />
                     </div>
