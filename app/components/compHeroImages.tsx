@@ -24,7 +24,7 @@ import Porto16 from '@/public/assets/images/portofolios/porto-16.webp';
 
 export default function CompHeroImages() {
     return (
-        <div className={"py-12"}>
+        <div className={"pb-12"}>
             <div className={"relative"}>
                 <div className="overflow-hidden whitespace-nowrap">
                     {/*1st Row Marquee*/}
