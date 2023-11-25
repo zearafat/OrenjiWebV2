@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 interface IPropsFeatureCard {
-    image: string;
+    image: StaticImageData | string;
     imageAlt: string;
     heading: string;
     description: string;
@@ -14,8 +14,8 @@ export default function CompFeaturesCard(props: IPropsFeatureCard) {
                 <Image
                     src={props.image}
                     alt={props.imageAlt}
-                    sizes={"100vw"}
-                    style={{ width: '15%', height: 'auto' }}
+                    width={50}
+                    height={50}
                     quality={100}
                 />
                 <h3 className={"font-semibold text-xl tracking-tight py-2 px-4"}>

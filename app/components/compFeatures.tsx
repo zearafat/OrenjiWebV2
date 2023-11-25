@@ -1,11 +1,11 @@
 import CompFeaturesCard from "@/app/components/compFeaturesCard";
 
-import iconUnlimitedDesign from "@/public/assets/illustrations/icons/icon-unlimited-design.svg"
-import iconMonthlyFlat from "@/public/assets/illustrations/icons/icon-monthly-flat.svg"
-import iconUnlimitedChanges from "@/public/assets/illustrations/icons/icon-unlimited-changes.svg"
-import iconDailyReports from "@/public/assets/illustrations/icons/icon-daily-reports.svg"
-import iconDailyTurnAround from "@/public/assets/illustrations/icons/icon-daily-turnaround.svg"
-import iconCustomAssets from "@/public/assets/illustrations/icons/icon-custom-assets.svg"
+import iconUnlimitedDesign from "@/public/assets/illustrations/icons/icon-feature-1.png"
+import iconMonthlyFlat from "@/public/assets/illustrations/icons/icon-feature-2.png"
+import iconUnlimitedChanges from "@/public/assets/illustrations/icons/icon-feature-3.png"
+import iconDailyReports from "@/public/assets/illustrations/icons/icon-feature-4.png"
+import iconDailyTurnAround from "@/public/assets/illustrations/icons/icon-feature-5.png"
+import iconCustomAssets from "@/public/assets/illustrations/icons/icon-feature-6.png"
 
 export default function CompFeatures() {
     return(
