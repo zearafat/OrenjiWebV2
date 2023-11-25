@@ -14,10 +14,11 @@ export default function CompFeaturesCard(props: IPropsFeatureCard) {
                 <Image
                     src={props.image}
                     alt={props.imageAlt}
-                    width={50}
-                    height={50}
+                    sizes={"100vw"}
+                    style={{ width: '15%', height: 'auto' }}
+                    quality={100}
                 />
-                <h3 className={"font-bold text-xl tracking-tight py-2 px-4"}>
+                <h3 className={"font-semibold text-xl tracking-tight py-2 px-4"}>
                     {props.heading}
                 </h3>
             </div>

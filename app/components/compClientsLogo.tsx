@@ -8,8 +8,9 @@ export default function compClientsLogo() {
                 <Image
                     src={clientsLogo}
                     alt={"Clients"}
-                    width={1300}
-                    height={50}
+                    sizes={"100vw"}
+                    style={{ width: '75%', height: 'auto' }}
+                    quality={100}
                 />
             </div>
         </div>

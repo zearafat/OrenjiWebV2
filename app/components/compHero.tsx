@@ -40,7 +40,7 @@ export default function compHero() {
 
                     {/*BUTTON CTA*/}
                     <div className={"my-14"}>
-                        <button type="button" className={"px-[44px] py-[18px] text-xl tracking-tight font-bold text-center " +
+                        <button type="button" className={"px-[44px] py-[18px] text-xl tracking-tight font-semibold text-center " +
                             "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 hover:scale-100 duration-300"}>
                             Start a project
                         </button>
