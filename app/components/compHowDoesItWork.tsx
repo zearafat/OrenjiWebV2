@@ -30,7 +30,7 @@ export default function compHowDoesItWork() {
                     <div className={"flex flex-row space-x-4 py-4"}>
                         {/*Card 1*/}
                         <div className={"basis-3/6"}>
-                            <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl h-[400px]"}>
+                            <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl h-[400px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                 <div className={""}>
                                     <h3 className={"text-xl font-bold tracking-tight pb-4"}>
                                         1. Subscribe to plan
@@ -50,7 +50,7 @@ export default function compHowDoesItWork() {
                         </div>
                         {/*Card 2*/}
                         <div className={"basis-5/6"}>
-                            <div className={"p-8 bg-slate-50 rounded-3xl h-[400px]"}>
+                            <div className={"p-8 bg-slate-50 rounded-3xl h-[400px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                 <div className={""}>
                                     <h3 className={"text-xl font-bold tracking-tight pb-4"}>
                                         2. Add your design task
@@ -74,7 +74,7 @@ export default function compHowDoesItWork() {
                     <div className={"flex flex-row space-x-4"}>
                         {/*Card 3*/}
                         <div className={"basis-5/6"}>
-                            <div className={"pr-8 pt-8 bg-slate-50 rounded-3xl h-[400px] overflow-hidden"}>
+                            <div className={"pr-8 pt-8 bg-slate-50 rounded-3xl h-[400px] overflow-hidden hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                 <div className={"flex flex-row"}>
                                     <div className={"relative w-full"}>
                                         <div className={"p-8"}>
@@ -108,8 +108,12 @@ export default function compHowDoesItWork() {
                         </div>
                         {/*Card 4*/}
                         <div className={"basis-2/6"}>
-                            <div className="bg-gradient-to-br from-purple-400 via-purple-500 to-pink-500 p-8 rounded-3xl h-[400px] flex justify-center items-center text-white">
-                                <h2 className="text-2xl font-bold mb-4">Any questions? <span className={"underline"}><Link href={""} >Talk to us 👋</Link></span></h2>
+                            <div className="bg-gradient-to-br from-purple-400 via-purple-500 to-pink-500 p-8
+                            rounded-3xl h-[400px] flex justify-center items-center text-white
+                            hover:-translate-y-0.5 duration-300">
+                                <h2 className="text-2xl font-bold mb-4">Any questions? <span className={"underline"}>
+                                    <Link href={""} >Talk to us 👋</Link></span>
+                                </h2>
                             </div>
                         </div>
                     </div>
