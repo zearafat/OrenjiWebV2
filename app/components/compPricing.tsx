@@ -26,7 +26,7 @@ export default function compPricing() {
                     <div className={"py-8 px-12 bg-slate-50 rounded-3xl border border-slate-100"}>
                         <div className={"space-y-6 pb-10"}>
                             <div className={"space-y-3"}>
-                                <h4 className={"text-3xl font-bold"}>Trial <span className={"text-slate-500 text-3xl"}>Basic</span></h4>
+                                <h4 className={"text-3xl font-bold tracking-tighter"}>Trial <span className={"text-slate-500 text-3xl tracking-tighter"}>Basic</span></h4>
                                 <p className={"text-base"}>Try our services for a week</p>
                             </div>
                             <h3 className={"text-5xl font-bold"}>$999<span className={"text-base text-slate-500 font-normal"}>/week</span></h3>
@@ -46,7 +46,7 @@ export default function compPricing() {
                         <div className={"space-y-6 pb-10"}>
                             <div className={"space-y-2"}>
                                 <div className={"flex flex-row"}>
-                                    <h4 className={"text-3xl font-bold text-white"}>Monthly <span className={"text-white opacity-50 text-3xl"}>Premium</span></h4>
+                                    <h4 className={"text-3xl font-bold text-white tracking-tighter"}>Monthly <span className={"text-white opacity-50 text-3xl tracking-tighter"}>Premium</span></h4>
                                     <div className="mx-auto"></div>
                                     <p className={"px-6 py-2 bg-white rounded-full text-base text-black"}>1 slot left</p>
                                 </div>
