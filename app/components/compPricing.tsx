@@ -50,7 +50,7 @@ export default function compPricing() {
                                     <div className="mx-auto"></div>
                                     <p className={"px-6 py-2 bg-white rounded-full text-base text-black"}>1 slot left</p>
                                 </div>
-                                <p className={"text-base text-white"}>Try our services for a week</p>
+                                <p className={"text-base text-white"}>Everything in Trial, plus:</p>
                             </div>
                             <h3 className={"text-5xl font-bold text-white"}>$2999<span className={"text-base text-white font-normal"}>/month</span></h3>
                             <div className={"flex flex-row space-x-14"}>
