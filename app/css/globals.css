@@ -31,3 +31,9 @@ img {
         @apply text-white bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-xl
     }
 }
+
+#hero {
+    overflow: hidden; /* This will prevent any overflow */
+    max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+    /* Set other styles like height or max-height as needed */
+}

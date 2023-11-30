@@ -11,7 +11,7 @@ export default function GLTF() {
     }, []); // Empty dependency array ensures this effect runs only once
 
     return (
-        <div className={"py-52"}>
+        <div className={"pt-52"}>
             <div id="hero" className="m-0 p-0 cursor-grab" />
         </div>
     );

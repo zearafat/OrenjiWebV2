@@ -4,6 +4,7 @@ import CompClientsLogo from"@/app/components/compClientsLogo";
 import CompFeatures from "@/app/components/compFeatures";
 import CompHowDoesItWork from "@/app/components/compHowDoesItWork";
 import CompGLTFLoader from "@/app/components/compGLTFLoader";
+import CompPricing from "@/app/components/compPricing";
 
 export default function Home() {
   return(
@@ -20,6 +21,8 @@ export default function Home() {
           <CompHowDoesItWork />
           {/*SECTION 3D GLTF*/}
           <CompGLTFLoader />
+          {/*SECTION PRICING*/}
+          <CompPricing />
       </div>
   )
 }
