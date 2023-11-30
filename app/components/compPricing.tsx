@@ -31,9 +31,24 @@ export default function compPricing() {
                             </div>
                             <h3 className={"text-5xl font-bold"}>$999<span className={"text-base text-slate-500 font-normal"}>/week</span></h3>
                             <ul className={"space-y-4"}>
-                                <li><span className={"text-slate-800"}>&#10004;</span> Website & App design</li>
-                                <li><span className={"text-slate-800"}>&#10004;</span> Logo & Brand design</li>
-                                <li><span className={"text-slate-800"}>&#10004;</span> Custom 2D illustrations</li>
+                                <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                    <svg className={"flex-shrink-0 w-3.5 h-3.5 text-black"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                    </svg>
+                                    <span>Website & App design</span>
+                                </li>
+                                <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                    <svg className={"flex-shrink-0 w-3.5 h-3.5 text-black"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                    </svg>
+                                    <span>Logo & Brand design</span>
+                                </li>
+                                <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                    <svg className={"flex-shrink-0 w-3.5 h-3.5 text-black"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                    </svg>
+                                    <span>Custom 2D illustrations</span>
+                                </li>
                             </ul>
                         </div>
                         <Link href={""} className={"block p-4 w-full border border-black text-center rounded-2xl font-bold"}>
@@ -55,14 +70,44 @@ export default function compPricing() {
                             <h3 className={"text-5xl font-bold text-white"}>$2999<span className={"text-base text-white font-normal"}>/month</span></h3>
                             <div className={"flex flex-row space-x-14"}>
                                 <ul className={"space-y-4 text-white"}>
-                                    <li><span className={"text-white"}>&#10004;</span> Social media design</li>
-                                    <li><span className={"text-white"}>&#10004;</span> Motion & animation design</li>
-                                    <li><span className={"text-white"}>&#10004;</span> Custom 3D illustrations</li>
+                                    <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                        <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                        </svg>
+                                        <span>Social media design</span>
+                                    </li>
+                                    <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                        <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                        </svg>
+                                        <span>Motion & animation design</span>
+                                    </li>
+                                    <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                        <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                        </svg>
+                                        <span>Custom 3D illustrations</span>
+                                    </li>
                                 </ul>
                                 <ul className={"space-y-4 text-white"}>
-                                    <li><span className={"text-white"}>&#10004;</span> Dedicated project manager</li>
-                                    <li><span className={"text-white"}>&#10004;</span> Dedicated creative director</li>
-                                    <li><span className={"text-white"}>&#10004;</span> Cancel or pause anytime</li>
+                                    <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                        <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                        </svg>
+                                        <span>Dedicated project manager</span>
+                                    </li>
+                                    <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                        <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                        </svg>
+                                        <span>Dedicated creative director</span>
+                                    </li>
+                                    <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
+                                        <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                        </svg>
+                                        <span>Cancel or pause anytime</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
