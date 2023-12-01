@@ -35,11 +35,11 @@ const camera= new THREE.PerspectiveCamera(
     1,
     100
 );
-// camera.position.set(
-//     -15,
-//     30,
-//     65
-// );
+camera.position.set(
+    -15,
+    30,
+    65
+);
 camera.zoom = 1;
 
 
@@ -252,7 +252,7 @@ const animate = () => {
     const elapsedTime = clock.getElapsedTime();
     if (hero) {
         // This will override GUI controller. So comment this out if you wanna use GUI controller for model position.
-        hero.position.set(-2.3, 0, 0);
+        // hero.position.set(-2.3, 0, 0);
         hero.rotation.set(targetY, targetX, hero.rotation.z);
     }
     window.requestAnimationFrame( animate );
