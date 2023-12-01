@@ -35,11 +35,11 @@ const camera= new THREE.PerspectiveCamera(
     1,
     100
 );
-camera.position.set(
-    -15,
-    30,
-    65
-);
+// camera.position.set(
+//     -15,
+//     30,
+//     65
+// );
 camera.zoom = 1;
 
 
