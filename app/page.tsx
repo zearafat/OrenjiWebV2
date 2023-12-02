@@ -6,6 +6,7 @@ import CompHowDoesItWork from "@/app/components/compHowDoesItWork";
 import CompGLTFLoader from "@/app/components/compGLTFLoader";
 import CompPricing from "@/app/components/compPricing";
 import CompFAQ from "@/app/components/compFAQ";
+import CompFooter from "@/app/components/compFooter";
 
 export default function Home() {
   return(
@@ -26,6 +27,8 @@ export default function Home() {
           <CompPricing />
           {/*SECTION FAQ*/}
           <CompFAQ />
+          {/*SECTION FOOTER*/}
+          <CompFooter />
       </div>
   )
 }

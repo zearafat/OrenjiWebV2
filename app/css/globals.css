@@ -37,3 +37,11 @@ img {
     max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
     /* Set other styles like height or max-height as needed */
 }
+
+.gradient-border {
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 1px; /* Adjust the thickness of the 'border' here */
+    border-radius: 9999px; /* Fully rounded corners */
+    display: inline-block; /* To wrap tightly around the <a> tag */
+    width: fit-content; /* To shrink-wrap the width to the content */
+}
