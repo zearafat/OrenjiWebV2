@@ -76,6 +76,11 @@ const Accordion: React.FC = () => {
                                     refining the work until it meets your exact standards. Recognizing your passion for your
                                     project and the need for perfection, we are committed to doing whatever it takes to achieve that.
                                 </AccordionItem>
+                                <AccordionItem title={"What services do you offer?"}>
+                                    We offer UI/UX design (Both mobile and/or web), custom illustrations (Both 2D and/or 3D),
+                                    branding and visual identity design, logo design, icon design, graphic design, and social media design. All with
+                                    dedicated Project Manager and Creative Director in charge.
+                                </AccordionItem>
                                 <AccordionItem title={"Why not hire a freelancer, or a full-time designer?"}>
                                     Employing a designer can be both costly and time-intensive. It involves attracting
                                     suitable candidates, sifting through numerous applications, providing a competitive
@@ -89,12 +94,9 @@ const Accordion: React.FC = () => {
                                 <AccordionItem title={"What design software do you use?"}>
                                     We use mainly Figma for UI/UX design and vector illustration, and Blender for 3D illustrations.
                                 </AccordionItem>
-                                <AccordionItem title={"Can I pause my subscription?"}>
-                                    Of course you can. We can pause the subscription at any point of the project, and
-                                    pick up where you left off when you are ready to continue.
-                                </AccordionItem>
-                                <AccordionItem title={"Can I cancel my subscription?"}>
-                                    Absolutely. No question asked.
+                                <AccordionItem title={"Can I pause or cancel my subscription?"}>
+                                    Of course you can. You can pause the subscription at any point of the project, and
+                                    pick up where you left off when you are ready to continue. As for cancellation, absolutely. No question asked.
                                 </AccordionItem>
                                 <AccordionItem title={"Can I ask for a refund?"}>
                                     Sadly, we are unable to provide any money-back guarantee. The significant creative effort
