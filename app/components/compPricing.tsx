@@ -51,7 +51,7 @@ export default function compPricing() {
                                 </li>
                             </ul>
                         </div>
-                        <Link href={""} className={"block p-4 w-full border border-black text-center rounded-2xl font-bold"}>
+                        <Link href={""} className={"block p-4 w-full border border-black text-center rounded-xl font-bold hover:border-orange-500 hover:text-orange-500 hover:-translate-y-1 hover:scale-100 duration-300"}>
                             Try us
                         </Link>
                     </div>
@@ -111,7 +111,7 @@ export default function compPricing() {
                                 </ul>
                             </div>
                         </div>
-                        <Link href={""} className={"block p-4 w-full bg-white text-orange-600 rounded-2xl font-bold text-center"}>
+                        <Link href={""} className={"block p-4 w-full bg-white text-orange-600 rounded-xl font-bold text-center hover:shadow-xl hover:shadow-black-200/50 hover:-translate-y-1 hover:scale-100 duration-300"}>
                                 Subscribe now
                         </Link>
                     </div>
