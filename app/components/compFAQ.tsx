@@ -2,7 +2,7 @@
 import React, { useState, ReactNode } from 'react';
 import Link from "next/link";
 import Image from 'next/image';
-import faq from '@/public/assets/illustrations/faq.png';
+import faq from '@/public/assets/illustrations/faq.webp';
 
 type AccordionItemProps = {
     title: string;
@@ -46,7 +46,7 @@ const Accordion: React.FC = () => {
                                 </p>
                             </div>
                             <div className={"py-4"}>
-                                <Image src={faq} alt={"FAQ"} />
+                                <Image src={faq} alt={"FAQ"} width={500} />
                             </div>
                         </div>
                         <div className={"flex-auto"}>
