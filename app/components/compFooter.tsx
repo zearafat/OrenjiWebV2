@@ -4,7 +4,7 @@ import logo from "@/public/assets/images/etc/logo-dark.svg";
 
 export default function compFooter() {
     return(
-        <div>
+        <section id={"Footer"}>
             <div className={"bg-black"}>
                 <div className={"p-24"}>
                     {/*Header*/}
@@ -83,6 +83,6 @@ export default function compFooter() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

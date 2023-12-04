@@ -24,155 +24,157 @@ import Porto16 from '@/public/assets/images/portofolios/porto-16.webp';
 
 export default function CompHeroImages() {
     return (
-        <div className={"pb-12"}>
-            <div className={"relative"}>
-                <div className="overflow-hidden whitespace-nowrap">
-                    {/*1st Row Marquee*/}
-                    <div className="animate-marquee-top flex space-x-4 mb-8">
-                        <Image
-                            src={Porto1}
-                            alt={`Portfolio 1`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto2}
-                            alt={`Portfolio 2`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto3}
-                            alt={`Portfolio 3`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto4}
-                            alt={`Portfolio 4`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto5}
-                            alt={`Portfolio 5`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto6}
-                            alt={`Portfolio 6`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto7}
-                            alt={`Portfolio 7`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto8}
-                            alt={`Portfolio 8`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                    </div>
+        <section id={"HeroImages"}>
+            <div className={"pb-12"}>
+                <div className={"relative"}>
+                    <div className="overflow-hidden whitespace-nowrap">
+                        {/*1st Row Marquee*/}
+                        <div className="animate-marquee-top flex space-x-4 mb-8">
+                            <Image
+                                src={Porto1}
+                                alt={`Portfolio 1`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto2}
+                                alt={`Portfolio 2`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto3}
+                                alt={`Portfolio 3`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto4}
+                                alt={`Portfolio 4`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto5}
+                                alt={`Portfolio 5`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto6}
+                                alt={`Portfolio 6`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto7}
+                                alt={`Portfolio 7`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto8}
+                                alt={`Portfolio 8`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                        </div>
 
-                    {/*2nd Row Marquee*/}
-                    <div className="animate-marquee-bottom flex space-x-4">
-                        <Image
-                            src={Porto9}
-                            alt={`Portfolio 9`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto10}
-                            alt={`Portfolio 10`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto11}
-                            alt={`Portfolio 11`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto12}
-                            alt={`Portfolio 12`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto13}
-                            alt={`Portfolio 13`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto14}
-                            alt={`Portfolio 14`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto15}
-                            alt={`Portfolio 15`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
-                        <Image
-                            src={Porto16}
-                            alt={`Portfolio 16`}
-                            sizes={"100vw"}
-                            style={{ width: '35%', height: 'auto' }}
-                            quality={100}
-                            className={"rounded-lg"}
-                        />
+                        {/*2nd Row Marquee*/}
+                        <div className="animate-marquee-bottom flex space-x-4">
+                            <Image
+                                src={Porto9}
+                                alt={`Portfolio 9`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto10}
+                                alt={`Portfolio 10`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto11}
+                                alt={`Portfolio 11`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto12}
+                                alt={`Portfolio 12`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto13}
+                                alt={`Portfolio 13`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto14}
+                                alt={`Portfolio 14`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto15}
+                                alt={`Portfolio 15`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                            <Image
+                                src={Porto16}
+                                alt={`Portfolio 16`}
+                                sizes={"100vw"}
+                                style={{ width: '35%', height: 'auto' }}
+                                quality={100}
+                                className={"rounded-lg"}
+                            />
+                        </div>
                     </div>
+                    {/* Overlay Gradient */}
+                    <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+
+                    {/* Floating button */}
+                    <Link href={""} className="backdrop-filter backdrop-blur-lg bg-white/30 absolute bottom-0 mb-10
+                    left-1/2 transform -translate-x-1/2 px-6 py-4 bg-white text-black text-xl font-medium
+                    rounded-xl shadow-md hover:bg-orange-50 hover:-translate-y-1 duration-300">
+                        View Portfolio  ⤍
+                    </Link>
                 </div>
-                {/* Overlay Gradient */}
-                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
-
-                {/* Your floating button */}
-                <Link href={""} className="backdrop-filter backdrop-blur-lg bg-white/30 absolute bottom-0 mb-10
-                left-1/2 transform -translate-x-1/2 px-6 py-4 bg-white text-black text-xl font-medium
-                rounded-xl shadow-md hover:bg-orange-50 hover:-translate-y-1 duration-300">
-                    View Portfolio  ⤍
-                </Link>
             </div>
-        </div>
+        </section>
     );
 }

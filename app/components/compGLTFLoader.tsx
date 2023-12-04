@@ -11,8 +11,10 @@ export default function GLTF() {
     }, []); // Empty dependency array ensures this effect runs only once
 
     return (
-        <div className={"pt-44"}>
-            <div id="hero" className="m-0 p-0 cursor-grab" />
-        </div>
+        <section id={"GLTF"}>
+            <div className={"pt-44"}>
+                <div id="hero" className="m-0 p-0 cursor-grab" />
+            </div>
+        </section>
     );
 }
