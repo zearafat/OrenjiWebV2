@@ -32,7 +32,7 @@ export default function compHowDoesItWork() {
                         <div className={"basis-3/6"}>
                             <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl h-[400px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                 <div className={""}>
-                                    <h3 className={"text-xl font-bold tracking-tight pb-4"}>
+                                    <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                         1. Subscribe to plan
                                     </h3>
                                     <p className={"text-lg text-slate-500"}>
@@ -52,7 +52,7 @@ export default function compHowDoesItWork() {
                         <div className={"basis-5/6"}>
                             <div className={"p-8 bg-slate-50 rounded-3xl h-[400px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                 <div className={""}>
-                                    <h3 className={"text-xl font-bold tracking-tight pb-4"}>
+                                    <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                         2. Add your design task
                                     </h3>
                                     <p className={"text-lg text-slate-500"}>
@@ -78,7 +78,7 @@ export default function compHowDoesItWork() {
                                 <div className={"flex flex-row"}>
                                     <div className={"relative w-full"}>
                                         <div className={"p-8"}>
-                                            <h3 className={"text-xl font-bold tracking-tight pb-4"}>
+                                            <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                                 3. Enjoy your new shiny design!
                                             </h3>
                                             <p className={"text-lg text-slate-500"}>

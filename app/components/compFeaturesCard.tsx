@@ -18,7 +18,7 @@ export default function CompFeaturesCard(props: IPropsFeatureCard) {
                     height={50}
                     quality={100}
                 />
-                <h3 className={"font-semibold text-xl tracking-tight py-2 px-4"}>
+                <h3 className={"font-medium text-xl tracking-tight py-2 px-4"}>
                     {props.heading}
                 </h3>
             </div>

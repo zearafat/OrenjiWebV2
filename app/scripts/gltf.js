@@ -119,47 +119,47 @@ loader.load('assets/illustrations/gltf/orenji.glb', (gltf) => {
  * @param model
  * @param light
  */
-function initModelControls(model, light) {
-    const gui = new GUI();
-
-    // Add camera position folder
-    const cameraFolder = gui.addFolder('Camera Position');
-    cameraFolder.add(camera.position, 'x', -100, 100);
-    cameraFolder.add(camera.position, 'y', -100, 100);
-    cameraFolder.add(camera.position, 'z', -100, 100);
-
-    // Add model position folder
-    const modelFolder = gui.addFolder('Model Position');
-    modelFolder.add(model.position, 'x', -10, 10).onChange(() => render());
-    modelFolder.add(model.position, 'y', -10, 10).onChange(() => render());
-    modelFolder.add(model.position, 'z', -10, 10).onChange(() => render());
-
-    // Add hemisphere lighting position folder
-    const hemisphereLightFolder = gui.addFolder('Hemisphere Light');
-    hemisphereLightFolder.add(hemisphereLight, 'intensity', 0, 100);
-    hemisphereLightFolder.add(hemisphereLight.position, 'x', -100, 100).onChange(() => render());
-    hemisphereLightFolder.add(hemisphereLight.position, 'y', -100, 100).onChange(() => render());
-    hemisphereLightFolder.add(hemisphereLight.position, 'z', -100, 100).onChange(() => render());
-
-    // Add directional lighting position
-    const directionalLightFolder = gui.addFolder('Directional Light');
-    directionalLightFolder.add(directionalLight, 'intensity', 0, 100);
-    directionalLightFolder.add(directionalLight.position, 'x', -100, 100).onChange(() => render());
-    directionalLightFolder.add(directionalLight.position, 'y', -100, 100).onChange(() => render());
-    directionalLightFolder.add(directionalLight.position, 'z', -100, 100).onChange(() => render());
-
-    // Add camera zoom folder
-    const cameraZoomFolder = gui.addFolder('Camera Zoom');
-    cameraZoomFolder.add(camera, 'zoom', 0.1, 100).onChange(() => {
-        camera.updateProjectionMatrix();
-    });
-
-    cameraZoomFolder.open();
-    modelFolder.open();
-    cameraFolder.open();
-    hemisphereLightFolder.open();
-    directionalLightFolder.open();
-}
+// function initModelControls(model, light) {
+//     const gui = new GUI();
+//
+//     // Add camera position folder
+//     const cameraFolder = gui.addFolder('Camera Position');
+//     cameraFolder.add(camera.position, 'x', -100, 100);
+//     cameraFolder.add(camera.position, 'y', -100, 100);
+//     cameraFolder.add(camera.position, 'z', -100, 100);
+//
+//     // Add model position folder
+//     const modelFolder = gui.addFolder('Model Position');
+//     modelFolder.add(model.position, 'x', -10, 10).onChange(() => render());
+//     modelFolder.add(model.position, 'y', -10, 10).onChange(() => render());
+//     modelFolder.add(model.position, 'z', -10, 10).onChange(() => render());
+//
+//     // Add hemisphere lighting position folder
+//     const hemisphereLightFolder = gui.addFolder('Hemisphere Light');
+//     hemisphereLightFolder.add(hemisphereLight, 'intensity', 0, 100);
+//     hemisphereLightFolder.add(hemisphereLight.position, 'x', -100, 100).onChange(() => render());
+//     hemisphereLightFolder.add(hemisphereLight.position, 'y', -100, 100).onChange(() => render());
+//     hemisphereLightFolder.add(hemisphereLight.position, 'z', -100, 100).onChange(() => render());
+//
+//     // Add directional lighting position
+//     const directionalLightFolder = gui.addFolder('Directional Light');
+//     directionalLightFolder.add(directionalLight, 'intensity', 0, 100);
+//     directionalLightFolder.add(directionalLight.position, 'x', -100, 100).onChange(() => render());
+//     directionalLightFolder.add(directionalLight.position, 'y', -100, 100).onChange(() => render());
+//     directionalLightFolder.add(directionalLight.position, 'z', -100, 100).onChange(() => render());
+//
+//     // Add camera zoom folder
+//     const cameraZoomFolder = gui.addFolder('Camera Zoom');
+//     cameraZoomFolder.add(camera, 'zoom', 0.1, 100).onChange(() => {
+//         camera.updateProjectionMatrix();
+//     });
+//
+//     cameraZoomFolder.open();
+//     modelFolder.open();
+//     cameraFolder.open();
+//     hemisphereLightFolder.open();
+//     directionalLightFolder.open();
+// }
 
 // Ensure you have a render function that updates the scene
 function render() {

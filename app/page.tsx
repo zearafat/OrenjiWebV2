@@ -7,10 +7,13 @@ import CompGLTFLoader from "@/app/components/compGLTFLoader";
 import CompPricing from "@/app/components/compPricing";
 import CompFAQ from "@/app/components/compFAQ";
 import CompFooter from "@/app/components/compFooter";
+import CompNavMenu from "@/app/components/compNavMenu";
 
 export default function Home() {
   return(
       <div>
+          {/*SECTION NAV MENU*/}
+          <CompNavMenu />
           {/*SECTION HERO TEXT*/}
           <CompHero />
           {/*SECTION HERO IMAGES*/}
