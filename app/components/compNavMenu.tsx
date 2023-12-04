@@ -4,7 +4,7 @@ import logo from "@/public/assets/images/etc/logo-light.svg";
 
 export default function CompNavMenu() {
     return (
-        <div className={"bg-white sticky top-0 z-50 w-full border-b"}>
+        <div className={"bg-white sticky top-0 z-50 w-full border-b border-slate-100"}>
             <div className={"container mx-auto"}>
                 <nav className="flex justify-between items-center py-4">
                     <div>
