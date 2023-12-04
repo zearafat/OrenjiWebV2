@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function compPricing() {
     return(
-        <div className={"-mt-52 py-12"}>
+        <div className={"-mt-64 py-12"}>
             <div className={"container mx-auto"}>
                 {/*Header*/}
                 <div className={"text-center pb-12"}>
