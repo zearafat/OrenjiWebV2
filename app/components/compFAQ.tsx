@@ -27,7 +27,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
 
 const Accordion: React.FC = () => {
     return (
-        <section id={"faq"}>
+        <section id={"FAQ"}>
             <div className={"pt-24"}>
                 <div className={"bg-slate-50 p-24"}>
                     <div className={"container mx-auto"}>

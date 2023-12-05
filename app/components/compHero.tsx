@@ -40,7 +40,7 @@ export default function compHero() {
 
                         {/*BUTTON CTA*/}
                         <div className={"py-4"}>
-                            <Link href={""}>
+                            <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
                                 <button type="button"
                                         className={"px-[42px] py-[22px] text-xl tracking-tight font-medium text-center " +
                                             "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 " +
@@ -51,7 +51,7 @@ export default function compHero() {
                             <p className={"pt-8"}>
                                 <span className={"text-red-500"}>1 slot left. </span>
                                 <span className={"text-slate-500"}>Want to talk first? </span>
-                                <span className={"underline"}><Link href={"mailto:orenjistudio@outlook.com"}>Get in touch 👋</Link></span>
+                                <span className={"underline"}><Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>Get in touch 👋</Link></span>
                             </p>
                         </div>
                     </div>

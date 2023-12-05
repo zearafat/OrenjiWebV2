@@ -11,27 +11,29 @@ import CompNavMenu from "@/app/components/compNavMenu";
 
 export default function Home() {
   return(
-      <div>
-          {/*SECTION NAV MENU*/}
-          <CompNavMenu />
-          {/*SECTION HERO TEXT*/}
-          <CompHero />
-          {/*SECTION HERO IMAGES*/}
-          <CompHeroImages />
-          {/*SECTION CLIENTS LOGO*/}
-          <CompClientsLogo />
-          {/*SECTION FEATURES*/}
-          <CompFeatures />
-          {/*SECTION HOW DOES IT WORK*/}
-          <CompHowDoesItWork />
-          {/*SECTION 3D GLTF*/}
-          <CompGLTFLoader />
-          {/*SECTION PRICING*/}
-          <CompPricing />
-          {/*SECTION FAQ*/}
-          <CompFAQ />
-          {/*SECTION FOOTER*/}
-          <CompFooter />
-      </div>
+      <section id={"Components"}>
+          <div>
+              {/*SECTION NAV MENU*/}
+              <CompNavMenu />
+              {/*SECTION HERO TEXT*/}
+              <CompHero />
+              {/*SECTION HERO IMAGES*/}
+              <CompHeroImages />
+              {/*SECTION CLIENTS LOGO*/}
+              <CompClientsLogo />
+              {/*SECTION FEATURES*/}
+              <CompFeatures />
+              {/*SECTION HOW DOES IT WORK*/}
+              <CompHowDoesItWork />
+              {/*SECTION 3D GLTF*/}
+              <CompGLTFLoader />
+              {/*SECTION PRICING*/}
+              <CompPricing />
+              {/*SECTION FAQ*/}
+              <CompFAQ />
+              {/*SECTION FOOTER*/}
+              <CompFooter />
+          </div>
+      </section>
   )
 }

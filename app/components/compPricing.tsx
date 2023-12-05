@@ -52,7 +52,7 @@ export default function compPricing() {
                                     </li>
                                 </ul>
                             </div>
-                            <Link href={""} className={"block p-4 w-full border border-black text-center rounded-xl font-medium hover:border-orange-500 hover:text-orange-500 hover:-translate-y-1 hover:scale-100 duration-300"}>
+                            <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"} className={"block p-4 w-full border border-black text-center rounded-xl font-medium hover:border-orange-500 hover:text-orange-500 hover:-translate-y-1 hover:scale-100 duration-300"}>
                                 Try us
                             </Link>
                         </div>
@@ -112,7 +112,7 @@ export default function compPricing() {
                                     </ul>
                                 </div>
                             </div>
-                            <Link href={""} className={"block p-4 w-full bg-white text-orange-600 rounded-xl font-medium text-center hover:shadow-xl hover:shadow-black-200/50 hover:-translate-y-1 hover:scale-100 duration-300"}>
+                            <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"} className={"block p-4 w-full bg-white text-orange-600 rounded-xl font-medium text-center hover:shadow-xl hover:shadow-black-200/50 hover:-translate-y-1 hover:scale-100 duration-300"}>
                                     Subscribe now
                             </Link>
                         </div>

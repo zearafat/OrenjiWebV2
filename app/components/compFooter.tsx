@@ -37,7 +37,7 @@ export default function compFooter() {
                     </div>
                     {/*CTA BUTTON*/}
                     <div className={"py-12"}>
-                        <Link href={""}>
+                        <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
                             <div className={"mx-auto flex items-center justify-center"}>
                                 <div className="rounded-full bg-gradient-to-tr from-[#00FFA3] via-[#B61AFF] to-yellow-500
                                 p-1 hover:bg-gradient-to-br hover:from-[#B61AFF] hover:via-[#2663FF] hover:to-[#00FFA3]
@@ -69,13 +69,13 @@ export default function compFooter() {
                                 <p className={"text-white pb-4"}>Pakem, Sleman, Yogyakarta, Indonesia (55582)</p>
                                 <div className="text-white py-4">
                                     <nav className="flex items-center justify-center space-x-4">
-                                        <Link href="https://dribbble.com" className="hover:text-red-600">Dribbble</Link>
+                                        <Link href="https://dribbble.com/orenjistudio" target={"_blank"} className="hover:text-red-600">Dribbble</Link>
                                         <span className="text-red-600">•</span>
-                                        <Link href="https://www.behance.net" className="hover:text-red-600">Behance</Link>
+                                        <Link href="https://www.behance.net/studioorenji" target={"_blank"} className="hover:text-red-600">Behance</Link>
                                         <span className="text-red-600">•</span>
-                                        <Link href="https://www.instagram.com" className="hover:text-red-600">Instagram</Link>
+                                        <Link href="https://www.instagram.com/orenji.studio/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target={"_blank"} className="hover:text-red-600">Instagram</Link>
                                         <span className="text-red-600">•</span>
-                                        <a href="https://www.linkedin.com" className="hover:text-red-600">LinkedIn</a>
+                                        <a href="https://www.linkedin.com/company/orenji-studio/" target={"_blank"} className="hover:text-red-600">LinkedIn</a>
                                     </nav>
                                 </div>
                             </div>
