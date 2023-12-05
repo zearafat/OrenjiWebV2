@@ -12,7 +12,7 @@ export default function GLTF() {
 
     return (
         <section id={"GLTF"}>
-            <div className={"pt-44"}>
+            <div className={"sm:pt-44 sm:block hidden"}>
                 <div id="hero" className="m-0 p-0 cursor-grab" />
             </div>
         </section>

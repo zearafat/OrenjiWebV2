@@ -6,9 +6,9 @@ export default function compFooter() {
     return(
         <section id={"Footer"}>
             <div className={"bg-black"}>
-                <div className={"p-24"}>
+                <div className={"sm:p-24 py-14 px-6"}>
                     {/*Header*/}
-                    <h1 className={"text-[68px] px-52 font-bold tracking-tighter text-center text-white justify-center"}>
+                    <h1 className={"sm:text-[68px] text-[24px] sm:px-52 font-bold tracking-tighter text-center text-white justify-center"}>
                         Your own dedicated design team, just one click away
                         <span className={"text-orange-600"}>.</span>
                     </h1>
@@ -36,14 +36,14 @@ export default function compFooter() {
                         </ul>
                     </div>
                     {/*CTA BUTTON*/}
-                    <div className={"py-12"}>
+                    <div className={"sm:py-12 py-6"}>
                         <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
                             <div className={"mx-auto flex items-center justify-center"}>
                                 <div className="rounded-full bg-gradient-to-tr from-[#00FFA3] via-[#B61AFF] to-yellow-500
                                 p-1 hover:bg-gradient-to-br hover:from-[#B61AFF] hover:via-[#2663FF] hover:to-[#00FFA3]
                                 hover:-translate-y-1 hover:scale-100 duration-300">
-                                    <div className={"flex py-8 px-16 rounded-full items-center justify-center bg-black back"}>
-                                        <h1 className={"text-2xl font-medium text-white"}>Start a project</h1>
+                                    <div className={"flex sm:py-8 py-6 sm:px-16 px-12 rounded-full items-center justify-center bg-black back"}>
+                                        <h1 className={"sm:text-2xl text-xl font-medium text-white"}>Start a project</h1>
                                     </div>
                                 </div>
                             </div>
@@ -51,8 +51,8 @@ export default function compFooter() {
                     </div>
                     <hr className={"h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"} />
                     {/*FOOTER*/}
-                    <div className={"pt-12"}>
-                        <div className={"flex flex-row"}>
+                    <div className={"sm:pt-12 pt-6"}>
+                        <div className={"sm:flex sm:flex-row"}>
                             <div>
                                 <Image
                                     src={logo}
@@ -62,13 +62,13 @@ export default function compFooter() {
                                 />
                                 <p className={"text-slate-700 text-sm"}>Copyright 2023 Orenji Studio - All rights Reserved</p>
                             </div>
-                            <div className={"flex-grow"}>
+                            <div className={"flex-grow sm:pb-0 pb-6"}>
                                 {/*EMPTY*/}
                             </div>
-                            <div className={"text-right"}>
+                            <div className={"sm:text-right text-left"}>
                                 <p className={"text-white pb-4"}>Pakem, Sleman, Yogyakarta, Indonesia (55582)</p>
                                 <div className="text-white py-4">
-                                    <nav className="flex items-center justify-center space-x-4">
+                                    <nav className="flex items-center justify-center sm:space-x-4 space-x-3">
                                         <Link href="https://dribbble.com/orenjistudio" target={"_blank"} className="hover:text-red-600">Dribbble</Link>
                                         <span className="text-red-600">•</span>
                                         <Link href="https://www.behance.net/studioorenji" target={"_blank"} className="hover:text-red-600">Behance</Link>

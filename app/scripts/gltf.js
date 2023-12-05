@@ -175,7 +175,6 @@ const renderer = new THREE.WebGLRenderer(
     {
         alpha: true,
         antialias: true,
-        physicallyCorrectLights: true
     }
 );
 renderer.shadowMap.enabled = true
@@ -184,7 +183,6 @@ renderer.toneMapping = THREE.LinearToneMapping;
 renderer.toneMappingExposure = 1; // Physically based renderer needs toneMappingExposure function
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.physicallyCorrectLights = true;
 document.getElementById("hero").appendChild(renderer.domElement);
 
 

@@ -4,10 +4,10 @@ import logo from "@/public/assets/images/etc/logo-light.svg";
 
 export default function CompNavMenu() {
     return (
-        <section id={"NavMenu"}>
-            <div className={"bg-white sticky top-0 z-50 w-full border-b border-slate-100"}>
+        <section id={"NavMenu"} className={"sticky top-0 z-50"}>
+            <div className={"bg-white w-full border-b border-slate-100"}>
                 <div className={"container mx-auto"}>
-                    <nav className={"flex justify-between items-center py-4"}>
+                    <nav className={"flex justify-between items-center py-4 sm:px-0 px-4"}>
                         <div>
                             <Image src={logo} alt="Orenji Studio" width={160} height={48} /> {/* Make sure to include height */}
                         </div>

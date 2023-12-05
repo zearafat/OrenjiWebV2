@@ -9,7 +9,7 @@ interface IPropsFeatureCard {
 
 export default function CompFeaturesCard(props: IPropsFeatureCard) {
     return(
-        <div className={"p-8 border rounded-xl hover:-translate-y-1 hover:border-orange-300 duration-300"}>
+        <div className={"sm:p-8 p-6 border rounded-xl hover:-translate-y-1 hover:border-orange-300 duration-300"}>
             <div className={"flex flex-row"}>
                 <Image
                     src={props.image}

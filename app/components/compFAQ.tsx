@@ -17,7 +17,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
             <button
                 className="flex justify-between items-center w-full py-4 border-b"
                 onClick={() => setIsOpen(!isOpen)}>
-                <h2 className="text-lg font-medium">{title}</h2>
+                <h2 className="text-lg font-medium text-left">{title}</h2>
                 <span>{isOpen ? '▲' : '▼'}</span>
             </button>
             {isOpen && <div className="py-4">{children}</div>}
@@ -29,13 +29,13 @@ const Accordion: React.FC = () => {
     return (
         <section id={"FAQ"}>
             <div className={"pt-24"}>
-                <div className={"bg-slate-50 p-24"}>
+                <div className={"bg-slate-50 sm:p-24 px-4 py-12"}>
                     <div className={"container mx-auto"}>
-                        <div className={"flex flex-row"}>
+                        <div className={"sm:flex sm:flex-row"}>
                             <div className={"shrink"}>
                                 <div className={"pb-4"}>
                                     <h2 className={"text-4xl font-bold pb-4"}>
-                                        WHAT. THE. FAQ
+                                        What. The. FAQ
                                     </h2>
                                     <p>
                                         Can’t find your answers? Talk to us:
@@ -50,7 +50,7 @@ const Accordion: React.FC = () => {
                                     <Image src={faq} alt={"FAQ"} width={500} />
                                 </div>
                             </div>
-                            <div className={"flex-auto"}>
+                            <div className={"flex-auto px-2"}>
                                 <div className="max-w-3xl mx-auto">
                                     <AccordionItem title={"Is it really unlimited requests?"}>
                                         Absolutely. After subscribing, you will have the ability to submit an unlimited number of design requests.
