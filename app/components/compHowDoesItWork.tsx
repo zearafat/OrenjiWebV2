@@ -113,7 +113,7 @@ export default function compHowDoesItWork() {
                                 <div className="bg-gradient-to-br from-purple-400 via-purple-500 to-pink-500 p-8
                                 rounded-3xl sm:h-[400px] h-[100px] flex justify-center items-center text-white
                                 hover:-translate-y-0.5 duration-300">
-                                    <h2 className="sm:text-2xl text-xl font-bold p-4-">Any questions? <span className={"underline"}>
+                                    <h2 className="sm:text-2xl text-xl font-medium p-4-">Any questions? <span className={"underline"}>
                                         <Link href={"https://tally.so/r/wkNrkZ"}>Talk to us 👋</Link></span>
                                     </h2>
                                 </div>
