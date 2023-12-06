@@ -83,7 +83,8 @@ const Accordion: React.FC = () => {
                                         dedicated Project Manager and Creative Director in charge.
                                     </AccordionItem>
                                     <AccordionItem title={"Do you also offer Development services?"}>
-                                        Yes we do. We offer website development and mobile app (Flutter) development service, <strong>with an additional charge</strong>.
+                                        Yes we do. We offer website development and mobile app (Flutter) development service,
+                                        <strong> with an additional fee</strong>. Please talk to us for more info.
                                     </AccordionItem>
                                     <AccordionItem title={"Why not hire a freelancer, or a full-time designer?"}>
                                         Employing a designer can be both costly and time-intensive. It involves attracting
