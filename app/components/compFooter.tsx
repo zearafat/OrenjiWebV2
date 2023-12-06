@@ -37,17 +37,17 @@ export default function compFooter() {
                     </div>
                     {/*CTA BUTTON*/}
                     <div className={"sm:py-12 py-6"}>
-                        <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
-                            <div className={"mx-auto flex items-center justify-center"}>
+                        <div className={"mx-auto flex items-center justify-center"}>
+                            <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
                                 <div className="rounded-full bg-gradient-to-tr from-[#00FFA3] via-[#B61AFF] to-yellow-500
-                                p-1 hover:bg-gradient-to-br hover:from-[#B61AFF] hover:via-[#2663FF] hover:to-[#00FFA3]
-                                hover:-translate-y-1 hover:scale-100 duration-300">
+                                    p-1 hover:bg-gradient-to-br hover:from-[#B61AFF] hover:via-[#2663FF] hover:to-[#00FFA3]
+                                    hover:-translate-y-1 hover:scale-100 duration-300">
                                     <div className={"flex sm:py-8 py-6 sm:px-16 px-12 rounded-full items-center justify-center bg-black back"}>
                                         <h1 className={"sm:text-2xl text-xl font-medium text-white"}>Start a project</h1>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
                     <hr className={"h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"} />
                     {/*FOOTER*/}

@@ -22,8 +22,7 @@ export default function CompFeatures() {
                         </div>
                         <div className={"py-4"}>
                             <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                When you hire us, you will get the whole team with all of our creative power. Not just 1-man-show with couple of outsourced designers like many others.
                             </p>
                         </div>
                     </div>
@@ -34,43 +33,43 @@ export default function CompFeatures() {
                                 image={iconUnlimitedDesign}
                                 imageAlt={"Unlimited design"}
                                 heading={"Unlimited design"}
-                                description={"Our recruitment tool subscription is priced so competitively that " +
-                                    "choosing it over our competitors is a no-brainer!"}
+                                description={"Have lots of brilliant ideas that you want to realize? Leave it all to us. " +
+                                    "Request all the designs you want with unlimited design request! Go crazy!"}
                             />
                             <CompFeaturesCard
                                 image={iconMonthlyFlat}
                                 imageAlt={"Fixed monthly rate"}
                                 heading={"Fixed monthly rate"}
-                                description={"Our recruitment tool subscription is priced so competitively that " +
-                                    "choosing it over our competitors is a no-brainer!"}
+                                description={"Pay once every month, and get all our services. As simple as that. " +
+                                    "No overcomplicated pricing schemes with many pricing tables. Just 1 flat, monthly rate."}
                             />
                             <CompFeaturesCard
                                 image={iconUnlimitedChanges}
                                 imageAlt={"Unlimited changes"}
                                 heading={"Unlimited changes"}
-                                description={"Our recruitment tool subscription is priced so competitively that " +
-                                    "choosing it over our competitors is a no-brainer!"}
+                                description={"Still not satisfied with the existing design? Ask for as many revisions " +
+                                    "and changes as you want. Until you are happy. No complaint. Promise."}
                             />
                             <CompFeaturesCard
                                 image={iconDailyReports}
                                 imageAlt={"Daily report & updates"}
                                 heading={"Daily report & updates"}
-                                description={"Our recruitment tool subscription is priced so competitively that " +
-                                    "choosing it over our competitors is a no-brainer!"}
+                                description={"Get daily reports and updates. Never feel left out. We believe communication is a key and " +
+                                    "we want you to be part of us, from day one."}
                             />
                             <CompFeaturesCard
                                 image={iconDailyTurnAround}
                                 imageAlt={"1-2 days turnaround"}
                                 heading={"1-2 days turnaround"}
-                                description={"Our recruitment tool subscription is priced so competitively that " +
-                                    "choosing it over our competitors is a no-brainer!"}
+                                description={"Get your designs delivered at an insane speed. Not just fast, but also looks " +
+                                    "beautiful, functional and consistent. And that's our expertise. "}
                             />
                             <CompFeaturesCard
                                 image={iconCustomAssets}
                                 imageAlt={"Custom-made assets"}
                                 heading={"Custom-made assets"}
-                                description={"Our recruitment tool subscription is priced so competitively that " +
-                                    "choosing it over our competitors is a no-brainer!"}
+                                description={"We never use templates. We have in-house super talented illustrators and " +
+                                    "designers that will help make your product stand out among the rest."}
                             />
                         </div>
                     </div>

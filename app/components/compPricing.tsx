@@ -15,8 +15,7 @@ export default function compPricing() {
                         </div>
                         <div className={"py-4"}>
                             <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                Simple, flat, no hidden-cost. Pay once every month, get all our services, unlimited. Pause or cancel anytime, no question asked.
                             </p>
                         </div>
                     </div>

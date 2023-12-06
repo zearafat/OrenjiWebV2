@@ -21,8 +21,8 @@ export default function compHowDoesItWork() {
                         </div>
                         <div className={"py-4"}>
                             <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                No overcomplicated workflow, no unnecessary bureaucracy or pappers. Let's go straight to realizing
+                                your ideas and tackling your business problems.
                             </p>
                         </div>
                     </div>
@@ -31,13 +31,15 @@ export default function compHowDoesItWork() {
                         <div className={"sm:flex sm:flex-row sm:space-x-4 sm:py-2"}>
                             {/*Card 1*/}
                             <div className={"sm:basis-3/6 pb-4"}>
-                                <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl sm:h-[400px] h-[285px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
+                                <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl sm:h-[400px] h-[285px] " +
+                                    "hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                     <div className={""}>
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                             1. Subscribe to plan
                                         </h3>
                                         <p className={"sm:text-lg text-base text-slate-500"}>
-                                            Our recruitment tool subscription is priced so competitively that choosing.
+                                            Click the button, fill out
+                                            some questionnaires, then our CEO will contact you within 1x24 to explain further.
                                         </p>
                                     </div>
                                     <div className={"pt-8 px-4"}>
@@ -57,8 +59,7 @@ export default function compHowDoesItWork() {
                                             2. Add your design task
                                         </h3>
                                         <p className={"sm:text-lg text-base text-slate-500"}>
-                                            Our recruitment tool subscription is priced so competitively that choosing
-                                            it over our competitors is a no-brainer!
+                                            After your subscribe to the plan, you can request as many designs as you want via Trello, Email or directly in Figma. You can give as many feedback or as many revisions as you want.
                                         </p>
                                     </div>
                                     <div className={"py-12 sm:px-24"}>
@@ -83,8 +84,7 @@ export default function compHowDoesItWork() {
                                                     3. Enjoy your new shiny design!
                                                 </h3>
                                                 <p className={"sm:text-lg text-base text-slate-500"}>
-                                                    Our recruitment tool subscription is priced so competitively that choosing it over our
-                                                    competitors is a no-brainer!
+                                                    Receive your design updates within 1-3 business days. Not satisfied? No problem. We will design again until you are 1000% happy.
                                                 </p>
                                             </div>
                                             <div className={"absolute bottom-0 left-0 right-0 mx-auto"}>
@@ -113,7 +113,7 @@ export default function compHowDoesItWork() {
                                 <div className="bg-gradient-to-br from-purple-400 via-purple-500 to-pink-500 p-8
                                 rounded-3xl sm:h-[400px] h-[100px] flex justify-center items-center text-white
                                 hover:-translate-y-0.5 duration-300">
-                                    <h2 className="sm:text-2xl text-xl font-medium p-4-">Any questions? <span className={"underline"}>
+                                    <h2 className="sm:text-xl text-lg font-medium p-4-">Any questions? <span className={"underline"}>
                                         <Link href={"https://tally.so/r/wkNrkZ"}>Talk to us 👋</Link></span>
                                     </h2>
                                 </div>
