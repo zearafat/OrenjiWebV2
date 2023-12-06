@@ -21,13 +21,8 @@ export const metadata: Metadata = {
         url: 'https://orenji-web-v2.vercel.app/opengraph-image.png',
         width: 1200,
         height: 630,
-      },
-      {
-        url: 'https://orenji-web-v2.vercel.app/opengraph-image-1800x1600.png',
-        width: 1800,
-        height: 1600,
         alt: 'Orenji Studio - Unlimited design, with flat monthly fee',
-      },
+      }
     ],
     locale: 'en_US',
     type: 'website',
@@ -44,13 +39,8 @@ export const metadata: Metadata = {
         url: 'https://orenji-web-v2.vercel.app/twitter-image.png',
         width: 1200,
         height: 630,
-      },
-      {
-        url: 'https://orenji-web-v2.vercel.app/twitter-image-1800x1600.png',
-        width: 1800,
-        height: 1600,
         alt: 'Orenji Studio - Unlimited design, with flat monthly fee',
-      },
+      }
     ]
   }
 };
