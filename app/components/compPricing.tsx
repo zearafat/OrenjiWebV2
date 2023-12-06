@@ -21,7 +21,7 @@ export default function compPricing() {
                     </div>
 
                     {/*Cards*/}
-                    <div className={"sm:flex sm:flex-row mx-auto justify-center sm:space-x-6 p-4 space-y-2"}>
+                    <div className={"sm:flex sm:flex-row mx-auto justify-center sm:space-x-6 p-4 sm:space-y-0 space-y-2"}>
                         {/*Card Trial*/}
                         <div className={"sm:py-8 py-4 sm:px-12 px-6 bg-slate-50 rounded-3xl border border-slate-100"}>
                             <div className={"space-y-6 pb-10"}>
