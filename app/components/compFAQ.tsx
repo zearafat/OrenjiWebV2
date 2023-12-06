@@ -93,7 +93,7 @@ const Accordion: React.FC = () => {
                                         your required design work, ensuring progress from day one rather than enduring weeks or months of delay.
                                     </AccordionItem>
                                     <AccordionItem title={"What design software do you use?"}>
-                                        We use mainly Figma for UI/UX design and vector illustration, and Blender for 3D illustrations.
+                                        We use mainly Figma for UI/UX design and Blender for 3D illustrations.
                                     </AccordionItem>
                                     <AccordionItem title={"Can I pause or cancel my subscription?"}>
                                         Of course you can. You can pause the subscription at any point of the project, and
@@ -102,7 +102,10 @@ const Accordion: React.FC = () => {
                                     <AccordionItem title={"Can I ask for a refund?"}>
                                         Sadly, we are unable to provide any money-back guarantee. The significant creative effort
                                         and research required to deliver top-quality designs in a brief timeframe mean we must ensure
-                                        compensation for our time and effort. However, if you find yourself dissatisfied with our service
+                                        compensation for our time and effort.
+                                        <br />
+                                        <br />
+                                        However, if you find yourself dissatisfied with our service
                                         (though such cases are exceedingly rare), we encourage you to tell us and we will strive
                                         to address your concerns to the best of our ability.
                                     </AccordionItem>
