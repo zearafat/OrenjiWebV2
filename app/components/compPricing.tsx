@@ -9,7 +9,7 @@ export default function compPricing() {
                     <div className={"text-center pb-12"}>
                         <div className={"py-4"}>
                             <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter"}>
-                                {"Great design, zero-hassle"}
+                                {"Simple pricing"}
                                 <span className={"text-orange-600"}>.</span>
                             </h2>
                         </div>
