@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     siteName: 'Orenji Studio',
     images: [
       {
-        url: 'https://orenji-web-v2.vercel.app/opengraph-image.png',
+        url: 'https://orenji-web-v2.vercel.app/opengraph-image-800x600.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://orenji-web-v2.vercel.app/opengraph-image.png',
+        url: 'https://orenji-web-v2.vercel.app/opengraph-image-1800x1600.png',
         width: 1800,
         height: 1600,
         alt: 'Orenji Studio - Unlimited design, with flat monthly fee',
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
         'Think of us as of your dedicated creative team. We’ll work alongside you or your team to give you the best design results possible.',
     images: [
       {
-        url: 'https://orenji-web-v2.vercel.app/twitter-image.png',
+        url: 'https://orenji-web-v2.vercel.app/twitter-image-800x600.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://orenji-web-v2.vercel.app/twitter-image.png',
+        url: 'https://orenji-web-v2.vercel.app/twitter-image-1800x1600.png',
         width: 1800,
         height: 1600,
         alt: 'Orenji Studio - Unlimited design, with flat monthly fee',
