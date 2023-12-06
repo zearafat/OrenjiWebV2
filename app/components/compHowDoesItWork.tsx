@@ -15,14 +15,14 @@ export default function compHowDoesItWork() {
                     <div className={"text-center sm:pb-12 pb-4"}>
                         <div className={"py-4"}>
                             <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter"}>
-                                How does it work
+                                {"How does it work"}
                                 <span className={"text-orange-600"}>.</span>
                             </h2>
                         </div>
                         <div className={"py-4"}>
                             <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
-                                No overcomplicated workflow, no unnecessary bureaucracy or pappers. Let's go straight to realizing
-                                your ideas and tackling your business problems.
+                                {"No overcomplicated workflow, no unnecessary bureaucracy or pappers. Let's go straight to realizing " +
+                                    "your ideas and tackling your business problems."}
                             </p>
                         </div>
                     </div>
@@ -35,11 +35,10 @@ export default function compHowDoesItWork() {
                                     "hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                     <div className={""}>
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>
-                                            1. Subscribe to plan
+                                            {"1. Subscribe to plan"}
                                         </h3>
                                         <p className={"sm:text-lg text-base text-slate-500"}>
-                                            Click the button, fill out
-                                            some questionnaires, then our CEO will contact you within 1x24 to explain further.
+                                            {"Click the button, fill out some questionnaires, then our CEO will contact you within 1x24 to explain further."}
                                         </p>
                                     </div>
                                     <div className={"pt-8 px-4"}>
@@ -56,10 +55,10 @@ export default function compHowDoesItWork() {
                                 <div className={"p-8 bg-slate-50 rounded-3xl sm:h-[400px] h-[300px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                     <div className={""}>
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>
-                                            2. Add your design task
+                                            {"2. Add your design task"}
                                         </h3>
                                         <p className={"sm:text-lg text-base text-slate-500"}>
-                                            After your subscribe to the plan, you can request as many designs as you want via Trello, Email or directly in Figma. You can give as many feedback or as many revisions as you want.
+                                            {"After your subscribe to the plan, you can request as many designs as you want via Trello, Email or directly in Figma. You can give as many feedback or as many revisions as you want."}
                                         </p>
                                     </div>
                                     <div className={"py-12 sm:px-24"}>
@@ -81,10 +80,10 @@ export default function compHowDoesItWork() {
                                         <div className={"relative w-full"}>
                                             <div className={"p-8"}>
                                                 <h3 className={"text-xl font-medium tracking-tight pb-4"}>
-                                                    3. Enjoy your new shiny design!
+                                                    {"3. Enjoy your new shiny design!"}
                                                 </h3>
                                                 <p className={"sm:text-lg text-base text-slate-500"}>
-                                                    Receive your design updates within 1-3 business days. Not satisfied? No problem. We will design again until you are 1000% happy.
+                                                    {"Receive your design updates within 1-3 business days. Not satisfied? No problem. We will design again until you are 1000% happy."}
                                                 </p>
                                             </div>
                                             <div className={"absolute bottom-0 left-0 right-0 mx-auto"}>

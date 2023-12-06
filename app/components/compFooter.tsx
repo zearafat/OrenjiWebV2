@@ -9,7 +9,7 @@ export default function compFooter() {
                 <div className={"sm:p-24 py-14 px-6"}>
                     {/*Header*/}
                     <h1 className={"sm:text-[68px] text-[24px] sm:px-52 font-bold tracking-tighter text-center text-white justify-center"}>
-                        Your own dedicated design team, just one click away
+                        {"Your own dedicated design team, just one click away"}
                         <span className={"text-orange-600"}>.</span>
                     </h1>
                     {/*BULLETS FEATURE*/}
@@ -60,13 +60,13 @@ export default function compFooter() {
                                     width={200}
                                     className={"pb-4"}
                                 />
-                                <p className={"text-slate-700 text-sm"}>Copyright 2023 Orenji Studio - All rights Reserved</p>
+                                <p className={"text-slate-700 text-sm"}>{"Copyright 2023 Orenji Studio - All rights Reserved"}</p>
                             </div>
                             <div className={"flex-grow sm:pb-0 pb-6"}>
                                 {/*EMPTY*/}
                             </div>
                             <div className={"sm:text-right text-left"}>
-                                <p className={"text-white pb-4"}>Pakem, Sleman, Yogyakarta, Indonesia (55582)</p>
+                                <p className={"text-white pb-4"}>{"Pakem, Sleman, Yogyakarta, Indonesia (55582)"}</p>
                                 <div className="text-white py-4">
                                     <nav className="flex items-center justify-center sm:space-x-4 space-x-3">
                                         <Link href="https://dribbble.com/orenjistudio" target={"_blank"} className="hover:text-red-600">Dribbble</Link>

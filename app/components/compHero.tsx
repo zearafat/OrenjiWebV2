@@ -10,14 +10,14 @@ export default function compHero() {
                         {/*HEADER*/}
                         <div>
                             <h1 className={"sm:text-[68px] text-3xl font-bold tracking-tighter"}>
-                                Unlimited design, with flat monthly fee
+                                {"Unlimited design, with flat monthly fee"}
                                 <span className={"text-orange-600"}>.</span>
                             </h1>
                         </div>
                         {/*BULLETS FEATURE*/}
                         <div className={"sm:py-12 py-6"}>
                             <div className={"sm:hidden block"}>
-                                <p>Unlimited revisions. Unlimited requests. Cancel anytime.</p>
+                                <p>{"Unlimited revisions. Unlimited requests. Cancel anytime."}</p>
                             </div>
                             <ul className={"space-x-6 sm:flex flex-wrap justify-center hidden text-xl"}>
                                 <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>

@@ -9,13 +9,13 @@ export default function compPricing() {
                     <div className={"text-center pb-12"}>
                         <div className={"py-4"}>
                             <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter"}>
-                                Great design, zero-hassle
+                                {"Great design, zero-hassle"}
                                 <span className={"text-orange-600"}>.</span>
                             </h2>
                         </div>
                         <div className={"py-4"}>
                             <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
-                                Simple, flat, no hidden-cost. Pay once every month, get all our services, unlimited. Pause or cancel anytime. No question asked.
+                                {"Simple, flat, no hidden-cost. Pay once every month, get all our services, unlimited. Pause or cancel anytime. No question asked."}
                             </p>
                         </div>
                     </div>
