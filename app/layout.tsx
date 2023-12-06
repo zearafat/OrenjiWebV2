@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Orenji Studio is a very small design team. ' +
       'We keep our studio intentionally small so we can move faster, and more focused, without the big-agency bloat. ' +
       'Think of us as of your dedicated creative team. We’ll work alongside you or your team to give you the best design results possible.',
-  metadataBase: new URL('https://orenji-web-v2.vercel.app'),
+  metadataBase: new URL('https://orenji.studio'),
   openGraph: {
     title: 'Orenji Studio - Unlimited design, with flat monthly fee',
     description: 'Orenji Studio is a very small design team. ' +
         'We keep our studio intentionally small so we can move faster, and more focused, without the big-agency bloat. ' +
         'Think of us as of your dedicated creative team. We’ll work alongside you or your team to give you the best design results possible.',
-    url: 'https://orenji-web-v2.vercel.app',
+    url: 'https://orenji.studio',
     siteName: 'Orenji Studio',
     images: [
       {
-        url: 'https://orenji-web-v2.vercel.app/opengraph-image.png',
+        url: 'https://orenji.studio/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Orenji Studio - Unlimited design, with flat monthly fee',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         'Think of us as of your dedicated creative team. We’ll work alongside you or your team to give you the best design results possible.',
     images: [
       {
-        url: 'https://orenji-web-v2.vercel.app/twitter-image.png',
+        url: 'https://orenji.studio/twitter-image.png',
         width: 1200,
         height: 630,
         alt: 'Orenji Studio - Unlimited design, with flat monthly fee',
