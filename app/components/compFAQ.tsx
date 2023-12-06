@@ -82,6 +82,9 @@ const Accordion: React.FC = () => {
                                         branding and visual identity design, logo design, icon design, graphic design, and social media design. All with
                                         dedicated Project Manager and Creative Director in charge.
                                     </AccordionItem>
+                                    <AccordionItem title={"Do you also offer Development services?"}>
+                                        Yes we do. We offer website development and mobile app (Flutter) development service, <strong>with an additional charge</strong>.
+                                    </AccordionItem>
                                     <AccordionItem title={"Why not hire a freelancer, or a full-time designer?"}>
                                         Employing a designer can be both costly and time-intensive. It involves attracting
                                         suitable candidates, sifting through numerous applications, providing a competitive
