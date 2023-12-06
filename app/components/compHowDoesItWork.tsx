@@ -37,11 +37,11 @@ export default function compHowDoesItWork() {
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                             {"1. Subscribe to plan"}
                                         </h3>
-                                        <p className={"sm:text-lg text-base text-slate-500"}>
+                                        <p className={"sm:text-lg text-sm text-slate-500"}>
                                             {"Click the button, fill out some questionnaires, then our CEO will contact you within 1x24 to explain further."}
                                         </p>
                                     </div>
-                                    <div className={"pt-8 px-4"}>
+                                    <div className={"sm:pt-8 pt-4 px-4"}>
                                         <Image
                                             src={howItWork1}
                                             alt={"How it works 1"}
@@ -57,11 +57,11 @@ export default function compHowDoesItWork() {
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                             {"2. Add your design task"}
                                         </h3>
-                                        <p className={"sm:text-lg text-base text-slate-500"}>
+                                        <p className={"sm:text-lg text-sm text-slate-500"}>
                                             {"After your subscribe to the plan, you can request as many designs as you want via Trello, Email or directly in Figma. You can give as many feedback or as many revisions as you want."}
                                         </p>
                                     </div>
-                                    <div className={"py-12 sm:px-24"}>
+                                    <div className={"sm:pt-8 pt-6 sm:px-24"}>
                                         <Image
                                             src={howItWork2}
                                             alt={"How it works 2"}
@@ -82,7 +82,7 @@ export default function compHowDoesItWork() {
                                                 <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                                     {"3. Enjoy your new shiny design!"}
                                                 </h3>
-                                                <p className={"sm:text-lg text-base text-slate-500"}>
+                                                <p className={"sm:text-lg text-sm text-slate-500"}>
                                                     {"Receive your design updates within 1-3 business days. Not satisfied? No problem. We will design again until you are 1000% happy."}
                                                 </p>
                                             </div>

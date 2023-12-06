@@ -29,7 +29,7 @@ export default function CompHeroImages() {
                 <div className={"relative"}>
                     <div className="overflow-hidden whitespace-nowrap">
                         {/*1st Row Marquee*/}
-                        <div className="animate-marquee-top flex space-x-4 mb-8">
+                        <div className="animate-marquee-top flex sm:space-x-4 space-x-2 sm:mb-8 mb-4">
                             <Image
                                 src={Porto1}
                                 alt={`Portfolio 1`}
@@ -97,7 +97,7 @@ export default function CompHeroImages() {
                         </div>
 
                         {/*2nd Row Marquee*/}
-                        <div className="animate-marquee-bottom flex space-x-4">
+                        <div className="animate-marquee-bottom flex sm:space-x-4 space-x-2">
                             <Image
                                 src={Porto9}
                                 alt={`Portfolio 9`}
@@ -170,7 +170,7 @@ export default function CompHeroImages() {
                         <Link href="https://dribbble.com/orenjistudio"
                               target={"_blank"}
                               className="backdrop-filter backdrop-blur-lg bg-white/30 absolute bottom-0 mb-10
-                              left-1/2 transform -translate-x-1/2 px-6 py-4 bg-white text-black sm:text-xl text-base font-medium
+                              left-1/2 transform -translate-x-1/2 sm:px-6 px-4 sm:py-4 py-3 bg-white text-black sm:text-xl text-base font-medium
                               rounded-xl shadow-md hover:bg-orange-50 hover:-translate-y-1 duration-300">
                             View Portfolio  ⤍
                         </Link>
