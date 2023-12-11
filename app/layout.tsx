@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: 'https://orenji.studio',
+    site: '@helloalzea',
     title: 'Orenji Studio - Unlimited design, with flat monthly fee',
     description: 'Orenji Studio is a very small design team. ' +
         'We keep our studio intentionally small so we can move faster, and more focused, without the big-agency bloat. ' +
@@ -51,8 +51,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" style={{scrollBehavior:'smooth'}} className={`${GeistSans.variable}`}>
-      <body>{children}</body>
-    </html>
+      <html lang="en" style={{scrollBehavior: 'smooth'}} className={`${GeistSans.variable}`}>
+        <body>{children}</body>
+      </html>
   )
 }
