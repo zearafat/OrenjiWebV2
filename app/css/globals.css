@@ -6,7 +6,7 @@ img {
     object-fit: cover; /* Firefox need this. Or 'contain', depending on your needs */
 }
 
-@keyframes marquee {
+@keyframes marquee-porto {
     0% {
         transform: translateX(0);
     }
@@ -16,23 +16,21 @@ img {
     }
 }
 
+.animate-marquee-top {
+    display: flex;
+    animation: marquee-porto 60s linear infinite;
+}
+
+.animate-marquee-bottom {
+    display: flex;
+    animation: marquee-porto 80s linear infinite;
+}
+
 @layer components {
     .btn-gradient-orenji {
         @apply text-white bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-xl
     }
 }
-
-.animate-marquee-top {
-    display: flex;
-    animation: marquee 60s linear infinite;
-}
-
-.animate-marquee-bottom {
-    display: flex;
-    animation: marquee 60s linear infinite;
-}
-
-
 
 .animate-marquee-members-top {
     display: flex;
