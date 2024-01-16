@@ -402,7 +402,7 @@ export default function Page() {
                             We charge you fairly. We believe that if you are satisfied with our service (without feeling
                             being robbed), you will tell your friends or colleagues about us, which will ultimately bring
                             new clients to us. Additionally, unlike many others, we do not rely solely on service business.
-                            We also sell products and design assets that are our own creations, remember? So we do not
+                            We also sell our own products, remember? So we do not
                             have to rob our clients ;)
                         </p>
                     </div>
