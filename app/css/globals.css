@@ -16,6 +16,12 @@ img {
     }
 }
 
+@layer components {
+    .btn-gradient-orenji {
+        @apply text-white bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-xl
+    }
+}
+
 .animate-marquee-top {
     display: flex;
     animation: marquee 60s linear infinite;
@@ -23,15 +29,38 @@ img {
 
 .animate-marquee-bottom {
     display: flex;
-    animation: marquee 80s linear infinite;
+    animation: marquee 60s linear infinite;
 }
 
-@layer components {
-    .btn-gradient-orenji {
-        @apply text-white bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-xl
+
+
+.animate-marquee-members-top {
+    display: flex;
+    animation: marquee 120s linear infinite;
+}
+
+.animate-marquee-members-bottom {
+    display: flex;
+    animation: marquee-reverse 80s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-85%); /* Start from -50% of the container width */
+    }
+    100% {
+        transform: translateX(50%); /* Move to the right past the full width of the container plus half the viewport width */
     }
 }
 
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(0%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-50%); /* Move left the full width of the initial content */
+    }
+}
 #hero {
     overflow: hidden; /* This will prevent any overflow */
     max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */

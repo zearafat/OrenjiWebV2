@@ -14,26 +14,26 @@ export default function Home() {
       <section id={"Components"}>
           <div>
               {/*SECTION NAV MENU*/}
-              <CompNavMenu />
-              {/*SECTION HERO TEXT*/}
-              <CompHero />
+              <CompNavMenu/>
+              {/*SECTION HERO HEADER*/}
+              <CompHero/>
               {/*SECTION HERO IMAGES*/}
-              <CompHeroImages />
+              <CompHeroImages/>
               {/*SECTION CLIENTS LOGO*/}
-              <CompClientsLogo />
+              <CompClientsLogo/>
               {/*SECTION FEATURES*/}
-              <CompFeatures />
+              <CompFeatures/>
               {/*SECTION HOW DOES IT WORK*/}
-              <CompHowDoesItWork />
+              <CompHowDoesItWork/>
               {/*SECTION 3D GLTF*/}
-              <CompGLTFLoader />
+              <CompGLTFLoader/>
               {/*SECTION PRICING*/}
-              <CompPricing />
+              <CompPricing/>
               {/*SECTION FAQ*/}
-              <CompFAQ />
+              <CompFAQ/>
               {/*SECTION FOOTER*/}
-              <CompFooter />
+              <CompFooter/>
           </div>
       </section>
-  )
+)
 }
