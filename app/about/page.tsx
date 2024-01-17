@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Components
 import CompNavMenu from "@/app/components/compNavMenu";
 import CompHeroHeader from "@/app/components/compHeroHeader";
 import CompTeamMember from "@/app/components/compTeamMember"
+import CompFAQ from "@/app/components/compFAQ";
+import CompFooter from "@/app/components/compFooter";
 
 // TEAM PHOTOS
 import afif from "@/public/assets/team-photo/afif.webp"
@@ -28,14 +31,14 @@ import rizki from "@/public/assets/team-photo/rizki.webp"
 import zea from "@/public/assets/team-photo/zea.webp"
 import orenji from "@/public/assets/team-photo/orenji-team.webp"
 
+// Products Photo
 import product_1 from "@/public/assets/products/product-1.webp"
 import product_2 from "@/public/assets/products/product-2.webp"
 import product_3 from "@/public/assets/products/product-3.webp"
 import product_4 from "@/public/assets/products/product-4.webp"
 import product_5 from "@/public/assets/products/product-5.webp"
 import product_6 from "@/public/assets/products/product-6.webp"
-import CompFAQ from "@/app/components/compFAQ";
-import CompFooter from "@/app/components/compFooter";
+import product_7 from "@/public/assets/products/product-7.webp"
 
 export default function Page() {
     return(
@@ -43,14 +46,15 @@ export default function Page() {
             <CompNavMenu/>
             <div className={"sm:p-12 py-12 px-6 sm:mt-12"}>
                 <div className={"container mx-auto"}>
-                    <div className={"sm:text-center text-left space-y-14"}>
+                    <div className={"sm:text-center text-left sm:space-y-14 space-y-6"}>
                         <CompHeroHeader headerText={"What makes us special"}/>
-                        <p className={"text-xl w-5/12 mx-auto leading-relaxed"}>There are tons of other similar services
-                            out there. Then what make us stand out over the rest?</p>
+                        <p className={"sm:text-xl text-lg sm:w-5/12 mx-auto leading-relaxed"}>
+                            There are tons of other similar services out there. Then what make us stand out over the rest?
+                        </p>
                     </div>
                 </div>
             </div>
-            <div className={"pt-14 pb-24 relative"}>
+            <div className={"py-14 relative"}>
                 <div className="overflow-hidden whitespace-nowrap">
                     {/*1st Row Marquee*/}
                     <div className="animate-marquee-members-top flex sm:space-x-4 space-x-2 sm:mb-8 mb-4">
@@ -280,42 +284,43 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className={"container mx-auto space-y-14"}>
-                <div>
-                    <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter pb-10 w-5/12 mx-auto"}>
-                        {"We are full team"}
-                        <span className={"text-orange-600"}>.</span>
-                    </h2>
-                    <div className="w-5/12 mx-auto space-y-8">
-                        <p className="text-lg">
-                            Believe it or not, most agencies out there are run by just one person. They are
-                            basically one-man shows. Some even claim to have a team, but really, all their team
-                            members are outsourced from other countries.
-                        </p>
-                        <p className="text-lg">
-                            Over here at Orenji Studio, we have got a full team of 10+ people. Everyone is from the
-                            same country, Indonesia, so speed and language are not barriers when it comes to
-                            delivering value to our clients. That is a stark contrast to those agencies with their
-                            entire team outsourced from different countries at a lower cost.
-                        </p>
-                    </div>
+            <div className={"container mx-auto space-y-10 p-6 sm:pb-10"}>
+                <h2 className={"sm:text-4xl text-3xl font-bold tracking-tighter sm:w-5/12 mx-auto"}>
+                    {"We are full team"}
+                    <span className={"text-orange-600"}>.</span>
+                </h2>
+                <div className="sm:w-5/12 mx-auto space-y-8">
+                    <p className="text-lg">
+                        Believe it or not, most agencies out there are run by just one person. They are
+                        basically one-man shows. Some even claim to have a team, but really, all their team
+                        members are outsourced from other countries.
+                    </p>
+                    <p className="text-lg">
+                        Over here at Orenji Studio, we have got a full team of 10+ people. Everyone is from the
+                        same country, Indonesia, so speed and language are not barriers when it comes to
+                        delivering value to our clients. That is a stark contrast to those agencies with their
+                        entire team outsourced from different countries at a lower cost.
+                    </p>
                 </div>
-                <div className={"mx-40 text-center"}>
+            </div>
+            <div className={"overflow-hidden whitespace-nowrap"}>
+                <div className={"sm:mx-40 pb-10 text-center"}>
                     <Image src={orenji}
                            alt={"Orenji Team"}
                            width={1222}
                            height={473}
+                           style={{width: "100%", height: "auto"}}
                            quality={100}
                     />
                 </div>
             </div>
-            <div className={"container mx-auto space-y-14"}>
+            <div className={"container mx-auto space-y-10"}>
                 <div>
-                    <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter pb-10 w-5/12 mx-auto"}>
+                    <h2 className={"sm:text-4xl text-3xl font-bold tracking-tighter p-6 sm:pb-5 sm:w-5/12 mx-auto"}>
                         {"We make our own design assets"}
                         <span className={"text-orange-600"}>.</span>
                     </h2>
-                    <div className="w-5/12 mx-auto space-y-8">
+                    <div className="sm:w-5/12 mx-auto space-y-8 p-6">
                         <p className="text-lg">
                             While other agencies buy design assets or pay third-party outsourcers, we proudly create
                             our assets, in-house. Elsa and Wahyu are two of our best illustrators. We also have Danin
@@ -326,20 +331,20 @@ export default function Page() {
                             We are not just experts in UI/UX design; we are also great at creating design assets that
                             many of our customers love.
                         </p>
-                        <div className={"flex flex-row space-x-4"}>
-                            <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
+                        <div className={"sm:flex sm:flex-row sm:space-x-4"}>
+                            <Link href={"https://ui8.net/orenji-studio-2bd14c/"} target={"_blank"}>
                                 <button type="button"
                                         className={"sm:px-[32px] sm:py-[22px] py-4 px-14 sm:text-xl text-lg tracking-tight font-medium text-center " +
                                             "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 " +
-                                            "hover:scale-100 duration-300"}>
+                                            "hover:scale-100 duration-300 sm:w-auto w-full mb-2 sm:mb-0"}>
                                     Check UI8 ❯
                                 </button>
                             </Link>
-                            <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
+                            <Link href={"https://iconscout.com/contributors/orenjistudio/"} target={"_blank"}>
                                 <button type="button"
                                         className={"sm:px-[32px] sm:py-[22px] py-4 px-14 sm:text-xl text-lg tracking-tight font-medium text-center " +
                                             "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 " +
-                                            "hover:scale-100 duration-300"}>
+                                            "hover:scale-100 duration-300 sm:w-auto w-full"}>
                                     Check Icon Scout ❯
                                 </button>
                             </Link>
@@ -347,61 +352,72 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className={"flex flex-row space-x-2 py-20"}>
-                <Image src={product_1}
-                       alt={"product 1"}
-                       width={326}
-                       height={235}
-                       quality={100}
-                />
-                <Image src={product_2}
-                       alt={"product 2"}
-                       width={326}
-                       height={235}
-                       quality={100}
-                />
-                <Image src={product_3}
-                       alt={"product 3"}
-                       width={326}
-                       height={235}
-                       quality={100}
-                />
-                <Image src={product_4}
-                       alt={"product 4"}
-                       width={326}
-                       height={235}
-                       quality={100}
-                />
-                <Image src={product_5}
-                       alt={"product 5"}
-                       width={326}
-                       height={235}
-                       quality={100}
-                />
-                <Image src={product_6}
-                       alt={"product 6"}
-                       width={326}
-                       height={235}
-                       quality={100}
-                />
+            <div className="overflow-hidden whitespace-nowrap sm:pb-14 pb-4">
+                <div className={"flex flex-row space-x-4 sm:py-20 py-10 justify-center"}>
+                    <Image src={product_1}
+                           alt={"product 1"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                    <Image src={product_2}
+                           alt={"product 2"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                    <Image src={product_3}
+                           alt={"product 3"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                    <Image src={product_4}
+                           alt={"product 4"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                    <Image src={product_5}
+                           alt={"product 5"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                    <Image src={product_6}
+                           alt={"product 6"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                    <Image src={product_7}
+                           alt={"product 7"}
+                           width={326}
+                           height={235}
+                           quality={100}
+                    />
+                </div>
             </div>
-            <div className={"container mx-auto space-y-14"}>
-                <div>
-                    <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter pb-10 w-5/12 mx-auto"}>
+            <div className={"container mx-auto space-y-10"}>
+                <div className={"p-6 sm:p-0"}>
+                    <h2 className={"sm:text-4xl text-3xl font-bold tracking-tighter pb-10 sm:w-5/12 mx-auto"}>
                         {"We charges fairly"}
                         <span className={"text-orange-600"}>.</span>
                     </h2>
-                    <div className="w-5/12 mx-auto space-y-8">
+                    <div className="sm:w-5/12 mx-auto space-y-8">
                         <p className="text-lg">
                             If you think our rate is expensive, wait until you see how much other agencies will charge
                             you for essentially the same thing. Many agencies believe they have the right to charge very
-                            high because they think they provide better value than us, when in reality it is just the same.
+                            high because they think they provide better value than us, when in reality it is just the
+                            same.
                             Cool agency website with fancy animation does not mean better value though.
                         </p>
                         <p className="text-lg">
                             We charge you fairly. We believe that if you are satisfied with our service (without feeling
-                            being robbed), you will tell your friends or colleagues about us, which will ultimately bring
-                            new clients to us. Additionally, unlike many others, we do not rely solely on service business.
+                            being robbed), you will tell your friends or colleagues about us, which will ultimately
+                            bring
+                            new clients to us. Additionally, unlike many others, we do not rely solely on service
+                            business.
                             We also sell our own products, remember? So we do not
                             have to rob our clients ;)
                         </p>

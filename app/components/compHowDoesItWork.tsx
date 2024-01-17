@@ -20,7 +20,7 @@ export default function compHowDoesItWork() {
                             </h2>
                         </div>
                         <div className={"py-4"}>
-                            <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
+                            <p className={"text-slate-600 sm:px-[450px] text-base px-4"}>
                                 {"No overcomplicated workflow, no unnecessary bureaucracy or pappers. Let's go straight to realizing " +
                                     "your ideas and tackling your business problems."}
                             </p>

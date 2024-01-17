@@ -1,11 +1,15 @@
+import Link from "next/link";
+
 import CompFeaturesCard from "@/app/components/compFeaturesCard";
 
+// Icons
 import iconUnlimitedDesign from "@/public/assets/illustrations/icons/icon-feature-1.png"
 import iconMonthlyFlat from "@/public/assets/illustrations/icons/icon-feature-2.png"
 import iconUnlimitedChanges from "@/public/assets/illustrations/icons/icon-feature-3.png"
 import iconDailyReports from "@/public/assets/illustrations/icons/icon-feature-4.png"
 import iconDailyTurnAround from "@/public/assets/illustrations/icons/icon-feature-5.png"
 import iconCustomAssets from "@/public/assets/illustrations/icons/icon-feature-6.png"
+
 
 export default function CompFeatures() {
     return(
@@ -21,7 +25,7 @@ export default function CompFeatures() {
                             </h2>
                         </div>
                         <div className={"py-4"}>
-                            <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
+                            <p className={"text-slate-600 sm:px-[450px] text-base px-4"}>
                                 {"When you hire us, you will get the whole team with all of our creative power. Not just 1-man-show with couple of outsourced designers like many others."}
                             </p>
                         </div>
@@ -72,6 +76,13 @@ export default function CompFeatures() {
                                     "designers that will help make your product stand out among the rest."}
                             />
                         </div>
+                    </div>
+                    {/*Why Us Link*/}
+                    <div className={"text-center py-4"}>
+                        <Link href={"/about"} target={"_blank"}
+                              className={"sm:text-xl text-base font-medium sm:p-6 p-4 duration-300 text-orange-500 hover:text-orange-700 py-4 hover:border-orange-700 duration-10 border border-orange-500 rounded-full"}>
+                            What makes us different from competitors ❯
+                        </Link>
                     </div>
                 </div>
             </div>

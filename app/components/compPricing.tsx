@@ -6,7 +6,7 @@ export default function compPricing() {
             <div className={"sm:-mt-64 sm:py-12 py-4"}>
                 <div className={"container mx-auto"}>
                     {/*Header*/}
-                    <div className={"text-center pb-12"}>
+                    <div className={"text-center sm:pb-12 pb-6"}>
                         <div className={"py-4"}>
                             <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter"}>
                                 {"Simple pricing"}
@@ -14,7 +14,7 @@ export default function compPricing() {
                             </h2>
                         </div>
                         <div className={"py-4"}>
-                            <p className={"text-slate-600 sm:px-[450px] sm:text-base px-4 text-sm"}>
+                            <p className={"text-slate-600 sm:px-[450px] text-base px-4"}>
                                 {"Simple, flat, no hidden-cost. Pay once every month, get all our services, unlimited. Pause or cancel anytime. No question asked."}
                             </p>
                         </div>
