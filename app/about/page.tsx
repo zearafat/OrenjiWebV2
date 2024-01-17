@@ -408,9 +408,7 @@ export default function Page() {
                         <p className="text-lg">
                             If you think our rate is expensive, wait until you see how much other agencies will charge
                             you for essentially the same thing. Many agencies believe they have the right to charge very
-                            high because they think they provide better value than us, when in reality it is just the
-                            same.
-                            Cool agency website with fancy animation does not mean better value though.
+                            high just because they can.
                         </p>
                         <p className="text-lg">
                             We charge you fairly. We believe that if you are satisfied with our service (without feeling
