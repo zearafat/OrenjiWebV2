@@ -297,7 +297,7 @@ export default function Page() {
                     </p>
                     <p className="text-lg">
                         Over here at Orenji Studio, we have got a full team of 10+ people. Everyone is from the
-                        same country, Indonesia, so speed and language are not barriers when it comes to
+                        same country, Indonesia, so time zones and language are not barriers when it comes to
                         delivering value to our clients. That is a stark contrast to those agencies with their
                         entire team outsourced from different countries at a lower cost.
                     </p>
