@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import './css/globals.css';
 import React from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Orenji Studio - Unlimited design, with flat monthly fee',
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
       <html lang="en" style={{scrollBehavior: 'smooth'}} className={`${GeistSans.variable}`}>
         <body>{children}</body>
+        <Analytics />
       </html>
   )
 }
