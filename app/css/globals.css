@@ -72,3 +72,39 @@ img {
     display: inline-block; /* To wrap tightly around the <a> tag */
     width: fit-content; /* To shrink-wrap the width to the content */
 }
+
+/*// Balon beruang 🐻*/
+@layer balloon {
+    .balloon-bear {
+        position: absolute;
+        width: 120px;
+        right: 5%;
+        z-index: 99999;
+    }
+    .balloon-bear__balloon {
+        fill: hsl(0 100% 50%);
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+        .balloon-bear {
+            animation: float 30s infinite linear;
+        }
+        .balloon-bear__balloon {
+            animation: switch 10s infinite steps(1);
+        }
+        @keyframes switch {
+            0%, 100% { fill: hsl(0 100% 50%); }
+            33% { fill: hsl(210 100% 50%); }
+            66% { fill: hsl(280 100% 50%); }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, calc(150vh + 500%));
+            }
+            100% {
+                transform: translate(0, -500%);
+            }
+        }
+    }
+}

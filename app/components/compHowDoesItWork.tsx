@@ -4,6 +4,7 @@ import howItWork2 from "@/public/assets/illustrations/how-it-work-2.png"
 import howItWork3 from "@/public/assets/illustrations/how-it-work-3.png"
 import howItWork4 from "@/public/assets/illustrations/how-it-work-4.png"
 import Link from "next/link";
+import React from "react";
 
 
 export default function compHowDoesItWork() {
@@ -52,7 +53,8 @@ export default function compHowDoesItWork() {
                             </div>
                             {/*Card 2*/}
                             <div className={"sm:basis-5/6 pb-4"}>
-                                <div className={"p-8 bg-slate-50 rounded-3xl sm:h-[400px] h-[300px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
+                                <div
+                                    className={"p-8 bg-slate-50 rounded-3xl sm:h-[400px] h-[300px] hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                     <div className={""}>
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>
                                             {"2. Add your design task"}
@@ -75,7 +77,8 @@ export default function compHowDoesItWork() {
                         <div className={"sm:flex sm:flex-row sm:space-x-4"}>
                             {/*Card 3*/}
                             <div className={"sm:basis-5/6 pb-4"}>
-                                <div className={"sm:pr-8 sm:pt-8 p-2 bg-slate-50 rounded-3xl sm:h-[400px] h-[450px] overflow-hidden hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
+                                <div
+                                    className={"sm:pr-8 sm:pt-8 p-2 bg-slate-50 rounded-3xl sm:h-[400px] h-[450px] overflow-hidden hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                     <div className={"sm:flex sm:flex-row"}>
                                         <div className={"relative w-full"}>
                                             <div className={"p-8"}>
@@ -91,7 +94,7 @@ export default function compHowDoesItWork() {
                                                     src={howItWork4}
                                                     alt={"How it works 4"}
                                                     sizes={"100vw"}
-                                                    style={{ width: '90%', height: 'auto' }}
+                                                    style={{width: '90%', height: 'auto'}}
                                                     quality={100}
                                                     className={"invisible sm:visible"}
                                                 />
@@ -112,7 +115,8 @@ export default function compHowDoesItWork() {
                                 <div className="bg-gradient-to-br from-purple-400 via-purple-500 to-pink-500 p-8
                                 rounded-3xl sm:h-[400px] h-[100px] flex justify-center items-center text-white
                                 hover:-translate-y-0.5 duration-300">
-                                    <h2 className="sm:text-xl text-lg font-medium p-4-">Any questions? <span className={"underline"}>
+                                    <h2 className="sm:text-xl text-lg font-medium p-4-">Any questions? <span
+                                        className={"underline"}>
                                         <Link href={"https://tally.so/r/wkNrkZ"}>Talk to us 👋</Link></span>
                                     </h2>
                                 </div>

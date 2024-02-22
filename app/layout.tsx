@@ -53,8 +53,10 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en" style={{scrollBehavior: 'smooth'}} className={`${GeistSans.variable}`}>
-        <body>{children}</body>
-        <Analytics />
+        <body>
+          {children}
+        </body>
+        <Analytics/>
       </html>
   )
 }
