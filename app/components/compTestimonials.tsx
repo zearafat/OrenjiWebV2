@@ -41,7 +41,7 @@ export default function CompTestimonials() {
                                 </div>
                                 <div className={"flex-grow"}>
                                     <Link href={"https://www.linkedin.com/in/joanathanlim/"} className={"font-medium text-lg text-white hover:underline"} target={"_blank"}>Joanathan</Link>
-                                    <p className={"text-slate-200"}>CEO @ Opaper</p>
+                                    <p className={"text-slate-200"}>CEO Opaper</p>
                                 </div>
                                 <div>
                                     <Link href={"https://techcrunch.com/2022/03/07/opaper-takes-the-friction-out-of-social-commerce/"} target={"_blank"}
@@ -75,7 +75,7 @@ export default function CompTestimonials() {
                                     </div>
                                     <div className={"flex-grow"}>
                                         <Link href={"https://www.linkedin.com/in/wiiwooorg/"} className={"font-medium text-lg text-black hover:underline"} target={"_blank"}>Briana Neidig</Link>
-                                        <p className={"text-slate-500"}>CEO @ WiiWoo</p>
+                                        <p className={"text-slate-500"}>CEO WiiWoo</p>
                                     </div>
                                     <div>
                                         <Link href={"https://wiiwoo.org"} target={"_blank"}
@@ -104,7 +104,7 @@ export default function CompTestimonials() {
                                     </div>
                                     <div className={"flex-grow"}>
                                         <Link href={"https://www.linkedin.com/in/ken-imai-312639240/"} className={"font-medium text-lg text-black hover:underline"} target={"_blank"}>Ken Imai</Link>
-                                        <p className={"text-slate-500"}>CEO @ Mealmates</p>
+                                        <p className={"text-slate-500"}>CEO Mealmates</p>
                                     </div>
                                     <div>
                                         <Link href={"https://prtimes.jp/main/html/rd/p/000000001.000119497.html"} target={"_blank"}
