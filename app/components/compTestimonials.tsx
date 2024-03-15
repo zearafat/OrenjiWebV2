@@ -25,7 +25,7 @@ export default function CompTestimonials() {
                         </div>
                     </div>
                     {/*Testimonal Cards*/}
-                    <div className={"p-8 bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-3xl mb-4"}>
+                    <div className={"p-6 bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-3xl mb-4"}>
                         <div className={"py-6"}>
                             <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight text-white"}>
                                 &quot;We worked with Orenji Studio for the past few years, and I really enjoy worked
@@ -59,7 +59,7 @@ export default function CompTestimonials() {
                         </div>
                     </div>
                     <div className={"flex flex-col sm:flex-row gap-4 items-center"}>
-                        <div className={"p-8 bg-slate-100 rounded-3xl"}>
+                        <div className={"p-6 bg-slate-100 rounded-3xl"}>
                             <div className={"py-6"}>
                                 <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight"}>
                                     &quot;Working with Orenji Studio was a game-changer for our business.
@@ -88,7 +88,7 @@ export default function CompTestimonials() {
                             </div>
                         </div>
 
-                        <div className={"p-8 bg-slate-100 rounded-3xl"}>
+                        <div className={"p-6 bg-slate-100 rounded-3xl"}>
                             <div className={"py-6"}>
                                 <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight"}>
                                     &quot;Orenji Studio exceeded our expectations with their exceptional designs.
