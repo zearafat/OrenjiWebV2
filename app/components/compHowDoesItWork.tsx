@@ -32,7 +32,7 @@ export default function compHowDoesItWork() {
                         <div className={"sm:flex sm:flex-row sm:space-x-4 sm:py-2"}>
                             {/*Card 1*/}
                             <div className={"sm:basis-3/6 pb-4"}>
-                                <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl sm:h-[400px] h-[305px] " +
+                                <div className={"pt-8 pl-8 pr-8 pb-0 bg-slate-50 rounded-3xl sm:h-[400px] h-[300px] " +
                                     "hover:-translate-y-0.5 hover:bg-orange-50 duration-300"}>
                                     <div className={""}>
                                         <h3 className={"text-xl font-medium tracking-tight pb-4"}>

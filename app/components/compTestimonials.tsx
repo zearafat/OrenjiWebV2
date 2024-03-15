@@ -26,7 +26,7 @@ export default function CompTestimonials() {
                     </div>
                     {/*Testimonal Cards*/}
                     <div className={"p-6 bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-3xl mb-4"}>
-                        <div className={"py-6"}>
+                        <div className={"pb-4"}>
                             <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight text-white"}>
                                 &quot;We worked with Orenji Studio for the past few years, and I really enjoy worked
                                 with them. They had a great design sense and really instrumental in our massive product design along
@@ -34,14 +34,14 @@ export default function CompTestimonials() {
                                 We are very happy with how things work out. I highly recommend them.&quot;
                             </p>
                         </div>
-                        <div className={"py-4"}>
+                        <div className={"pt-4"}>
                             <div className={"flex flex-row gap-4 items-center"}>
                                 <div>
                                     <Image src={client1_joan} alt={"Joanathan McIntosh"} className={"w-14 h-14 rounded-full"}/>
                                 </div>
                                 <div className={"flex-grow"}>
                                     <Link href={"https://www.linkedin.com/in/joanathanlim/"} className={"font-medium text-lg text-white hover:underline"} target={"_blank"}>Joanathan</Link>
-                                    <p className={"text-slate-200"}>CEO of Opaper</p>
+                                    <p className={"text-slate-200"}>CEO @ Opaper</p>
                                 </div>
                                 <div>
                                     <Link href={"https://techcrunch.com/2022/03/07/opaper-takes-the-friction-out-of-social-commerce/"} target={"_blank"}
@@ -60,7 +60,7 @@ export default function CompTestimonials() {
                     </div>
                     <div className={"flex flex-col sm:flex-row gap-4 items-center"}>
                         <div className={"p-6 bg-slate-100 rounded-3xl"}>
-                            <div className={"py-6"}>
+                            <div className={"pb-4"}>
                                 <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight"}>
                                     &quot;Working with Orenji Studio was a game-changer for our business.
                                     They captured the essence of our brand effortlessly and translated it into stunning visuals.
@@ -68,14 +68,14 @@ export default function CompTestimonials() {
                                     Couldn&#39;t be happier with the results!&quot;
                                 </p>
                             </div>
-                            <div className={"py-4"}>
+                            <div className={"pt-4"}>
                                 <div className={"flex flex-row gap-4 items-center"}>
                                     <div>
                                         <Image src={client2_briana} alt={"Briana Neidig"} className={"w-14 h-14 rounded-full"}/>
                                     </div>
                                     <div className={"flex-grow"}>
                                         <Link href={"https://www.linkedin.com/in/wiiwooorg/"} className={"font-medium text-lg text-black hover:underline"} target={"_blank"}>Briana Neidig</Link>
-                                        <p className={"text-slate-500"}>CEO of WiiWoo</p>
+                                        <p className={"text-slate-500"}>CEO @ WiiWoo</p>
                                     </div>
                                     <div>
                                         <Link href={"https://wiiwoo.org"} target={"_blank"}
@@ -89,7 +89,7 @@ export default function CompTestimonials() {
                         </div>
 
                         <div className={"p-6 bg-slate-100 rounded-3xl"}>
-                            <div className={"py-6"}>
+                            <div className={"pb-4"}>
                                 <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight"}>
                                     &quot;Orenji Studio exceeded our expectations with their exceptional designs.
                                     They took the time to understand our vision and brought it to fruition with creativity and precision.
@@ -97,14 +97,14 @@ export default function CompTestimonials() {
                                     Highly recommend Orenji Studio for top-notch design services.&quot;
                                 </p>
                             </div>
-                            <div className={"py-4"}>
+                            <div className={"pt-4"}>
                                 <div className={"flex flex-row gap-4 items-center"}>
                                     <div>
                                         <Image src={client3_ken} alt={"Ken Imai"} className={"w-14 h-14 rounded-full"}/>
                                     </div>
                                     <div className={"flex-grow"}>
                                         <Link href={"https://www.linkedin.com/in/ken-imai-312639240/"} className={"font-medium text-lg text-black hover:underline"} target={"_blank"}>Ken Imai</Link>
-                                        <p className={"text-slate-500"}>CEO of MealMates</p>
+                                        <p className={"text-slate-500"}>CEO @ Mealmates</p>
                                     </div>
                                     <div>
                                         <Link href={"https://prtimes.jp/main/html/rd/p/000000001.000119497.html"} target={"_blank"}
@@ -116,7 +116,6 @@ export default function CompTestimonials() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
