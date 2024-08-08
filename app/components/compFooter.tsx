@@ -89,8 +89,8 @@ export default function compFooter() {
                                                 href="https://www.instagram.com/orenji.studio/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
                                                 target={"_blank"} className="hover:text-red-600">Instagram</Link>
                                             <span className="text-red-600">•</span>
-                                            <a href="https://www.linkedin.com/company/orenji-studio/" target={"_blank"}
-                                               className="hover:text-red-600">LinkedIn</a>
+                                            <a href="https://orenjistudio.gumroad.com/" target={"_blank"}
+                                               className="hover:text-red-600">Gumroad</a>
                                         </nav>
                                     </div>
                                 </div>
