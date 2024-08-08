@@ -332,20 +332,12 @@ export default function Page() {
                             many of our customers love.
                         </p>
                         <div className={"sm:flex sm:flex-row sm:space-x-4"}>
-                            <Link href={"https://ui8.net/orenji-studio-2bd14c/"} target={"_blank"}>
+                            <Link href={"https://orenjistudio.gumroad.com/"} target={"_blank"}>
                                 <button type="button"
-                                        className={"sm:px-[32px] sm:py-[22px] py-4 px-14 sm:text-xl text-lg tracking-tight font-medium text-center " +
+                                        className={"sm:py-[22px] py-4 px-14 sm:text-xl text-lg tracking-tight font-medium text-center " +
                                             "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 " +
                                             "hover:scale-100 duration-300 sm:w-auto w-full mb-2 sm:mb-0"}>
-                                    Check UI8 ❯
-                                </button>
-                            </Link>
-                            <Link href={"https://iconscout.com/contributors/orenjistudio/"} target={"_blank"}>
-                                <button type="button"
-                                        className={"sm:px-[32px] sm:py-[22px] py-4 px-14 sm:text-xl text-lg tracking-tight font-medium text-center " +
-                                            "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 " +
-                                            "hover:scale-100 duration-300 sm:w-auto w-full"}>
-                                    Check Icon Scout ❯
+                                    Check our Gumroad ❯
                                 </button>
                             </Link>
                         </div>
