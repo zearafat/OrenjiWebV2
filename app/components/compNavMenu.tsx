@@ -22,6 +22,10 @@ export default function CompNavMenu() {
                                   className={"text-base hover:text-orange-500"}>
                                 Portfolio
                             </Link>
+                            <Link href="https://orenjistudio.gumroad.com" target={"_blank"}
+                                  className={"text-base hover:text-orange-500"}>
+                                Products
+                            </Link>
                             <Link href={"/about"} target={"_blank"}
                                   className={"text-base hover:text-orange-500"}>
                                 Why us
