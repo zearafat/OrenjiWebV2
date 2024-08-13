@@ -64,12 +64,12 @@ const Accordion: React.FC = () => {
                                         a comprehensive
                                         page design could require up to 3 days for the initial draft. Each design is
                                         uniquely crafted to your
-                                        specifications, eschewing the use of pre-made templates.
+                                        specifications, we never use pre-made templates.
                                     </AccordionItem>
                                     <AccordionItem title={"Can we have regular meetings?"}>
                                         No. They can take up a lot of time. All our interactions will be asynchronous
                                         via the
-                                        Trello or Email to enhance workflow efficiency. However, should you require a
+                                        Figma, Slack or Email to enhance workflow efficiency. However, should you require a
                                         more
                                         thorough explanation on any specific feature or feedback, feel free to create a
                                         detailed
@@ -96,7 +96,7 @@ const Accordion: React.FC = () => {
                                         dedicated Project Manager and Creative Director in charge.
                                     </AccordionItem>
                                     <AccordionItem title={"Do you also offer Development services?"}>
-                                        Yes we do. We offer website development and mobile app (Flutter) development
+                                        Yes we do. We offer website development and mobile app development
                                         service,
                                         <strong> with an additional fee</strong>. Please talk to us for more info.
                                     </AccordionItem>
@@ -116,7 +116,8 @@ const Accordion: React.FC = () => {
                                         weeks or months of delay.
                                     </AccordionItem>
                                     <AccordionItem title={"What design software do you use?"}>
-                                        We use mainly Figma for UI/UX design and Blender for 3D illustrations.
+                                        We use mainly Figma for UI/UX design, Blender for 3D illustrations, and Adobe
+                                        Suites for everything else.
                                     </AccordionItem>
                                     <AccordionItem title={"Can I pause or cancel my subscription?"}>
                                         Of course you can. You can pause the subscription at any point of the project,
@@ -125,7 +126,7 @@ const Accordion: React.FC = () => {
                                         absolutely. No question asked.
                                     </AccordionItem>
                                     <AccordionItem title={"Can I ask for a refund?"}>
-                                        Sadly, we are unable to provide any money-back guarantee. The significant
+                                        No. We are unable to provide any money-back guarantee. The significant
                                         creative effort
                                         and research required to deliver top-quality designs in a brief timeframe mean
                                         we must ensure
