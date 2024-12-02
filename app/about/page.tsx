@@ -49,7 +49,8 @@ export default function Page() {
                     <div className={"sm:text-center text-left sm:space-y-14 space-y-6"}>
                         <CompHeroHeader headerText={"What makes us special"}/>
                         <p className={"sm:text-xl text-lg sm:w-5/12 mx-auto leading-relaxed"}>
-                            There are tons of other similar services out there. Then what make us stand out over the rest?
+                            There are tons of other similar services out there. Then what make us stand out over the
+                            rest?
                         </p>
                     </div>
                 </div>
@@ -410,6 +411,27 @@ export default function Page() {
                             business.
                             We also sell our own products, remember? So we do not
                             have to rob our clients ;)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={"container mx-auto space-y-10 pt-24"}>
+                <div className={"p-6 sm:p-0"}>
+                    <h2 className={"sm:text-4xl text-3xl font-bold tracking-tighter pb-10 sm:w-5/12 mx-auto"}>
+                        {"We know what we’re doing"}
+                        <span className={"text-orange-600"}>.</span>
+                    </h2>
+                    <div className="sm:w-5/12 mx-auto space-y-8">
+                        <p className="text-lg">
+                            Unlike many agencies that jump on the bandwagon and establish themselves with just 1-2 years
+                            of experience, we bring a wealth of industry expertise to the table.
+                        </p>
+                        <p className="text-lg">
+                            Our founders, Zea and
+                            Hega, have been working as designers for over a decade, collaborating with a wide range of
+                            clients—from early-stage startups 🚀 to established Unicorns 🦄. The same goes for our design team,
+                            who are equally experienced and seasoned in the industry. Simply put, we know what we’re doing.
                         </p>
                     </div>
                 </div>

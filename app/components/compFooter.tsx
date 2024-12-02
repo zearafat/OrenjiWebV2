@@ -70,7 +70,7 @@ export default function compFooter() {
                                         width={200}
                                         className={"pb-4"}
                                     />
-                                    <p className={"text-slate-700 text-sm"}>{"Copyright 2024 Orenji Studio - All rights Reserved"}</p>
+                                    <p className={"text-slate-700 text-sm"}>{"Copyright 2025 Orenji Studio - All rights Reserved"}</p>
                                 </div>
                                 <div className={"flex-grow sm:pb-0 pb-6"}>
                                     {/*EMPTY*/}
