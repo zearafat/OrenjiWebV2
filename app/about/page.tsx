@@ -428,7 +428,7 @@ export default function Page() {
                             of experience, we bring a wealth of industry expertise to the table.
                         </p>
                         <p className="text-lg">
-                            Our founders, Zea and
+                            Our Founders, Zea and
                             Hega, have been working as designers for over a decade, collaborating with a wide range of
                             clients—from early-stage startups 🚀 to established Unicorns 🦄. The same goes for our design team,
                             who are equally experienced and seasoned in the industry. Simply put, we know what we’re doing.
