@@ -119,11 +119,11 @@ const Accordion: React.FC = () => {
                                         We use mainly Figma for UI/UX design, Blender for 3D illustrations, and Adobe
                                         Suites for everything else.
                                     </AccordionItem>
-                                    <AccordionItem title={"Do you accept Crypto as payment method?"}>
-                                        No. We only accept PayPal and/or direct bank transfer.
+                                    <AccordionItem title={"Do you accept crypto or company shares/stock as payment method?"}>
+                                        No. We only accept US Dollar via PayPal and/or direct bank transfer.
                                     </AccordionItem>
                                     <AccordionItem title={"Can I pause or cancel my subscription?"}>
-                                        Of course. You can pause the subscription at any point of the project.
+                                        Yes. You can pause the subscription at any point of the project.
                                         As for cancellation, absolutely. No question asked.
                                     </AccordionItem>
                                     <AccordionItem title={"Can I ask for a refund?"}>
