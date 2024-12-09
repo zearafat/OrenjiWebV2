@@ -120,7 +120,7 @@ const Accordion: React.FC = () => {
                                         Suites for everything else.
                                     </AccordionItem>
                                     <AccordionItem title={"Do you accept crypto or company shares/stock as payment method?"}>
-                                        No. We only accept US Dollar via PayPal and/or direct bank transfer.
+                                        No. We only accept USD via PayPal and/or direct bank transfer.
                                     </AccordionItem>
                                     <AccordionItem title={"Can I pause or cancel my subscription?"}>
                                         Yes. You can pause the subscription at any point of the project.
