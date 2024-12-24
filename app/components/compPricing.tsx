@@ -174,7 +174,7 @@ export default function compPricing() {
                                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                                   strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                         </svg>
-                                        <span>Mobile app development</span>
+                                        <span>Mobile App development</span>
                                     </li>
                                     <li className={"flex items-center space-x-3 rtl:space-x-reverse text-white"}>
                                         <svg className={"flex-shrink-0 w-3.5 h-3.5 text-white"} aria-hidden="true"
