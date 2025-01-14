@@ -51,7 +51,7 @@ export default function CompNavMenu() {
                         </div>
                         <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}
                               className={"border rounded-lg px-6 py-2 hover:border-orange-500 hover:text-orange-500"}>
-                            Start a project
+                            Start a Project
                         </Link>
                     </nav>
                 </div>
