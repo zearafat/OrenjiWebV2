@@ -70,7 +70,7 @@ export default function GameUIPage() {
     }
 
     return (
-        <div style={{ width: '100vw', height: '100vh' }}>
+        <div style={{ width: '100vw', height: '50vh' }}>
             {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
             <CompNavMenu/>
             <Canvas shadows camera={{ position: [5, 2, 8], fov: 50 }} dpr={[1, 1.5]}>
@@ -84,7 +84,7 @@ export default function GameUIPage() {
                     position={[5, 10, 5]}
                     intensity={1}
                     castShadow
-                    shadow-mapSize={[2048, 2048]}
+                    shadow-mapSize={[1024, 1024]}
                     shadow-camera-left={-15}
                     shadow-camera-right={15}
                     shadow-camera-top={15}
@@ -124,15 +124,16 @@ export default function GameUIPage() {
                 {/*Post-Processing Effects*/}
                 <EffectComposer>
                     <Bloom
-                        intensity={0.4}
-                        luminanceThreshold={0.2}
-                        luminanceSmoothing={0.9}
+                        intensity={0.5}
+                        luminanceThreshold={0.4}
+                        luminanceSmoothing={1}
                     />
                 </EffectComposer>
 
                 {/*Camera Controls*/}
                 <OrbitControls />
             </Canvas>
+            <h1>TESTTT</h1>
         </div>
     );
 }
