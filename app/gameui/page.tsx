@@ -1,6 +1,6 @@
 'use client';
 
-import { Canvas, useLoader, useFrame } from '@react-three/fiber';
+import { Canvas, useLoader, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows } from '@react-three/drei';
 import {useEffect, useRef, useState} from "react";
 import * as THREE from 'three';
@@ -13,6 +13,13 @@ import CompNavMenu from "@/app/components/compNavMenu";
 function AnimatedModel() {
     const gltf = useLoader(GLTFLoader, '/assets/illustrations/gltf/orenjistudio.glb');
     const mixer = useRef<THREE.AnimationMixer | null>(null);
+
+    useThree(({camera}) => {
+        camera.position.x = -10;
+        camera.position.y = 10;
+        camera.position.z = 20;
+        camera.lookAt(0, 0, 0);
+    });
 
     useEffect(() => {
         if (gltf.animations.length) {
