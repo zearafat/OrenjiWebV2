@@ -76,7 +76,7 @@ export default function GameUIPage() {
                 <directionalLight
                     position={[5, 10, 5]}
                     castShadow
-                    intensity={1.5}
+                    intensity={1}
                     shadow-mapSize={[1024, 1024]}
                     shadow-camera-left={-15}
                     shadow-camera-right={15}
@@ -125,12 +125,13 @@ export default function GameUIPage() {
 
                 {/*Camera Controls*/}
                 <OrbitControls
+                    enableZoom={false}
                     minAzimuthAngle={-Math.PI / 4}
                     maxAzimuthAngle={Math.PI / 4}
                     minPolarAngle={Math.PI / 4}
                     maxPolarAngle={Math.PI - Math.PI / 1.8}
-                    minZoom={50}
-                    maxZoom={100}
+                    // minZoom={50}
+                    // maxZoom={100}
                 />
             </Canvas>
             <h1>TESTTT</h1>
