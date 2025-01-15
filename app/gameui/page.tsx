@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import {useEffect, useRef, useState} from "react";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import { Canvas, useLoader, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows } from '@react-three/drei';
 
 // Components
@@ -76,7 +76,7 @@ export default function GameUIPage() {
                 <directionalLight
                     position={[5, 10, 5]}
                     castShadow
-                    intensity={1}
+                    intensity={1.5}
                     shadow-mapSize={[1024, 1024]}
                     shadow-camera-left={-15}
                     shadow-camera-right={15}
@@ -118,7 +118,7 @@ export default function GameUIPage() {
                 <EffectComposer>
                     <Bloom
                         intensity={0.5}
-                        luminanceThreshold={0.4}
+                        luminanceThreshold={0.5}
                         luminanceSmoothing={1}
                     />
                 </EffectComposer>
