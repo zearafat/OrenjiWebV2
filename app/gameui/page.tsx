@@ -1,11 +1,11 @@
 'use client';
 
-import { Canvas, useLoader, useFrame, useThree } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows } from '@react-three/drei';
-import {useEffect, useRef, useState} from "react";
 import * as THREE from 'three';
+import {useEffect, useRef, useState} from "react";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
+import { Canvas, useLoader, useFrame } from '@react-three/fiber';
+import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows } from '@react-three/drei';
 
 // Components
 import CompNavMenu from "@/app/components/compNavMenu";
@@ -13,13 +13,6 @@ import CompNavMenu from "@/app/components/compNavMenu";
 function AnimatedModel() {
     const gltf = useLoader(GLTFLoader, '/assets/illustrations/gltf/orenjistudio.glb');
     const mixer = useRef<THREE.AnimationMixer | null>(null);
-
-    useThree(({camera}) => {
-        camera.position.x = -10;
-        camera.position.y = 10;
-        camera.position.z = 20;
-        camera.lookAt(0, 0, 0);
-    });
 
     useEffect(() => {
         if (gltf.animations.length) {
@@ -73,7 +66,7 @@ export default function GameUIPage() {
         <div style={{ width: '100vw', height: '100vh' }}>
             {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
             <CompNavMenu/>
-            <Canvas shadows camera={{ position: [5, 2, 8], fov: 50 }} dpr={[1, 1.5]}>
+            <Canvas shadows orthographic camera={{ zoom: 50, position: [-10, 10, 20] }} dpr={[1, 1.5]}>
                 <Preload all />
                 <Stats />
                 <SoftShadows size={10} samples={16} focus={1} />
@@ -82,9 +75,9 @@ export default function GameUIPage() {
                 <ambientLight intensity={0.2} />
                 <directionalLight
                     position={[5, 10, 5]}
-                    intensity={1}
                     castShadow
-                    shadow-mapSize={[2048, 2048]}
+                    intensity={1}
+                    shadow-mapSize={[1024, 1024]}
                     shadow-camera-left={-15}
                     shadow-camera-right={15}
                     shadow-camera-top={15}
@@ -103,7 +96,7 @@ export default function GameUIPage() {
                     castShadow
                 >
                     <planeGeometry args={[50, 50]} />
-                    <meshStandardMaterial color="#e0e0e0" />
+                    <meshStandardMaterial color="#ffffff" />
                 </mesh>
 
                 {/*Shadows*/}
@@ -124,15 +117,24 @@ export default function GameUIPage() {
                 {/*Post-Processing Effects*/}
                 <EffectComposer>
                     <Bloom
-                        intensity={0.4}
-                        luminanceThreshold={0.2}
-                        luminanceSmoothing={0.9}
+                        intensity={0.5}
+                        luminanceThreshold={0.5}
+                        luminanceSmoothing={1}
                     />
                 </EffectComposer>
 
                 {/*Camera Controls*/}
-                <OrbitControls />
+                <OrbitControls
+                    enableZoom={false}
+                    minAzimuthAngle={-Math.PI / 4}
+                    maxAzimuthAngle={Math.PI / 4}
+                    minPolarAngle={Math.PI / 4}
+                    maxPolarAngle={Math.PI - Math.PI / 1.8}
+                    // minZoom={50}
+                    // maxZoom={100}
+                />
             </Canvas>
+            <h1>TESTTT</h1>
         </div>
     );
 }
