@@ -1,12 +1,12 @@
 'use client';
 
-import { useProgress } from "@react-three/drei";
 import Lottie from 'react-lottie';
-import animationData from '../json/loading.json';
 import { useEffect, useState } from "react";
+import { useProgress } from "@react-three/drei";
+import animationData from '../json/loading.json';
 
 export default function CompLoader() {
-    const { progress, active } = useProgress();
+    const { active } = useProgress();
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
