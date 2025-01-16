@@ -5,10 +5,12 @@ import {useEffect, useRef, useState} from "react";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows } from '@react-three/drei';
+import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows, Html } from '@react-three/drei';
 
 // Components
 import CompNavMenu from "@/app/components/compNavMenu";
+import CompModal from "@/app/components/compModal";
+import CompTooltip from "@/app/components/compTooltip";
 
 function AnimatedModel() {
     const gltf = useLoader(GLTFLoader, '/assets/illustrations/gltf/orenjistudio.glb');
@@ -46,14 +48,28 @@ function AnimatedModel() {
     return <primitive object={gltf.scene} />;
 }
 
+const eventHandler = () => {
+    console.log('the event occured')
+}
+
+const handleClick = () => {
+    console.log('Invisible mesh clicked!');
+    // Add your click handling logic here
+};
+
 export default function GameUIPage() {
     const [isClient, setIsClient] = useState(false);
+    const [hovered, setHovered] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const meshRef = useRef<THREE.Mesh>(null);
 
     useEffect(() => {
         setIsClient(true); // Ensure this runs only in the client environment
     }, []);
 
     let CompLoader;
+
     if (isClient) {
         CompLoader = require('@/app/components/compLoader').default; // Dynamic import
     }
@@ -62,17 +78,20 @@ export default function GameUIPage() {
         return null; // Render nothing during SSR
     }
 
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false)
+
     return (
-        <div style={{ width: '100vw', height: '100vh' }}>
+        <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
             {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
             <CompNavMenu/>
-            <Canvas shadows orthographic camera={{ zoom: 50, position: [-10, 10, 20] }} dpr={[1, 1.5]}>
-                <Preload all />
-                <Stats />
-                <SoftShadows size={10} samples={16} focus={1} />
+            <Canvas shadows orthographic camera={{zoom: 50, position: [-10, 10, 20]}} dpr={[1, 1.5]}>
+                <Preload all/>
+                <Stats/>
+                <SoftShadows size={10} samples={16} focus={1}/>
 
                 {/*Ligthing*/}
-                <ambientLight intensity={0.2} />
+                <ambientLight intensity={0.2}/>
                 <directionalLight
                     position={[5, 10, 5]}
                     castShadow
@@ -86,7 +105,50 @@ export default function GameUIPage() {
                     shadow-camera-far={50}
                     shadow-bias={-0.001} // Adjust bias as needed
                 />
-                <pointLight position={[-10, -10, -10]} intensity={0.5} />
+                <pointLight position={[-10, -10, -10]} intensity={0.5}/>
+
+                {/* First Box */}
+                <mesh
+                    position-x={-0.5}
+                    position-y={3.5}
+                    position-z={5}
+                    scale={2.5}
+                    onPointerOver={() => setHovered(true)}
+                    onPointerOut={() => setTimeout(() => setHovered(false), 750)} // Delay hiding the tooltip
+                >
+                    <boxGeometry args={[1, 1.8, 1]}/>
+                    <meshStandardMaterial color={hovered ? "orange" : "red"} wireframe={true}/>
+
+                    {/* Tooltip */}
+                    {hovered && (
+                        <Html position={[0, 1, 0]} center>
+                            <CompTooltip
+                                text="About us"
+                                onClick={() => {
+                                    openModal();
+                                    setHovered(false);
+                                }}
+                            />
+                        </Html>
+                    )}
+                </mesh>
+
+                {/*SECOND BOX*/}
+                <mesh
+                    position-x={-7.5}
+                    position-y={3.5}
+                    position-z={8}
+                    scale={4}
+                    ref={meshRef}
+                    onClick={handleClick}
+                    // Make the mesh invisible but still interactive
+                    visible={true}  // This hides the mesh visually
+                    // Alternatively, you can use transparent material:
+                    // material={<meshBasicMaterial transparent opacity={0} />}
+                >
+                    <boxGeometry args={[1.8, 1, 1]}/>
+                    <meshStandardMaterial color={"blue"} wireframe={true}/>
+                </mesh>
 
                 {/* Ground Plane */}
                 <mesh
@@ -95,8 +157,8 @@ export default function GameUIPage() {
                     receiveShadow
                     castShadow
                 >
-                    <planeGeometry args={[50, 50]} />
-                    <meshStandardMaterial color="#ffffff" />
+                    <planeGeometry args={[50, 50]}/>
+                    <meshStandardMaterial color="#ffffff"/>
                 </mesh>
 
                 {/*Shadows*/}
@@ -109,10 +171,10 @@ export default function GameUIPage() {
                 />
 
                 {/*3D Model*/}
-                <AnimatedModel />
+                <AnimatedModel/>
 
                 {/*Environment*/}
-                <Environment preset={"sunset"} resolution={256} />
+                <Environment preset={"sunset"} resolution={256}/>
 
                 {/*Post-Processing Effects*/}
                 <EffectComposer>
@@ -133,6 +195,21 @@ export default function GameUIPage() {
                     // minZoom={50}
                     // maxZoom={100}
                 />
+
+                {/* Modal */}
+                {isModalOpen && (
+                    <Html center>
+                        <CompModal
+                            isOpen={isModalOpen}
+                            onClose={closeModal}
+                            title="Detailed Information"
+                        >
+                            <p className="text-gray-700 leading-relaxed">
+                                This modal provides more detailed information. Add any text, images, or buttons here.
+                            </p>
+                        </CompModal>
+                    </Html>
+                )}
             </Canvas>
             <h1>TESTTT</h1>
         </div>
