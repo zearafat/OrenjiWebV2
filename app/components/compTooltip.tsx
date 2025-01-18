@@ -8,12 +8,11 @@ interface TooltipProps {
 const CompTooltip: React.FC<TooltipProps> = ({ text, onClick }) => {
     return (
         <div
-            className="bg-white/90 backdrop-blur-sm text-gray-900 text-sm px-4 py-2 rounded-lg shadow-lg
-                 transform -translate-y-2 transition-all duration-200 hover:bg-white
-                 cursor-pointer select-none"
+            className="bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2 px-4 rounded-full
+                 border-2 border-white drop-shadow-2xl cursor-pointer select-none"
             style={{
                 pointerEvents: "auto",
-                minWidth: "100px",
+                minWidth: "120px",
                 textAlign: "center"
             }}
             onClick={onClick}

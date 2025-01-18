@@ -1,4 +1,8 @@
 import React from 'react';
+import Image from "next/image";
+import CompButtonGame from "@/app/components/compButtonGame";
+
+import godot from '@/public/assets/illustrations/godot.svg';
 
 interface ModalProps {
     isOpen: boolean;
@@ -16,48 +20,49 @@ const CompModal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) =
     };
 
     return (
-        // Container with a solid white background
         <div
             onClick={handleContentClick}
             style={{
-                minWidth: '400px',  // Ensure minimum width
-                maxWidth: '600px',  // Limit maximum width
-                transform: 'translateY(-50%)',  // Center vertically
+                minWidth: '600px', // Ensure minimum width
+                maxWidth: '800px', // Limit maximum width
+                transform: 'translateY(-25%)'
             }}
-            className="bg-white rounded-lg shadow-2xl overflow-hidden"
+            className="bg-white rounded-3xl shadow-2xl overflow-hidden relative mx-auto my-8 max-h-[90vh]"
         >
             {/* Header */}
-            <div className="relative p-6 bg-gray-50 border-b border-gray-200">
-                <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
+            <div className="relative pt-6 pb-4 px-6">
+                <h2 className="bg-gradient-to-r from-red-500 via-orange-500 font-extrabold to-pink-500 inline-block
+            text-transparent bg-clip-text text-4xl">
+                    {title}
+                </h2>
                 <button
                     onClick={onClose}
-                    className="absolute right-4 top-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
+                    className="absolute right-4 top-4 w-8 h-8 flex items-center justify-center rounded-full
+            bg-gray-200 hover:bg-gray-300 transition-colors"
                 >
                     <span className="text-gray-600">&times;</span>
                 </button>
             </div>
 
             {/* Content */}
-            <div className="p-6 bg-white">
-                {children}
+            <div className="px-6 pt-4 pb-12 bg-white flex-grow overflow-y-auto max-h-[calc(90vh-100px)]">
+                <p className="text-lg">{children}</p>
             </div>
 
             {/* Footer */}
-            <div className="p-6 bg-gray-50 border-t border-gray-200 flex justify-end space-x-3">
-                <button
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
-                    onClick={() => alert("Action clicked!")}
-                    type="button"
-                >
-                    Action
-                </button>
-                <button
-                    className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors"
-                    onClick={onClose}
-                    type="button"
-                >
-                    Close
-                </button>
+            <div className="p-0 flex flex-row justify-between items-end space-x-6">
+                <Image
+                    src={godot}
+                    alt="Orenji Studio"
+                    sizes="100vw"
+                    style={{width: '50%', height: 'auto'}}
+                    quality={100}
+                    className="rounded-lg"
+                />
+
+                <div className="p-6">
+                    <CompButtonGame text="Understand" onClick={onClose}/>
+                </div>
             </div>
         </div>
     );

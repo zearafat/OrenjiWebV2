@@ -48,10 +48,6 @@ function AnimatedModel() {
     return <primitive object={gltf.scene} />;
 }
 
-const eventHandler = () => {
-    console.log('the event occured')
-}
-
 const handleClick = () => {
     console.log('Invisible mesh clicked!');
     // Add your click handling logic here
@@ -114,7 +110,7 @@ export default function GameUIPage() {
                     position-z={5}
                     scale={2.5}
                     onPointerOver={() => setHovered(true)}
-                    onPointerOut={() => setTimeout(() => setHovered(false), 750)} // Delay hiding the tooltip
+                    onPointerOut={() => setTimeout(() => setHovered(false), 1000)} // Delay hiding the tooltip
                 >
                     <boxGeometry args={[1, 1.8, 1]}/>
                     <meshStandardMaterial color={hovered ? "orange" : "red"} wireframe={true}/>
@@ -204,9 +200,19 @@ export default function GameUIPage() {
                             onClose={closeModal}
                             title="Detailed Information"
                         >
-                            <p className="text-gray-700 leading-relaxed">
-                                This modal provides more detailed information. Add any text, images, or buttons here.
-                            </p>
+                            <div className={"space-y-4"}>
+                                <p className="text-gray-700 leading-relaxed">
+                                    When you dream to play with billions, you need the tech that will empower teams to
+                                    push the boundaries of the achievable. With systems that elevate creativity and strip
+                                    away blockers, we’re full speed ahead to deliver smiles with every game.
+                                </p>
+
+                                <p className="text-gray-700 leading-relaxed">
+                                    When you dream to play with billions, you need the tech that will empower teams to
+                                    push the boundaries of the achievable. With systems that elevate creativity and strip
+                                    away blockers, we’re full speed ahead to deliver smiles with every game.
+                                </p>
+                            </div>
                         </CompModal>
                     </Html>
                 )}
