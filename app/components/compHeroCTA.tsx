@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function compHeroCTA() {
+export default function CompHeroCTA() {
     return(
         <>
             {/*BUTTON CTA*/}

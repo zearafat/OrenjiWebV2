@@ -10,7 +10,6 @@ import iconDailyReports from "@/public/assets/illustrations/icons/icon-feature-4
 import iconDailyTurnAround from "@/public/assets/illustrations/icons/icon-feature-5.png"
 import iconCustomAssets from "@/public/assets/illustrations/icons/icon-feature-6.png"
 
-
 export default function CompFeatures() {
     return(
         <section id={"Features"}>

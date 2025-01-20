@@ -2,7 +2,7 @@ type props = {
     headerText: string
 }
 
-export default function compHeroHeader({headerText} : props) {
+export default function CompHeroHeader({headerText} : props) {
     return(
         <>
             <div>

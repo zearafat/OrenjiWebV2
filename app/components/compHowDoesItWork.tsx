@@ -7,7 +7,7 @@ import Link from "next/link";
 import React from "react";
 
 
-export default function compHowDoesItWork() {
+export default function CompHowDoesItWork() {
     return(
         <section id={"HowItWork"}>
             <div className={"sm:py-12 py-4"}>

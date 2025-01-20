@@ -5,15 +5,25 @@ import {useEffect, useRef, useState} from "react";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows, Preload, Stats, SoftShadows, Html } from '@react-three/drei';
+import {
+    OrbitControls,
+    Environment,
+    ContactShadows,
+    Preload,
+    SoftShadows,
+    Html,
+    OrthographicCamera
+} from '@react-three/drei';
 
 // Components
 import CompNavMenu from "@/app/components/compNavMenu";
 import CompModal from "@/app/components/compModal";
 import CompTooltip from "@/app/components/compTooltip";
+import CompHeroHeader from "@/app/components/compHeroHeader";
+import CompScrollDownIndicator from "@/app/components/compScrollDownIndicator";
 
 function AnimatedModel() {
-    const gltf = useLoader(GLTFLoader, '/assets/illustrations/gltf/orenjistudio.glb');
+    const gltf = useLoader(GLTFLoader, '/assets/illustrations/gltf/orenji-studio-scene.glb');
     const mixer = useRef<THREE.AnimationMixer | null>(null);
 
     useEffect(() => {
@@ -48,11 +58,6 @@ function AnimatedModel() {
     return <primitive object={gltf.scene} />;
 }
 
-const handleClick = () => {
-    console.log('Invisible mesh clicked!');
-    // Add your click handling logic here
-};
-
 export default function GameUIPage() {
     const [isClient, setIsClient] = useState(false);
     const [hovered, setHovered] = useState(false);
@@ -78,15 +83,21 @@ export default function GameUIPage() {
     const closeModal = () => setIsModalOpen(false)
 
     return (
-        <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+        <div style={{ width: '100vw', height: '100vh', position: 'absolute' }}>
             {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
             <CompNavMenu/>
-            <Canvas shadows orthographic camera={{zoom: 50, position: [-10, 10, 20]}} dpr={[1, 1.5]}>
+            <div className={"h-full w-full"}>
+                <Canvas shadows>
                 <Preload all/>
-                <Stats/>
                 <SoftShadows size={10} samples={16} focus={1}/>
 
-                {/*Ligthing*/}
+                <OrthographicCamera
+                    makeDefault
+                    position={[-10, 10, 20]}
+                    zoom={50}
+                />
+
+                {/*Lighting*/}
                 <ambientLight intensity={0.2}/>
                 <directionalLight
                     position={[5, 10, 5]}
@@ -136,7 +147,7 @@ export default function GameUIPage() {
                     position-z={8}
                     scale={4}
                     ref={meshRef}
-                    onClick={handleClick}
+                    // onClick={}
                     // Make the mesh invisible but still interactive
                     visible={true}  // This hides the mesh visually
                     // Alternatively, you can use transparent material:
@@ -148,7 +159,7 @@ export default function GameUIPage() {
 
                 {/* Ground Plane */}
                 <mesh
-                    position={[0, -1, 0]}
+                    position={[0, -0.5, 0]}
                     rotation={[-Math.PI / 2, 0, 0]}
                     receiveShadow
                     castShadow
@@ -186,11 +197,24 @@ export default function GameUIPage() {
                     enableZoom={false}
                     minAzimuthAngle={-Math.PI / 4}
                     maxAzimuthAngle={Math.PI / 4}
-                    minPolarAngle={Math.PI / 4}
+                    minPolarAngle={Math.PI / 2.5}
                     maxPolarAngle={Math.PI - Math.PI / 1.8}
+                    enableRotate={true} // Allow rotation
+                    enablePan={false}  // Disable panning (right-click drag)
                     // minZoom={50}
                     // maxZoom={100}
                 />
+
+                <Html center>
+                    <div style={{
+                        minWidth: '300px', // Ensure minimum width
+                        maxWidth: '600px', // Limit maximum width
+                    }} className={"pt-24"}>
+                        <button className="px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white hover:bg-white/20 transition-all duration-200 shadow-lg">
+                            Press and drag to orbit
+                        </button>
+                    </div>
+                </Html>
 
                 {/* Modal */}
                 {isModalOpen && (
@@ -217,7 +241,13 @@ export default function GameUIPage() {
                     </Html>
                 )}
             </Canvas>
-            <h1>TESTTT</h1>
+            </div>
+            <div className={"text-center"}>
+                <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2">
+                    <CompScrollDownIndicator />
+                </div>
+                <CompHeroHeader headerText={"We design with insane creativity. From AI app to Game UI"} />
+            </div>
         </div>
     );
 }

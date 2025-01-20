@@ -1,7 +1,7 @@
 import Image from "next/image";
 import clientsLogo from '@/public/assets/images/etc/clients.webp';
 
-export default function compClientsLogo() {
+export default function CompClientsLogo() {
     return(
         <section id={"ClientLogo"}>
             <div className={"sm:py-12 py-6"}>

@@ -7,7 +7,7 @@ type props = {
     arrowRotation: string
 }
 
-export default function compTeamMember({image, name, alt, arrowRotation} : props) {
+export default function CompTeamMember({image, name, alt, arrowRotation} : props) {
     return(
         <>
             <div className={"flex flex-row items-center space-x-4 px-8"}>

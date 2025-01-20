@@ -3,7 +3,7 @@ import Link from "next/link";
 import Banner from '@/public/assets/images/etc/banner.webp';
 import React from "react";
 
-export default function compPricing() {
+export default function CompPricing() {
     return(
         <section id={"Pricing"}>
             <div className={"sm:-mt-64 sm:py-12 py-4"}>

@@ -4,7 +4,7 @@ import Link from "next/link";
 // Components
 import CompNavMenu from "@/app/components/compNavMenu";
 import CompHeroHeader from "@/app/components/compHeroHeader";
-import CompTeamMember from "@/app/components/compTeamMember"
+import CompTeamMember from "@/app/components/compTeamMember";
 import CompFAQ from "@/app/components/compFAQ";
 import CompFooter from "@/app/components/compFooter";
 
