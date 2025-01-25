@@ -25,7 +25,7 @@ export default function CompTestimonials() {
                         </div>
                     </div>
                     {/*Testimonal Cards*/}
-                    <div className={"p-6 bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-3xl mb-4"}>
+                    <div className={"p-6 bg-gradient-to-b from-customOrangeBg1 to-customOrangeBg2 rounded-3xl mb-4"}>
                         <div className={"pb-4"}>
                             <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight text-white"}>
                                 &quot;We worked with Orenji Studio for the past few years, and I really enjoy worked

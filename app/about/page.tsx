@@ -39,6 +39,7 @@ import product_4 from "@/public/assets/products/product-4.webp"
 import product_5 from "@/public/assets/products/product-5.webp"
 import product_6 from "@/public/assets/products/product-6.webp"
 import product_7 from "@/public/assets/products/product-7.webp"
+import CompButtonCTA from "@/app/components/compButtonCTA";
 
 export default function Page() {
     return(
@@ -334,12 +335,7 @@ export default function Page() {
                         </p>
                         <div className={"sm:flex sm:flex-row sm:space-x-4"}>
                             <Link href={"https://orenjistudio.gumroad.com/"} target={"_blank"}>
-                                <button type="button"
-                                        className={"sm:py-[22px] py-4 px-14 sm:text-xl text-lg tracking-tight font-medium text-center " +
-                                            "btn-gradient-orenji hover:shadow-xl hover:shadow-orange-200/50 hover:-translate-y-1 " +
-                                            "hover:scale-100 duration-300 sm:w-auto w-full mb-2 sm:mb-0"}>
-                                    Check our Gumroad ❯
-                                </button>
+                                <CompButtonCTA label={"Check our Products ❯"} />
                             </Link>
                         </div>
                     </div>

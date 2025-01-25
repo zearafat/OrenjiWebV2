@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720px" height="600px" viewBox="0 0 720 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Blur</title>
+    <defs>
+        <filter x="-66.1%" y="-66.1%" width="232.2%" height="232.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-66.1%" y="-66.1%" width="232.2%" height="232.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-66.1%" y="-66.1%" width="232.2%" height="232.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Orenji-Studio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MacBook-Air-13&quot;" transform="translate(0, -801)">
+            <g id="Blur" transform="translate(26, 951)">
+                <circle id="Oval" fill="#F5E2FF" filter="url(#filter-1)" cx="430.5" cy="150.5" r="113.5"></circle>
+                <circle id="Oval-Copy" fill="#E2F8FF" filter="url(#filter-2)" cx="310.5" cy="113.5" r="113.5"></circle>
+                <circle id="Oval-Copy-2" fill="#F9E2FF" filter="url(#filter-3)" cx="113.5" cy="186.5" r="113.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

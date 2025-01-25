@@ -26,7 +26,7 @@ export default function CompNavMenu() {
                                   className={"text-base hover:text-orange-500"}>
                                 Products
                             </Link>
-                            {/*<Link href={"/gameui"} target={"_blank"}*/}
+                            {/*<Link href={"/forai"} target={"_blank"}*/}
                             {/*      className={"text-base hover:text-orange-500"}>*/}
                             {/*    GameUI Pro*/}
                             {/*    <span className={"relative h-0 pl-1"}>*/}

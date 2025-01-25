@@ -72,7 +72,7 @@ export default function CompPricing() {
 
                         {/*Card Premium*/}
                         <div
-                            className={"sm:py-8 py-4 sm:px-12 px-6 bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-3xl border border-slate-100"}>
+                            className={"sm:py-8 py-4 sm:px-12 px-6 bg-gradient-to-b from-customOrangeBg1 to-customOrangeBg2 rounded-3xl border border-slate-100"}>
                             <div className={"space-y-6 pb-10"}>
                                 <div className={"space-y-2"}>
                                     <div className={"flex flex-row"}>
