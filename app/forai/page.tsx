@@ -40,7 +40,7 @@ export default function ForAIPage() {
                 </div>
                 <div className={""}>
                     <CompHeroHeader headerText={"AI doesn't have to be boring"}/>
-                    <p className={"text-center text-lg py-14 sm:px-[640px]"}>
+                    <p className={"text-center text-lg py-14 sm:px-[240px]"}>
                         At Orenji Studio, we believe technology and creativity go hand in hand. Our expertise lies in
                         crafting AI-powered UI/UX designs that are functional and visually captivating. Say goodbye to
                         dull interfaces—our designs are here to inspire and engage.
