@@ -72,7 +72,7 @@ const CompForAI3D = () => {
             <OrthographicCamera
                 makeDefault
                 position={[-10, 10, 20]}
-                zoom={40}
+                zoom={42}
             />
 
             {/*Lighting*/}
