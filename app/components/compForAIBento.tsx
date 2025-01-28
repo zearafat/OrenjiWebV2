@@ -8,7 +8,6 @@ import obotSkater from "@/public/assets/illustrations/obot-skater.png";
 import blur1 from "@/public/assets/illustrations/blurs/blur-box-1.svg";
 import CompFunkyText from "@/app/components/compFunkyText";
 
-
 export default function CompForAIBento() {
     return(
         <>
@@ -53,7 +52,7 @@ export default function CompForAIBento() {
                                                     <CompFunkyText
                                                         label={"funky 😎"}
                                                         className={"text-white text-4xl font-bold p-4 tracking-tight bg-gradient-to-b " +
-                                                            "from-violet-600 to-violet-700 border-4 border-violet-200 text-center" +
+                                                            "from-violet-400 to-violet-500 border-4 border-violet-200 text-center" +
                                                             "w-40 h-2 rounded-3xl z-10"}
                                                     />
                                                 </div>
@@ -90,7 +89,7 @@ export default function CompForAIBento() {
                                                     </div>
                                                     <div className={"rotate-6 z-10"}>
                                                         <CompFunkyText
-                                                            label={"joyful ✨"}
+                                                            label={"joyful 🫶"}
                                                             className={"text-white text-4xl font-bold p-4 tracking-tight bg-gradient-to-b " +
                                                                 "from-pink-400 to-pink-500 border-4 border-pink-200 text-center" +
                                                                 "w-40 h-2 rounded-3xl z-10"}
@@ -101,9 +100,11 @@ export default function CompForAIBento() {
                                                     </div>
                                                 </div>
                                                 <p className={"sm:text-lg text-sm text-slate-500 text-left z-10"}>
-                                                    {"We specialize in building seamless, intuitive interfaces for AI-driven" +
+                                                    {
+                                                        "We specialize in building seamless, intuitive interfaces for AI-driven" +
                                                         " applications. Whether it’s a companion app or a productivity tool," +
-                                                        " we design experiences that feel human and effortless."}
+                                                        " we design experiences that feel human and effortless."
+                                                    }
                                                 </p>
                                             </div>
                                         </div>

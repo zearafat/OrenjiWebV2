@@ -138,7 +138,7 @@ const CompForAI3D = () => {
                 receiveShadow
                 castShadow
             >
-                <planeGeometry args={[50, 50]}/>
+                <planeGeometry args={[32, 32]}/>
                 <meshStandardMaterial color="#ffffff"/>
             </mesh>
 
@@ -155,7 +155,7 @@ const CompForAI3D = () => {
             <AnimatedModel/>
 
             {/*Environment*/}
-            <Environment preset={"sunset"} resolution={256}/>
+            <Environment preset={"sunset"} resolution={128}/>
 
             {/*Post-Processing Effects*/}
             <EffectComposer>

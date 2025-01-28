@@ -1,4 +1,5 @@
 // app/components/compHeroImages.tsx
+import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
 
@@ -21,7 +22,6 @@ import Porto13 from '@/public/assets/images/portofolios/porto-13.webp';
 import Porto14 from '@/public/assets/images/portofolios/porto-14.webp';
 import Porto15 from '@/public/assets/images/portofolios/porto-15.webp';
 import Porto16 from '@/public/assets/images/portofolios/porto-16.webp';
-import React from "react";
 
 export default function CompHeroImages() {
     return (
