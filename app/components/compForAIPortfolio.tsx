@@ -41,7 +41,7 @@ export default function CompForAIPortfolio() {
                         <h1 className={"text-2xl font-medium tracking-tight py-2"}>
                             Pluxia AI /
                             <span className={"px-4"}>
-                                <a href={"https://pluxia.ai"} className={"underline text-orange-600"} target="_blank" rel="noopener noreferrer">
+                                <a href={"https://pluxia.ai"} className={"hover:underline text-orange-600"} target="_blank" rel="noopener noreferrer">
                                     Visit →
                                 </a>
                             </span>
