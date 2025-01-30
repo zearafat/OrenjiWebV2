@@ -48,10 +48,10 @@ export default function ForAIPage() {
                     {
                         "At Orenji Studio, we believe technology and creativity go hand in hand. Our expertise lies in" +
                         "crafting AI-powered UI/UX designs that are functional and visually captivating. Say goodbye to" +
-                        "dull interfaces—our designs are here to inspire and engage."
+                        " dull interfaces—our designs are here to inspire and engage."
                     }
                 </p>
-                <CompButtonCTA label={"Start your dream project ✨"} />
+                <CompButtonCTA label={"Start your dream AI project ✨"} />
             </div>
 
             <div className={"pb-12"}>

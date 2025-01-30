@@ -37,6 +37,30 @@ export default function CompForAIPortfolio() {
                             className={"rounded-lg -mb-72"}
                         />
                     </div>
+                    <div className={"py-4 flex flex-row"}>
+                        <h1 className={"text-2xl font-medium tracking-tight py-2"}>
+                            Pluxia AI /
+                            <span className={"px-4"}>
+                                <a href={"https://pluxia.ai"} className={"underline text-orange-600"} target="_blank" rel="noopener noreferrer">
+                                    Visit →
+                                </a>
+                            </span>
+                        </h1>
+
+                        <div className={"flex-1"}></div>
+
+                        <div className={"flex flex-row gap-2"}>
+                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                UI/UX design
+                            </span>
+                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                brand design
+                            </span>
+                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                video animation
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
