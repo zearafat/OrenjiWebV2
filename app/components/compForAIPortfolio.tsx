@@ -4,6 +4,8 @@ import Link from "next/link";
 import React from "react";
 
 import PortoPluxia from '@/public/assets/images/portofolios/ai-projects/porto-pluxia.webp';
+import PortoAsah from '@/public/assets/images/portofolios/ai-projects/porto-asah.webp';
+
 import Image from "next/image";
 
 export default function CompForAIPortfolio() {
@@ -26,39 +28,78 @@ export default function CompForAIPortfolio() {
                         {"projects"}
                     </div>
                 </div>
-                <div>
-                    <div className={"p-14 w-full bg-pink-100 rounded-3xl overflow-hidden"}>
-                        <Image
-                            src={PortoPluxia}
-                            alt={"Pluxia AI"}
-                            style={{width: '100%', height: 'auto'}}
-                            sizes={"100vw"}
-                            quality={100}
-                            className={"rounded-lg -mb-72"}
-                        />
-                    </div>
-                    <div className={"py-4 flex flex-row"}>
-                        <h1 className={"text-2xl font-medium tracking-tight py-2"}>
-                            Pluxia AI /
-                            <span className={"px-4"}>
+                {/*PORTO*/}
+                <div className={"flex flex-col gap-20"}>
+                    <div>
+                        <div className={"p-14 w-full bg-pink-100 rounded-3xl overflow-hidden"}>
+                            <Image
+                                src={PortoPluxia}
+                                alt={"Pluxia AI"}
+                                style={{width: '100%', height: 'auto'}}
+                                sizes={"100vw"}
+                                quality={100}
+                                className={"rounded-lg -mb-72"}
+                            />
+                        </div>
+                        <div className={"py-4 flex flex-row"}>
+                            <h1 className={"text-2xl font-medium tracking-tight py-2"}>
+                                Pluxia AI /
+                                <span className={"px-4"}>
                                 <a href={"https://pluxia.ai"} className={"hover:underline text-orange-600"} target="_blank" rel="noopener noreferrer">
                                     Visit →
                                 </a>
                             </span>
-                        </h1>
+                            </h1>
 
-                        <div className={"flex-1"}></div>
+                            <div className={"flex-1"}></div>
 
-                        <div className={"flex flex-row gap-2"}>
+                            <div className={"flex flex-row gap-2"}>
                             <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
                                 UI/UX design
                             </span>
-                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
                                 brand design
                             </span>
-                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
                                 video animation
                             </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className={"p-14 w-full bg-orange-100 rounded-3xl overflow-hidden"}>
+                            <Image
+                                src={PortoAsah}
+                                alt={"Daily Friend"}
+                                style={{width: '100%', height: 'auto'}}
+                                sizes={"100vw"}
+                                quality={100}
+                                className={"rounded-lg -mb-36 -mt-20"}
+                            />
+                        </div>
+                        <div className={"py-4 flex flex-row"}>
+                            <h1 className={"text-2xl font-medium tracking-tight py-2"}>
+                                DailyFriend /
+                                <span className={"px-4"}>
+                                <a href={"https://pluxia.ai"} className={"hover:underline text-orange-600"} target="_blank" rel="noopener noreferrer">
+                                    Visit →
+                                </a>
+                            </span>
+                            </h1>
+
+                            <div className={"flex-1"}></div>
+
+                            <div className={"flex flex-row gap-2"}>
+                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                UI/UX design
+                            </span>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                brand design
+                            </span>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                video animation
+                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>

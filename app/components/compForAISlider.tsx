@@ -6,14 +6,13 @@ import Link from "next/link";
 // 1st Row
 import Porto17 from '@/public/assets/images/portofolios/porto-17.webp';
 import Porto18 from '@/public/assets/images/portofolios/porto-18.webp';
-import Porto19 from '@/public/assets/images/portofolios/porto-19.webp';
-import Porto20 from '@/public/assets/images/portofolios/porto-20.webp';
-import Porto21 from '@/public/assets/images/portofolios/porto-21.webp';
-import Porto22 from '@/public/assets/images/portofolios/porto-22.webp';
-import Porto23 from '@/public/assets/images/portofolios/porto-23.webp';
-import Porto24 from '@/public/assets/images/portofolios/porto-24.webp';
-import Porto25 from '@/public/assets/images/portofolios/porto-25.webp';
-import Porto26 from '@/public/assets/images/portofolios/porto-26.webp';
+import Porto19 from '@/public/assets/images/portofolios/porto-20.webp';
+import Porto20 from '@/public/assets/images/portofolios/porto-22.webp';
+import Porto21 from '@/public/assets/images/portofolios/porto-25.webp';
+import Porto22 from '@/public/assets/images/portofolios/porto-26.webp';
+import Porto23 from '@/public/assets/images/portofolios/porto-24.webp';
+import Porto24 from '@/public/assets/images/portofolios/porto-23.webp';
+import Porto25 from '@/public/assets/images/portofolios/porto-21.webp';
 
 import CompFunkyText from "@/app/components/compFunkyText";
 import CompButtonCTA from "@/app/components/compButtonCTA";
@@ -129,14 +128,6 @@ export default function CompForAISlider() {
                                 <Image
                                     src={Porto25}
                                     alt={`Portfolio AI 25`}
-                                    sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
-                                    quality={100}
-                                    className={"rounded-lg"}
-                                />
-                                <Image
-                                    src={Porto26}
-                                    alt={`Portfolio AI 26`}
                                     sizes={"100vw"}
                                     style={{width: '35%', height: 'auto'}}
                                     quality={100}
