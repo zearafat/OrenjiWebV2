@@ -54,15 +54,15 @@ export default function CompForAIPortfolio() {
                             <div className={"flex-1"}></div>
 
                             <div className={"flex flex-row gap-2"}>
-                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
-                                UI/UX design
-                            </span>
                                 <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
-                                brand design
-                            </span>
+                                    UI/UX design
+                                </span>
                                 <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
-                                video animation
-                            </span>
+                                    brand design
+                                </span>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                    video animation
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -90,15 +90,18 @@ export default function CompForAIPortfolio() {
                             <div className={"flex-1"}></div>
 
                             <div className={"flex flex-row gap-2"}>
-                            <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
-                                UI/UX design
-                            </span>
                                 <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
-                                brand design
-                            </span>
+                                    UI/UX design
+                                </span>
                                 <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
-                                video animation
-                            </span>
+                                    custom illustrations
+                                </span>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                    brand design
+                                </span>
+                                <span className={"px-6 py-3 bg-slate-100 font-medium rounded-full"}>
+                                    video animation
+                                </span>
                             </div>
                         </div>
                     </div>

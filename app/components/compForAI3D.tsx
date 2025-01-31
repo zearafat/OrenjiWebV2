@@ -193,25 +193,27 @@ const CompForAI3D = () => {
             {/* Modal */}
             {isModalOpen && (
                 <Html center>
-                    <CompModal
-                        isOpen={isModalOpen}
-                        onClose={closeModal}
-                        title="Detailed Information"
-                    >
-                        <div className={"space-y-4"}>
-                            <p className="text-gray-700 leading-relaxed">
-                                When you dream to play with billions, you need the tech that will empower teams to
-                                push the boundaries of the achievable. With systems that elevate creativity and strip
-                                away blockers, we’re full speed ahead to deliver smiles with every game.
-                            </p>
+                    <div className="pt-32 align-middle content-center">
+                        <CompModal
+                            isOpen={isModalOpen}
+                            onClose={closeModal}
+                            title="Detailed Information"
+                        >
+                            <div className={"space-y-4"}>
+                                <p className="text-gray-700 leading-relaxed">
+                                    When you dream to play with billions, you need the tech that will empower teams to
+                                    push the boundaries of the achievable. With systems that elevate creativity and strip
+                                    away blockers, we’re full speed ahead to deliver smiles with every game.
+                                </p>
 
-                            <p className="text-gray-700 leading-relaxed">
-                                When you dream to play with billions, you need the tech that will empower teams to
-                                push the boundaries of the achievable. With systems that elevate creativity and strip
-                                away blockers, we’re full speed ahead to deliver smiles with every game.
-                            </p>
-                        </div>
-                    </CompModal>
+                                <p className="text-gray-700 leading-relaxed">
+                                    When you dream to play with billions, you need the tech that will empower teams to
+                                    push the boundaries of the achievable. With systems that elevate creativity and strip
+                                    away blockers, we’re full speed ahead to deliver smiles with every game.
+                                </p>
+                            </div>
+                        </CompModal>
+                    </div>
                 </Html>
             )}
         </Canvas>

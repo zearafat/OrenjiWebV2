@@ -3,6 +3,7 @@ import Image from "next/image";
 import CompButtonGame from "@/app/components/compButtonGame";
 
 import godot from '@/public/assets/illustrations/godot.svg';
+import CompButtonCTA from "@/app/components/compButtonCTA";
 
 interface ModalProps {
     isOpen: boolean;
@@ -61,7 +62,7 @@ const CompModal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) =
                 />
 
                 <div className="p-6">
-                    <CompButtonGame text="Understand" onClick={onClose}/>
+                    <CompButtonCTA label={"Understand"} action={onClose} />
                 </div>
             </div>
         </div>
