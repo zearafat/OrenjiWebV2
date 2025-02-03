@@ -31,7 +31,11 @@ export default function Home() {
               {/*SECTION 3D GLTF*/}
               <CompGLTFLoader/>
               {/*SECTION PRICING*/}
-              <CompPricing/>
+              <section id={"Pricing"}>
+                  <div className={"sm:-mt-64 sm:py-12 py-4"}>
+                      <CompPricing/>
+                  </div>
+              </section>
               {/*SECTION FAQ*/}
               <CompFAQ/>
               {/*SECTION FOOTER*/}

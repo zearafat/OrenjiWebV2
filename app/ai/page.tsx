@@ -11,6 +11,9 @@ import CompButtonCTA from "@/app/components/compButtonCTA";
 import CompForAIBento from "@/app/components/compForAIBento";
 import CompForAISlider from "@/app/components/compForAISlider";
 import CompForAIPortfolio from "@/app/components/compForAIPortfolio";
+import CompPricing from "@/app/components/compPricing";
+import CompFAQ from "@/app/components/compFAQ";
+import CompFooter from "@/app/components/compFooter";
 
 export default function ForAIPage() {
     const [isClient, setIsClient] = useState(false);
@@ -64,6 +67,15 @@ export default function ForAIPage() {
 
             <div className={"pb-12"}>
                 <CompForAIPortfolio />
+            </div>
+
+            <div className={"pb-12"}>
+                <CompPricing />
+            </div>
+
+            <div className={"pt-12"}>
+                <CompFAQ />
+                <CompFooter />
             </div>
         </>
     );
