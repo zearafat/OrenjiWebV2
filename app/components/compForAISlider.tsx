@@ -13,6 +13,8 @@ import Porto22 from '@/public/assets/images/portofolios/porto-26.webp';
 import Porto23 from '@/public/assets/images/portofolios/porto-24.webp';
 import Porto24 from '@/public/assets/images/portofolios/porto-23.webp';
 import Porto25 from '@/public/assets/images/portofolios/porto-21.webp';
+import Porto26 from '@/public/assets/images/portofolios/porto-23.webp';
+import Porto27 from '@/public/assets/images/portofolios/porto-21.webp';
 
 import CompFunkyText from "@/app/components/compFunkyText";
 import CompButtonCTA from "@/app/components/compButtonCTA";

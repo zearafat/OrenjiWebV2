@@ -33,7 +33,7 @@ const CompModal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) =
             {/* Header */}
             <div className="relative pt-6 pb-4 px-6">
                 <h2 className="bg-gradient-to-r from-red-500 via-orange-500 font-extrabold to-pink-500 inline-block
-            text-transparent bg-clip-text text-4xl">
+            text-transparent bg-clip-text text-4xl tracking-tight">
                     {title}
                 </h2>
                 <button

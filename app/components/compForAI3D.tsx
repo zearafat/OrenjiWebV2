@@ -197,19 +197,21 @@ const CompForAI3D = () => {
                         <CompModal
                             isOpen={isModalOpen}
                             onClose={closeModal}
-                            title="Detailed Information"
+                            title="Why us for AI Product?"
                         >
                             <div className={"space-y-4"}>
                                 <p className="text-gray-700 leading-relaxed">
-                                    When you dream to play with billions, you need the tech that will empower teams to
-                                    push the boundaries of the achievable. With systems that elevate creativity and strip
-                                    away blockers, we’re full speed ahead to deliver smiles with every game.
+                                    We have been riding the AI wave since it took off a few years ago, working on
+                                    everything from UI/UX to full-on development.
                                 </p>
-
-                                <p className="text-gray-700 leading-relaxed">
-                                    When you dream to play with billions, you need the tech that will empower teams to
-                                    push the boundaries of the achievable. With systems that elevate creativity and strip
-                                    away blockers, we’re full speed ahead to deliver smiles with every game.
+                                <p>
+                                    Whether it is designing sleek interfaces, crafting custom illustrations (both 2D and 3D),
+                                    or building a solid brand identity for AI products, we have got it covered.
+                                </p>
+                                <p>
+                                    AI projects are kind of our thing—we love bringing ideas to life and making sure they
+                                    look as smart as they act. If you are building something AI-powered and need a killer
+                                    design team, you’re in the right place. Let’s make something awesome together! 😎
                                 </p>
                             </div>
                         </CompModal>
