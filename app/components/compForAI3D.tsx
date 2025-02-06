@@ -116,7 +116,7 @@ const CompForAI3D = () => {
                 {hoveredBox1 && (
                     <Html position={[0, 1, 0]} center>
                         <CompTooltip
-                            text="Why us"
+                            text="Box 1"
                             className={"bg-gradient-to-r from-violet-500 to-purple-400 text-white font-semibold py-2" +
                                 "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
@@ -144,7 +144,7 @@ const CompForAI3D = () => {
                 {hoveredBox2 && (
                     <Html position={[0, 0.5, 0]} center>
                         <CompTooltip
-                            text="About us"
+                            text="Box 2"
                             className={"bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2" +
                                 "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
@@ -172,8 +172,8 @@ const CompForAI3D = () => {
                 {hoveredBox3 && (
                     <Html position={[0, 0.5, 0]} center>
                         <CompTooltip
-                            text="About us"
-                            className={"bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2" +
+                            text="Box 3"
+                            className={"bg-gradient-to-r from-green-500 to-emerald-300 text-white font-semibold py-2" +
                                 "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
                                 openModalBox3();
