@@ -13,8 +13,7 @@ import Porto22 from '@/public/assets/images/portofolios/porto-26.webp';
 import Porto23 from '@/public/assets/images/portofolios/porto-24.webp';
 import Porto24 from '@/public/assets/images/portofolios/porto-23.webp';
 import Porto25 from '@/public/assets/images/portofolios/porto-21.webp';
-import Porto26 from '@/public/assets/images/portofolios/porto-23.webp';
-import Porto27 from '@/public/assets/images/portofolios/porto-21.webp';
+import Porto26 from '@/public/assets/images/portofolios/porto-27.webp';
 
 import CompFunkyText from "@/app/components/compFunkyText";
 import CompButtonCTA from "@/app/components/compButtonCTA";
@@ -23,9 +22,9 @@ export default function CompForAISlider() {
     return (
         <>
             <section id={"For AI Sliders"}>
-                <div className={"container mx-auto"}>
-                    <div className={"flex flex-row"}>
-                        <div className={"text-left "}>
+                <div className={"container mx-auto px-6 sm:px-0"}>
+                    <div className={"sm:flex sm:flex-row sm:flex-wrap"}>
+                        <div className={"text-left pb-8"}>
                             <div className={"text-4xl font-bold tracking-tight z-10 pb-6"}>
                                 {"Designs that’ll make your"}
                             </div>
@@ -46,8 +45,8 @@ export default function CompForAISlider() {
                         <div className={"flex-1"}>
                         </div>
                         <div className={"py-4"}>
-                            <div className={"flex flex-row gap-4"}>
-                                <div className={"tracking-tight py-2"}>
+                            <div className={"sm:flex sm:flex-row sm:gap-4"}>
+                                <div className={"tracking-tight py-2 pb-8"}>
                                     <p className={"w-96 text-xl"}>{"To simply put, we are kinda good at it 👌 Don’t believe us? Just press this button ➡"}</p>
                                 </div>
                                 <a href={"https://dribbble.com/orenjistudio"} target="_blank" rel="noopener noreferrer">
@@ -58,7 +57,7 @@ export default function CompForAISlider() {
 
                     </div>
                 </div>
-                <div className={"py-20"}>
+                <div className={"sm:py-20 py-8"}>
                     <div className={"relative"}>
                         <div className="overflow-hidden whitespace-nowrap">
                             {/*2nd Row Marquee*/}
@@ -67,73 +66,70 @@ export default function CompForAISlider() {
                                     src={Porto17}
                                     alt={`Portfolio AI 17`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto18}
                                     alt={`Portfolio AI 18`}
-                                    sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto19}
                                     alt={`Portfolio AI 19`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto20}
                                     alt={`Portfolio AI 20`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto21}
                                     alt={`Portfolio AI 21`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto22}
                                     alt={`Portfolio AI 22`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto23}
                                     alt={`Portfolio AI 23`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto24}
                                     alt={`Portfolio AI 24`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                                 <Image
                                     src={Porto25}
                                     alt={`Portfolio AI 25`}
                                     sizes={"100vw"}
-                                    style={{width: '35%', height: 'auto'}}
                                     quality={100}
-                                    className={"rounded-lg"}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
+                                />
+                                <Image
+                                    src={Porto26}
+                                    alt={`Portfolio AI 26`}
+                                    sizes={"100vw"}
+                                    quality={100}
+                                    className={"rounded-lg w-[70%] sm:w-[35%]"}
                                 />
                             </div>
                         </div>

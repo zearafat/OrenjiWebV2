@@ -64,65 +64,57 @@ export default function CompHeroImages() {
                                 src={Porto1}
                                 alt={`Portfolio 1`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto2}
                                 alt={`Portfolio 2`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto3}
                                 alt={`Portfolio 3`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto4}
                                 alt={`Portfolio 4`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto5}
                                 alt={`Portfolio 5`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto6}
                                 alt={`Portfolio 6`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto7}
                                 alt={`Portfolio 7`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto8}
                                 alt={`Portfolio 8`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                         </div>
 
@@ -132,65 +124,56 @@ export default function CompHeroImages() {
                                 src={Porto9}
                                 alt={`Portfolio 9`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto10}
                                 alt={`Portfolio 10`}
-                                sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto11}
                                 alt={`Portfolio 11`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto12}
                                 alt={`Portfolio 12`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto13}
                                 alt={`Portfolio 13`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto14}
                                 alt={`Portfolio 14`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto15}
                                 alt={`Portfolio 15`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                             <Image
                                 src={Porto16}
                                 alt={`Portfolio 16`}
                                 sizes={"100vw"}
-                                style={{width: '35%', height: 'auto'}}
                                 quality={100}
-                                className={"rounded-lg"}
+                                className={"rounded-lg w-[70%] sm:w-[35%]"}
                             />
                         </div>
                     </div>

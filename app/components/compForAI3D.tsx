@@ -56,13 +56,21 @@ function AnimatedModel() {
 }
 
 const CompForAI3D = () => {
-    const [hovered, setHovered] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [hoveredBox1, setHoveredBox1] = useState(false);
+    const [hoveredBox2, setHoveredBox2] = useState(false);
+    const [hoveredBox3, setHoveredBox3] = useState(false);
 
-    const meshRef = useRef<THREE.Mesh>(null);
+    const [isModalOpenBox1, setIsModalOpenBox1] = useState(false);
+    const openModalBox1 = () => setIsModalOpenBox1(true);
+    const closeModalBox1 = () => setIsModalOpenBox1(false)
 
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false)
+    const [isModalOpenBox2, setIsModalOpenBox2] = useState(false);
+    const openModalBox2 = () => setIsModalOpenBox2(true);
+    const closeModalBox2 = () => setIsModalOpenBox2(false)
+
+    const [isModalOpenBox3, setIsModalOpenBox3] = useState(false);
+    const openModalBox3 = () => setIsModalOpenBox3(true);
+    const closeModalBox3 = () => setIsModalOpenBox3(false)
 
     return (
         <Canvas shadows>
@@ -92,43 +100,88 @@ const CompForAI3D = () => {
             />
             <pointLight position={[-10, -10, -10]} intensity={0.5}/>
 
-            {/* First Box */}
+            {/* FIRST COLLIDER BOX */}
             <mesh
                 position-x={-0.5}
                 position-y={3.5}
                 position-z={5}
                 scale={2.5}
-                onPointerOver={() => setHovered(true)}
-                onPointerOut={() => setTimeout(() => setHovered(false), 1000)} // Delay hiding the tooltip
+                onPointerOver={() => setHoveredBox1(true)}
+                onPointerOut={() => setTimeout(() => setHoveredBox1(false), 1000)} // Delay hiding the tooltip
             >
                 <boxGeometry args={[1, 1.8, 1]}/>
-                <meshStandardMaterial color={hovered ? "orange" : "red"} wireframe={true}/>
+                <meshStandardMaterial color={hoveredBox1 ? "orange" : "red"} wireframe={true}/>
 
                 {/* Tooltip */}
-                {hovered && (
+                {hoveredBox1 && (
                     <Html position={[0, 1, 0]} center>
                         <CompTooltip
-                            text="About us"
+                            text="Why us"
+                            className={"bg-gradient-to-r from-violet-500 to-purple-400 text-white font-semibold py-2" +
+                                "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
-                                openModal();
-                                setHovered(false);
+                                openModalBox1();
+                                setHoveredBox1(false);
                             }}
                         />
                     </Html>
                 )}
             </mesh>
 
-            {/*SECOND BOX*/}
+            {/*SECOND COLLIDER BOX*/}
             <mesh
                 position-x={-7.5}
                 position-y={3.5}
                 position-z={8}
                 scale={4}
-                ref={meshRef}
-                visible={true}
+                onPointerOver={() => setHoveredBox2(true)}
+                onPointerOut={() => setTimeout(() => setHoveredBox2(false), 1000)} // Delay hiding the tooltip
             >
                 <boxGeometry args={[1.8, 1, 1]}/>
                 <meshStandardMaterial color={"blue"} wireframe={true}/>
+
+                {/* Tooltip */}
+                {hoveredBox2 && (
+                    <Html position={[0, 0.5, 0]} center>
+                        <CompTooltip
+                            text="About us"
+                            className={"bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2" +
+                                "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
+                            onClick={() => {
+                                openModalBox2();
+                                setHoveredBox2(false);
+                            }}
+                        />
+                    </Html>
+                )}
+            </mesh>
+
+            {/*THIRD COLLIDER BOX*/}
+            <mesh
+                position-x={9.5}
+                position-y={3.5}
+                position-z={5}
+                scale={4}
+                onPointerOver={() => setHoveredBox3(true)}
+                onPointerOut={() => setTimeout(() => setHoveredBox3(false), 1000)} // Delay hiding the tooltip
+            >
+                <boxGeometry args={[1, 1, 1.5]}/>
+                <meshStandardMaterial color={"purple"} wireframe={true}/>
+
+                {/* Tooltip */}
+                {hoveredBox3 && (
+                    <Html position={[0, 0.5, 0]} center>
+                        <CompTooltip
+                            text="About us"
+                            className={"bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2" +
+                                "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
+                            onClick={() => {
+                                openModalBox3();
+                                setHoveredBox3(false);
+                            }}
+                        />
+                    </Html>
+                )}
             </mesh>
 
             {/* Ground Plane */}
@@ -190,14 +243,72 @@ const CompForAI3D = () => {
                 </div>
             </Html>
 
-            {/* Modal */}
-            {isModalOpen && (
+            {/* Modal 1 */}
+            {isModalOpenBox1 && (
                 <Html center>
                     <div className="pt-32 align-middle content-center">
                         <CompModal
-                            isOpen={isModalOpen}
-                            onClose={closeModal}
+                            isOpen={isModalOpenBox1}
+                            onClose={closeModalBox1}
                             title="Why us for AI Product?"
+                        >
+                            <div className={"space-y-4"}>
+                                <p className="text-gray-700 leading-relaxed">
+                                    We have been riding the AI wave since it took off a few years ago, working on
+                                    everything from UI/UX to full-on development.
+                                </p>
+                                <p>
+                                    Whether it is designing sleek interfaces, crafting custom illustrations (both 2D and 3D),
+                                    or building a solid brand identity for AI products, we have got it covered.
+                                </p>
+                                <p>
+                                    AI projects are kind of our thing—we love bringing ideas to life and making sure they
+                                    look as smart as they act. If you are building something AI-powered and need a killer
+                                    design team, you’re in the right place. Let’s make something awesome together! 😎
+                                </p>
+                            </div>
+                        </CompModal>
+                    </div>
+                </Html>
+            )}
+
+            {/* Modal 2 */}
+            {isModalOpenBox2 && (
+                <Html center>
+                    <div className="pt-32 align-middle content-center">
+                        <CompModal
+                            isOpen={isModalOpenBox2}
+                            onClose={closeModalBox2}
+                            title="About us"
+                        >
+                            <div className={"space-y-4"}>
+                                <p className="text-gray-700 leading-relaxed">
+                                    We have been riding the AI wave since it took off a few years ago, working on
+                                    everything from UI/UX to full-on development.
+                                </p>
+                                <p>
+                                    Whether it is designing sleek interfaces, crafting custom illustrations (both 2D and 3D),
+                                    or building a solid brand identity for AI products, we have got it covered.
+                                </p>
+                                <p>
+                                    AI projects are kind of our thing—we love bringing ideas to life and making sure they
+                                    look as smart as they act. If you are building something AI-powered and need a killer
+                                    design team, you’re in the right place. Let’s make something awesome together! 😎
+                                </p>
+                            </div>
+                        </CompModal>
+                    </div>
+                </Html>
+            )}
+
+            {/* Modal 3 */}
+            {isModalOpenBox3 && (
+                <Html center>
+                    <div className="pt-32 align-middle content-center">
+                        <CompModal
+                            isOpen={isModalOpenBox3}
+                            onClose={closeModalBox3}
+                            title="About us"
                         >
                             <div className={"space-y-4"}>
                                 <p className="text-gray-700 leading-relaxed">

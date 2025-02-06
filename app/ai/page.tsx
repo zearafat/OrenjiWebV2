@@ -33,9 +33,8 @@ export default function ForAIPage() {
     }
 
     return (
-        <>
+        <div className={"overflow-hidden"}>
             <CompNavMenu />
-
             <div className={""} style={{ width: '100vw', height: '100vh'}}>
                 {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
                 <CompForAI3D />
@@ -47,7 +46,7 @@ export default function ForAIPage() {
 
             <div className={"text-center pb-12"}>
                 <CompHeroHeader headerText={"AI doesn't have to be boring"}/>
-                <p className={"text-center text-lg py-14 sm:px-[240px]"}>
+                <p className={"text-base sm:text-lg leading-relaxed sm:py-14 py-6 max-w-7xl text-slate-500 mx-auto text-center px-4 sm:px-6 sm:text-xl"}>
                     {
                         "At Orenji Studio, we believe technology and creativity go hand in hand. Our expertise lies in" +
                         "crafting AI-powered UI/UX designs that are functional and visually captivating. Say goodbye to" +
@@ -77,6 +76,6 @@ export default function ForAIPage() {
                 <CompFAQ />
                 <CompFooter />
             </div>
-        </>
+        </div>
     );
 }

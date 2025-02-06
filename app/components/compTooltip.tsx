@@ -3,16 +3,19 @@ import React from 'react';
 interface TooltipProps {
     text: string;
     onClick?: () => void;
+    className: string;
 }
 
-const CompTooltip: React.FC<TooltipProps> = ({ text, onClick }) => {
+const CompTooltip: React.FC<TooltipProps> = ({ text, onClick, className }) => {
     return (
         <div
-            className="bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2 px-4 rounded-full
-                 border-2 border-white drop-shadow-2xl cursor-pointer select-none"
+            className={className}
             style={{
                 pointerEvents: "auto",
+                paddingTop: 12,
+                paddingBottom: 12,
                 minWidth: "120px",
+                minHeight: "50px",
                 textAlign: "center"
             }}
             onClick={onClick}
