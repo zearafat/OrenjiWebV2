@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import React, {useEffect, useState} from "react";
 
 // Components
@@ -53,7 +54,9 @@ export default function ForAIPage() {
                         " dull interfaces—our designs are here to inspire and engage."
                     }
                 </p>
-                <CompButtonCTA label={"Start your dream AI project ✨"} />
+                <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
+                    <CompButtonCTA label={"Start your dream AI project ✨"} />
+                </Link>
             </div>
 
             <div className={"pb-12"}>
