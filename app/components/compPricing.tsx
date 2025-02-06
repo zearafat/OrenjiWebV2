@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import Link from "next/link";
-import Banner from '@/public/assets/images/etc/banner.webp';
 import React from "react";
+
+import Link from "next/link";
+import Image from 'next/image';
+import Banner from '@/public/assets/images/etc/banner.webp';
 
 export default function CompPricing() {
     return(

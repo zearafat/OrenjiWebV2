@@ -26,21 +26,17 @@ export default function CompNavMenu() {
                                   className={"text-base hover:text-orange-500"}>
                                 Products
                             </Link>
-                            {/*<Link href={"/ai"} target={"_blank"}*/}
-                            {/*      className={"text-base hover:text-orange-500"}>*/}
-                            {/*    GameUI Pro*/}
-                            {/*    <span className={"relative h-0 pl-1"}>*/}
-                            {/*        <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-red-500 opacity-75"></span>*/}
-                            {/*        <span className="absolute inline-flex rounded-full h-3 w-3 bg-red-500"></span>*/}
-                            {/*    </span>*/}
-                            {/*</Link>*/}
-                            <Link href={"/about"} target={"_blank"}
+                            <Link href={"/ai"} target={"_blank"}
                                   className={"text-base hover:text-orange-500"}>
-                                Why us
+                                For AI Project
                                 <span className={"relative h-0 pl-1"}>
                                     <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-red-500 opacity-75"></span>
                                     <span className="absolute inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                                 </span>
+                            </Link>
+                            <Link href={"/about"} target={"_blank"}
+                                  className={"text-base hover:text-orange-500"}>
+                                Why us
                             </Link>
                             <Link href={"#HowItWork"} className={"text-base hover:text-orange-500"}>
                                 How it work

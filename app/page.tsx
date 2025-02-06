@@ -9,6 +9,7 @@ import CompPricing from "@/app/components/compPricing";
 import CompFAQ from '@/app/components/compFAQ';
 import CompFooter from '@/app/components/compFooter';
 import CompNavMenu from "@/app/components/compNavMenu";
+import CompFloatingToaster from "@/app/components/compFloatingToaster";
 
 export default function Home() {
   return(
@@ -40,6 +41,8 @@ export default function Home() {
               <CompFAQ/>
               {/*SECTION FOOTER*/}
               <CompFooter/>
+              {/*SECTION FLOATING TOASTER*/}
+              <CompFloatingToaster label={"🤖🦄 Building AI Product? We can help"} url={"/ai"} />
           </div>
       </section>
   )

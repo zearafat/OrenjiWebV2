@@ -110,13 +110,14 @@ const CompForAI3D = () => {
                 onPointerOut={() => setTimeout(() => setHoveredBox1(false), 1000)} // Delay hiding the tooltip
             >
                 <boxGeometry args={[1, 1.8, 1]}/>
-                <meshStandardMaterial color={hoveredBox1 ? "orange" : "red"} wireframe={true}/>
+                {/*<meshStandardMaterial color={hoveredBox1 ? "orange" : "red"} wireframe={true}/>*/}
+                <meshBasicMaterial visible={false}/>
 
                 {/* Tooltip */}
                 {hoveredBox1 && (
                     <Html position={[0, 1, 0]} center>
                         <CompTooltip
-                            text="Box 1"
+                            text="Welcome"
                             className={"bg-gradient-to-r from-violet-500 to-purple-400 text-white font-semibold py-2" +
                                 "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
@@ -138,13 +139,14 @@ const CompForAI3D = () => {
                 onPointerOut={() => setTimeout(() => setHoveredBox2(false), 1000)} // Delay hiding the tooltip
             >
                 <boxGeometry args={[1.8, 1, 1]}/>
-                <meshStandardMaterial color={"blue"} wireframe={true}/>
+                {/*<meshStandardMaterial color={"blue"} wireframe={true}/>*/}
+                <meshBasicMaterial visible={false}/>
 
                 {/* Tooltip */}
                 {hoveredBox2 && (
                     <Html position={[0, 0.5, 0]} center>
                         <CompTooltip
-                            text="Box 2"
+                            text="Why Us"
                             className={"bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold py-2" +
                                 "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
@@ -166,13 +168,14 @@ const CompForAI3D = () => {
                 onPointerOut={() => setTimeout(() => setHoveredBox3(false), 1000)} // Delay hiding the tooltip
             >
                 <boxGeometry args={[1, 1, 1.5]}/>
-                <meshStandardMaterial color={"purple"} wireframe={true}/>
+                {/*<meshStandardMaterial color={"purple"} wireframe={true}/>*/}
+                <meshBasicMaterial visible={false}/>
 
                 {/* Tooltip */}
                 {hoveredBox3 && (
                     <Html position={[0, 0.5, 0]} center>
                         <CompTooltip
-                            text="Box 3"
+                            text="Our Dream"
                             className={"bg-gradient-to-r from-green-500 to-emerald-300 text-white font-semibold py-2" +
                                 "px-4 rounded-full border-2 border-white drop-shadow-2xl cursor-pointer select-none"}
                             onClick={() => {
@@ -250,7 +253,7 @@ const CompForAI3D = () => {
                         <CompModal
                             isOpen={isModalOpenBox1}
                             onClose={closeModalBox1}
-                            title="Why us for AI Product?"
+                            title="Welcome!"
                         >
                             <div className={"space-y-4"}>
                                 <p className="text-gray-700 leading-relaxed">
@@ -279,7 +282,7 @@ const CompForAI3D = () => {
                         <CompModal
                             isOpen={isModalOpenBox2}
                             onClose={closeModalBox2}
-                            title="About us"
+                            title="Why us for AI Project?"
                         >
                             <div className={"space-y-4"}>
                                 <p className="text-gray-700 leading-relaxed">
@@ -308,7 +311,7 @@ const CompForAI3D = () => {
                         <CompModal
                             isOpen={isModalOpenBox3}
                             onClose={closeModalBox3}
-                            title="About us"
+                            title="Our mad dreams..."
                         >
                             <div className={"space-y-4"}>
                                 <p className="text-gray-700 leading-relaxed">
