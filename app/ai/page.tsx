@@ -36,7 +36,7 @@ export default function ForAIPage() {
     return (
         <div className={"overflow-hidden"}>
             <CompNavMenu />
-            <div className={""} style={{ width: '100vw', height: '100vh'}}>
+            <div className={"scene-container"} style={{ width: '100vw', height: '100vh'}}>
                 {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
                 <CompForAI3D />
             </div>

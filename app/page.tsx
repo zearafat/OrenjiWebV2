@@ -42,7 +42,7 @@ export default function Home() {
               {/*SECTION FOOTER*/}
               <CompFooter/>
               {/*SECTION FLOATING TOASTER*/}
-              <CompFloatingToaster label={"🤖🦄 Building AI Product? We can help"} url={"/ai"} />
+              <CompFloatingToaster label={"🤖🦄 Building AI Product? See how we can help"} url={"/ai"} />
           </div>
       </section>
   )

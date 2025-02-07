@@ -44,19 +44,19 @@ export default function CompForAIBento() {
                                     <div className={"px-8 pb-0 bg-slate-50 rounded-3xl h-[400px] " +
                                         "hover:-translate-y-0.5 duration-300 hover:bg-orange-50 overflow-hidden relative"}>
                                         <div className={"sm:p-24 px-4 py-14 text-center"}>
-                                            <div className={"flex flex-row flex-wrap gap-4 pb-14 sm:pb-8"}>
-                                                <div className={"text-4xl font-bold tracking-tight pb-4 z-10"}>
+                                            <div className={"flex flex-row flex-wrap gap-4 pb-8"}>
+                                                <div className={"sm:text-4xl text-3xl font-bold tracking-tight sm:pb-4 z-10"}>
                                                     {"AI apps can be"}
                                                 </div>
                                                 <div className={"-rotate-6 z-10"}>
                                                     <CompFunkyText
                                                         label={"funky 😎"}
-                                                        className={"text-white text-4xl font-bold p-4 tracking-tight bg-gradient-to-b " +
+                                                        className={"text-white sm:text-4xl text-3xl font-bold p-4 tracking-tight bg-gradient-to-b " +
                                                             "from-violet-400 to-violet-500 border-4 border-violet-200 text-center" +
                                                             "w-40 h-2 rounded-3xl z-10"}
                                                     />
                                                 </div>
-                                                <div className={"text-4xl font-bold tracking-tight z-10"}>
+                                                <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10"}>
                                                     {"too!"}
                                                 </div>
                                             </div>
@@ -82,19 +82,19 @@ export default function CompForAIBento() {
                                     <div className={"sm:px-8 px-2 pb-0 bg-slate-50 rounded-3xl h-[400px] " +
                                         "hover:-translate-y-0.5 duration-300 hover:bg-orange-50 overflow-hidden relative"}>
                                         <div className={"sm:p-24 px-10 py-20 text-center"}>
-                                            <div className={"flex flex-row flex-wrap gap-4 sm:pb-12 pb-6"}>
-                                                <div className={"text-4xl font-bold tracking-tight z-10"}>
+                                            <div className={"flex flex-row flex-wrap gap-4 sm:pb-12 pb-14"}>
+                                                <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10"}>
                                                     {"While still"}
                                                 </div>
                                                 <div className={"rotate-6 z-10"}>
                                                     <CompFunkyText
                                                         label={"joyful 🫶"}
-                                                        className={"text-white text-4xl font-bold p-4 tracking-tight bg-gradient-to-b " +
+                                                        className={"text-white sm:text-4xl text-3xl font-bold p-4 tracking-tight bg-gradient-to-b " +
                                                             "from-pink-400 to-pink-500 border-4 border-pink-200 text-center" +
                                                             "w-40 h-2 rounded-3xl z-10"}
                                                     />
                                                 </div>
-                                                <div className={"text-4xl font-bold tracking-tight z-10"}>
+                                                <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10"}>
                                                     {"to use"}
                                                 </div>
                                             </div>

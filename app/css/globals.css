@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Improves smooth scrolling on iOS */
+    height: 100%;
+}
+
+.scene-container {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allows touch scroll */
+    touch-action: auto !important; /* Ensures scrolling isn't blocked */
+    overflow: auto; /* Enables scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth mobile scrolling */
+}
+
 img {
     object-fit: cover; /* Firefox need this. Or 'contain', depending on your needs */
 }
