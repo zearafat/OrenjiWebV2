@@ -21,30 +21,27 @@ export default function CompFloatingToaster({label, url} : Props) {
                         {label}
                         <span className="ml-2 inline-block">&gt;&gt;</span>
                     </p>
-
-
-                        <button
-                            onClick={() => setIsVisible(false)}
-                            className="ml-2 p-1 hover:bg-orange-600/20 rounded-full transition-colors"
-                            aria-label="Close notification"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="w-4 h-4"
-                            >
-                                <path d="M18 6L6 18" />
-                                <path d="M6 6l12 12" />
-                            </svg>
-                        </button>
-
+                        {/*<button*/}
+                        {/*    onClick={() => setIsVisible(false)}*/}
+                        {/*    className="ml-2 p-1 hover:bg-orange-600/20 rounded-full transition-colors"*/}
+                        {/*    aria-label="Close notification"*/}
+                        {/*>*/}
+                        {/*    <svg*/}
+                        {/*        xmlns="http://www.w3.org/2000/svg"*/}
+                        {/*        width="16"*/}
+                        {/*        height="16"*/}
+                        {/*        viewBox="0 0 24 24"*/}
+                        {/*        fill="none"*/}
+                        {/*        stroke="currentColor"*/}
+                        {/*        strokeWidth="2"*/}
+                        {/*        strokeLinecap="round"*/}
+                        {/*        strokeLinejoin="round"*/}
+                        {/*        className="w-4 h-4"*/}
+                        {/*    >*/}
+                        {/*        <path d="M18 6L6 18" />*/}
+                        {/*        <path d="M6 6l12 12" />*/}
+                        {/*    </svg>*/}
+                        {/*</button>*/}
                 </div>
             </Link>
         </>

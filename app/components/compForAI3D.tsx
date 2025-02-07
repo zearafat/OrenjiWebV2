@@ -230,9 +230,15 @@ const CompForAI3D = () => {
                 minPolarAngle={Math.PI / 2.5}
                 maxPolarAngle={Math.PI - Math.PI / 1.8}
                 enableRotate={true} // Allow rotation
-                enablePan={false}  // Disable panning (right-click drag)
-                // minZoom={50}
-                // maxZoom={100}
+                enablePan={false}  // Disable panning
+                onStart={(event) => {
+                    // Prevent scrolling when interacting with 3D scene
+                    document.body.style.overflow = "hidden";
+                }}
+                onEnd={(event) => {
+                    // Re-enable scrolling when interaction ends
+                    document.body.style.overflow = "auto";
+                }}
             />
 
             <Html center>
