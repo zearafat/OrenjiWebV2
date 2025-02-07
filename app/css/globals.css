@@ -6,7 +6,6 @@ html, body {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; /* Improves smooth scrolling on iOS */
-    height: 100%;
 }
 
 .scene-container {
