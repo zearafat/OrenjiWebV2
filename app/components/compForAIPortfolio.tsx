@@ -15,18 +15,18 @@ export default function CompForAIPortfolio() {
             <div className={"container mx-auto"}>
                 <div className={"px-6 sm:px-0"}>
                     <div className={"flex flex-row flex-wrap gap-4 pb-12 sm:pb-16"}>
-                        <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10"}>
+                        <div className={"sm:text-4xl text-2xl font-bold tracking-tight z-10"}>
                             {"Some of our"}
                         </div>
                         <div className={"rotate-6 z-10"}>
                             <CompFunkyText
                                 label={"real 🦄"}
-                                className={"text-white sm:text-4xl text-3xl font-bold p-4 tracking-tight bg-gradient-to-b " +
+                                className={"text-white sm:text-4xl text-2xl font-bold p-4 tracking-tight bg-gradient-to-b " +
                                     "from-pink-500 to-amber-300 border-4 border-pink-100 text-center" +
                                     "w-40 h-2 rounded-3xl z-10"}
                             />
                         </div>
-                        <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10"}>
+                        <div className={"sm:text-4xl text-2xl font-bold tracking-tight z-10"}>
                             {"projects"}
                         </div>
                     </div>

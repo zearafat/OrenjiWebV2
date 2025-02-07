@@ -25,17 +25,17 @@ export default function CompForAISlider() {
                 <div className={"container mx-auto px-6 sm:px-0"}>
                     <div className={"sm:flex sm:flex-row sm:flex-wrap"}>
                         <div className={"text-left pb-8"}>
-                            <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10 pb-6"}>
+                            <div className={"sm:text-4xl text-2xl font-bold tracking-tight z-10 pb-6"}>
                                 {"Designs that’ll make your"}
                             </div>
                             <div className={"flex flex-row gap-4"}>
-                                <div className={"sm:text-4xl text-3xl font-bold tracking-tight z-10"}>
+                                <div className={"sm:text-4xl text-2xl font-bold tracking-tight z-10"}>
                                     {"AI apps goes"}
                                 </div>
                                 <div className={"-rotate-6 z-10"}>
                                     <CompFunkyText
                                         label={"Brrr... 🔥"}
-                                        className={"text-white sm:text-4xl text-3xl font-bold p-4 tracking-tight bg-gradient-to-b " +
+                                        className={"text-white sm:text-4xl text-2xl font-bold p-4 tracking-tight bg-gradient-to-b " +
                                             "from-amber-400 to-amber-500 border-4 border-amber-200 text-center" +
                                             "w-40 h-2 rounded-3xl z-10"}
                                     />
