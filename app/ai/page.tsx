@@ -34,50 +34,54 @@ export default function ForAIPage() {
     }
 
     return (
-        <div className={"overflow-hidden"}>
+        <div>
             <CompNavMenu />
-            <div className={"scene-container"} style={{ width: '100vw', height: '100vh'}}>
-                {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
-                <CompForAI3D />
-            </div>
 
-            <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2">
-                <CompScrollDownIndicator />
-            </div>
+            {CompLoader && <CompLoader />} {/* Only render if CompLoader is loaded */}
 
-            <div className={"text-center pb-12"}>
-                <CompHeroHeader headerText={"AI doesn't have to be boring"}/>
-                <p className={"text-base sm:text-lg leading-relaxed sm:py-14 py-6 max-w-7xl text-slate-500 mx-auto text-center px-4 sm:px-6 sm:text-xl"}>
-                    {
-                        "At Orenji Studio, we believe technology and creativity go hand in hand. Our expertise lies in" +
-                        "crafting AI-powered UI/UX designs that are functional and visually captivating. Say goodbye to" +
-                        " dull interfaces—our designs are here to inspire and engage."
-                    }
-                </p>
-                <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
-                    <CompButtonCTA label={"Start your dream AI project ✨"} />
-                </Link>
-            </div>
+            <div className="overflow-hidden">
+                <div className={""} style={{ width: '100vw', height: '100vh'}}>
+                    <CompForAI3D />
+                </div>
 
-            <div className={"pb-12"}>
-                <CompForAIBento />
-            </div>
+                <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2">
+                    <CompScrollDownIndicator />
+                </div>
 
-            <div className={"pb-12"}>
-                <CompForAISlider />
-            </div>
+                <div className={"text-center pb-12"}>
+                    <CompHeroHeader headerText={"AI doesn't have to be boring"}/>
+                    <p className={"text-base sm:text-lg leading-relaxed sm:py-14 py-6 max-w-7xl text-slate-500 mx-auto text-center px-4 sm:px-6 sm:text-xl"}>
+                        {
+                            "At Orenji Studio, we believe technology and creativity go hand in hand. Our expertise lies in" +
+                            "crafting AI-powered UI/UX designs that are functional and visually captivating. Say goodbye to" +
+                            " dull interfaces—our designs are here to inspire and engage."
+                        }
+                    </p>
+                    <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
+                        <CompButtonCTA label={"Start your dream AI project ✨"} />
+                    </Link>
+                </div>
 
-            <div className={"pb-12"}>
-                <CompForAIPortfolio />
-            </div>
+                <div className={"pb-12"}>
+                    <CompForAIBento />
+                </div>
 
-            <div className={"pb-12"}>
-                <CompPricing />
-            </div>
+                <div className={"pb-12"}>
+                    <CompForAISlider />
+                </div>
 
-            <div className={"pt-12"}>
-                <CompFAQ />
-                <CompFooter />
+                <div className={"pb-12"}>
+                    <CompForAIPortfolio />
+                </div>
+
+                <div className={"pb-12"}>
+                    <CompPricing />
+                </div>
+
+                <div className={"pt-12"}>
+                    <CompFAQ />
+                    <CompFooter />
+                </div>
             </div>
         </div>
     );
