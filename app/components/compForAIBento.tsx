@@ -100,9 +100,10 @@ export default function CompForAIBento() {
                                             </div>
                                             <p className={"text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-slate-500 text-left z-10 relative"}>
                                                 {
-                                                    "We specialize in building seamless, intuitive interfaces for AI-driven" +
-                                                    " applications. Whether it’s a companion app or a productivity tool," +
-                                                    " we design experiences that feel human and effortless."
+                                                    "Many AI apps feel robotic, stiff, bland, and lifeless. Our approach " +
+                                                    "is different—fun, dynamic, and full of personality. We believe " +
+                                                    "AI should feel engaging, making every interaction more " +
+                                                    "enjoyable."
                                                 }
                                             </p>
                                         </div>
