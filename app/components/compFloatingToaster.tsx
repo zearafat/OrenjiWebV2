@@ -9,39 +9,15 @@ type Props = {
 }
 
 export default function CompFloatingToaster({label, url} : Props) {
-    const [isVisible, setIsVisible] = useState(true);
-
-    if (!isVisible) return null;
-
     return (
         <>
-            <Link href={url} target={"_blank"} rel={"noopener noreferrer"}>
-                <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 btn-gradient-orenji text-white px-4 py-3 rounded-full shadow-lg transform transition-transform hover:scale-105">
-                    <p className="font-medium">
-                        {label}
-                        <span className="ml-2 inline-block">&gt;&gt;</span>
-                    </p>
-                        {/*<button*/}
-                        {/*    onClick={() => setIsVisible(false)}*/}
-                        {/*    className="ml-2 p-1 hover:bg-orange-600/20 rounded-full transition-colors"*/}
-                        {/*    aria-label="Close notification"*/}
-                        {/*>*/}
-                        {/*    <svg*/}
-                        {/*        xmlns="http://www.w3.org/2000/svg"*/}
-                        {/*        width="16"*/}
-                        {/*        height="16"*/}
-                        {/*        viewBox="0 0 24 24"*/}
-                        {/*        fill="none"*/}
-                        {/*        stroke="currentColor"*/}
-                        {/*        strokeWidth="2"*/}
-                        {/*        strokeLinecap="round"*/}
-                        {/*        strokeLinejoin="round"*/}
-                        {/*        className="w-4 h-4"*/}
-                        {/*    >*/}
-                        {/*        <path d="M18 6L6 18" />*/}
-                        {/*        <path d="M6 6l12 12" />*/}
-                        {/*    </svg>*/}
-                        {/*</button>*/}
+            <Link
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-4 inset-x-0 z-50 flex justify-center w-full px-4 md:inset-x-auto md:right-4 md:w-auto md:px-0">
+                <div className="flex sm:items-center gap-2 btn-gradient-orenji text-white px-5 py-3 rounded-full shadow-lg hover:scale-105 transition max-w-[90%] md:max-w-none sm:whitespace-nowrap leading-none text-center">
+                    <span className="font-medium">{label}</span>
                 </div>
             </Link>
         </>

@@ -286,7 +286,7 @@ export default function CompPricing() {
             </div>
 
             {/*Banner*/}
-            <div className="mx-auto max-w-4xl pt-14">
+            <div className="mx-auto max-w-4xl sm:pt-12 px-4 pt-4 sm:px-0">
                 <Link href={"https://orenjistudio.gumroad.com"} target={"_blank"}>
                     <div className={"mx-auto items-center justify-center"}>
                         <Image

@@ -35,7 +35,7 @@ export default function CompTestimonials() {
                             </p>
                         </div>
                         <div className={"pt-4"}>
-                            <div className={"flex flex-row gap-4 items-center"}>
+                            <div className={"flex flex-row sm:gap-4 gap-2 items-center"}>
                                 <div>
                                     <Image src={client1_joan} alt={"Joanathan McIntosh"} className={"w-14 h-14 rounded-full"}/>
                                 </div>
@@ -58,7 +58,7 @@ export default function CompTestimonials() {
                             </div>
                         </div>
                     </div>
-                    <div className={"flex flex-col sm:flex-row gap-4 items-center"}>
+                    <div className={"flex flex-col sm:flex-row sm:gap-4 gap-2 items-center"}>
                         <div className={"p-6 bg-slate-100 rounded-3xl"}>
                             <div className={"pb-4"}>
                                 <p className={"text-lg sm:text-2xl font-base leading-relaxed tracking-tight"}>
@@ -69,7 +69,7 @@ export default function CompTestimonials() {
                                 </p>
                             </div>
                             <div className={"pt-4"}>
-                                <div className={"flex flex-row gap-4 items-center"}>
+                                <div className={"flex flex-row sm:gap-4 gap-2 items-center"}>
                                     <div>
                                         <Image src={client2_briana} alt={"Briana Neidig"} className={"w-14 h-14 rounded-full"}/>
                                     </div>
@@ -98,13 +98,13 @@ export default function CompTestimonials() {
                                 </p>
                             </div>
                             <div className={"pt-4"}>
-                                <div className={"flex flex-row gap-4 items-center"}>
+                                <div className={"flex flex-row sm:gap-4 gap-2 items-center"}>
                                     <div>
-                                        <Image src={client3_ken} alt={"Ken Imai"} className={"w-14 h-14 rounded-full"}/>
+                                        <Image src={client3_ken} alt={"Ken Imai"} className={"w-14 h-14 rounded-full"} />
                                     </div>
                                     <div className={"flex-grow"}>
                                         <Link href={"https://www.linkedin.com/in/ken-imai-312639240/"} className={"font-medium text-lg text-black hover:underline"} target={"_blank"}>Ken Imai</Link>
-                                        <p className={"text-slate-500"}>CEO Mealmates</p>
+                                        <p className={"text-slate-500"}>Mealmates</p>
                                     </div>
                                     <div>
                                         <Link href={"https://prtimes.jp/main/html/rd/p/000000001.000119497.html"} target={"_blank"}
