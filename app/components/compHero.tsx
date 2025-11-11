@@ -10,7 +10,7 @@ export default function CompHero() {
                 <div className={"container mx-auto"}>
                     <div className={"sm:text-center text-left"}>
                         {/*SECTION HERO TEXT*/}
-                        <CompHeroHeader headerText={"Unlimited design support for fast-moving startups"} />
+                        <CompHeroHeader headerText={"Design that makes people smile"} />
                         {/*SECTION BULLET FEATURES*/}
                         <CompBulletFeatures/>
                         {/*SECTION HERO CTA*/}
