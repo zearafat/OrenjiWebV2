@@ -156,8 +156,8 @@ export default function CompPortfolio() {
 
                 {/* Optional: View All Projects Link */}
                 <div className={"text-center mt-12"}>
-                    <Link href="https://dribbble.com/orenjistudio" className={"px-8 py-4 border-2 border-black rounded-full font-semibold hover:bg-black hover:text-white transition-all duration-300"} target={"_blank"}>
-                        View all projects
+                    <Link href="https://www.behance.net/orenjistudio" className={"px-8 py-4 border-2 border-black rounded-full font-semibold hover:bg-black hover:text-white transition-all duration-300"} target={"_blank"}>
+                        View More
                     </Link>
                 </div>
             </div>
