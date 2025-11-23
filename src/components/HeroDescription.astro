@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import heartIcon from "../assets/etc/rainbow_heart.svg";
+---
+
+<section id="Hero-Description">
+    <div class="container mx-auto px-44 pb-16 sm:pb-24 -mt-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-4xl font-bold leading-tight tracking-tight">
+                We create brand pers<Image
+                    src={heartIcon}
+                    alt=""
+                    class="w-12 h-12 sm:w-16 sm:h-16 md:w-15 md:h-15 inline-block align-baseline rotate-12 -mx-1 translate-y-4"
+            />nality that is impossible to forget, through creative branding, charming 3D illustration, and expressive interfaces.
+            </h2>
+        </div>
+    </div>
+</section>
