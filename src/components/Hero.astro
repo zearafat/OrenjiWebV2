@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import HeroText from "../assets/etc/hero_text.svg";
+import Hero from "../assets/illustrations/Illustration_Header.webp";
+---
+
+<section class="py-16 sm:py-36 overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="relative max-w-6xl mx-auto">
+            <!-- Text Layer (Back) -->
+            <div class="flex items-center justify-center">
+                <Image
+                        src={HeroText}
+                        alt="We design cool stuff"
+                        class="w-full h-auto max-w-4xl"
+                        decoding="async"
+                        loading="eager"
+                />
+            </div>
+
+            <!-- Characters Layer (Front) - Overlapping with negative margin -->
+            <div class="flex items-center justify-center -mt-32 sm:-mt-96 md:-mt-86">
+                <Image
+                        src={Hero}
+                        alt="Orenji Studio team characters"
+                        class="w-full h-auto max-w-4xl"
+                        decoding="async"
+                        loading="eager"
+                />
+            </div>
+        </div>
+    </div>
+</section>
