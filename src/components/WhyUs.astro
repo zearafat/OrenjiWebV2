@@ -1,0 +1,118 @@
+---
+import { Image } from 'astro:assets';
+import HeaderTheCrew from "../assets/svgs/header_the_crew.svg"
+import HeaderWeMake from "../assets/svgs/header_we_make.svg"
+import HeaderLevelUp from "../assets/svgs/header_level_up.svg"
+import TheCrewIllustration from "../assets/illustrations/illustration_ginyu_force.webp"
+import WeMakeIllustration from "../assets/illustrations/illustration_gundam.webp"
+import LevelUpIllustration from "../assets/illustrations/illustration_level_up.webp"
+---
+
+<section class="py-16 sm:py-24">
+    <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+            <!--THE CREW-->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 items-center">
+
+                <!-- Left Column: Text Content -->
+                <div class="space-y-0 pl-24">
+                    <!-- "THE CREW!" SVG Text -->
+                    <Image
+                            src={HeaderTheCrew}
+                            alt="The Crew!"
+                            class="w-full max-w-md -rotate-6"
+                            loading="lazy"
+                            decoding="async"
+                    />
+
+                    <!-- Description -->
+                    <div class="pl-32 -mt-18 max-w-lg">
+                        <p class="text-xl sm:text-xl leading-relaxed">
+                            <strong>Your own design crew</strong> (without the HR headaches). We work together on your project, so everything feels cohesive instead of Frankenstein-ed 🧟 together.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Team Photo -->
+                <div class="flex justify-center lg:justify-start">
+                    <Image
+                            src={TheCrewIllustration}
+                            alt="Orenji Studio team characters posing together"
+                            class="w-full max-w-max h-auto"
+                            loading="lazy"
+                            decoding="async"
+                    />
+                </div>
+            </div>
+
+            <!--WE MAKE-->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 items-center">
+
+                <!-- Left Column: Text Content -->
+                <div class="flex justify-center lg:justify-start">
+                    <Image
+                            src={WeMakeIllustration}
+                            alt="Orenji Studio team characters posing together"
+                            class="w-full max-w-max h-auto"
+                            loading="lazy"
+                            decoding="async"
+                    />
+                </div>
+
+                <!-- Right Column: Team Photo -->
+                <div class="space-y-0">
+                    <!-- "THE CREW!" SVG Text -->
+                    <Image
+                            src={HeaderWeMake}
+                            alt="We Make!"
+                            class="w-full max-w-sm -rotate-6"
+                            loading="lazy"
+                            decoding="async"
+                    />
+
+                    <!-- Description -->
+                    <div class="pl-32 mt-8 max-w-lg">
+                        <p class="text-xl sm:text-xl leading-relaxed">
+                            <strong>We make cool stuff 😎</strong>. Like characters that will become your brand's face. 3D worlds that pop off the screen. Interfaces people actually enjoy using.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--LEVEL UP-->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 items-center">
+
+                <!-- Left Column: Text Content -->
+                <div class="space-y-0 pl-24 pb-24">
+                    <!-- "THE CREW!" SVG Text -->
+                    <Image
+                            src={HeaderLevelUp}
+                            alt="Level Up!"
+                            class="w-full max-w-sm -rotate-6"
+                            loading="lazy"
+                            decoding="async"
+                    />
+
+                    <!-- Description -->
+                    <div class="pl-32 mt-8 max-w-md">
+                        <p class="text-xl sm:text-xl leading-relaxed">
+                            <strong>We don't do basic</strong>. Every project gets our top-tier effort—the kind of quality that makes your competitors wonder 🤔 <i>"how they did it??"</i>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Team Photo -->
+                <div class="flex justify-center lg:justify-start">
+                    <Image
+                            src={LevelUpIllustration}
+                            alt="Orenji Studio team characters posing together"
+                            class="w-full max-w-max h-auto"
+                            loading="lazy"
+                            decoding="async"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
