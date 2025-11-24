@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import HeroText from "../assets/etc/hero_text.svg";
-import Hero from "../assets/illustrations/Illustration_Header.webp";
+import HeroImage from "../assets/illustrations/Illustration_Header.webp";
 ---
 
 <section id="Hero" class="py-16 sm:pt-36 pb-0 overflow-hidden">
@@ -22,7 +22,7 @@ import Hero from "../assets/illustrations/Illustration_Header.webp";
             <!-- Characters Layer (Front) - Overlapping with negative margin -->
             <div class="flex items-center justify-center -mt-32 sm:-mt-96 md:-mt-86">
                 <Image
-                        src={Hero}
+                        src={HeroImage}
                         alt="Orenji Studio team characters"
                         class="w-full h-auto max-w-4xl"
                         decoding="async"
