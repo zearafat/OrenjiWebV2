@@ -91,7 +91,7 @@ export default function CompPricing() {
                             </h4>
                             <p className={"text-base"}>Unlimited design at</p>
                         </div>
-                        <h3 className={"text-5xl font-bold"}>$3,999<span
+                        <h3 className={"text-5xl font-bold"}>$2,999<span
                             className={"text-base text-slate-500 font-normal"}>/month</span></h3>
                         <ul className={"space-y-4 sm:pb-8"}>
                             <li className={"flex items-center space-x-3 rtl:space-x-reverse"}>
@@ -148,7 +148,7 @@ export default function CompPricing() {
                         <div className="my-6 relative h-20 flex items-center">
                             {/* Monthly Price */}
                             <div className={`absolute inset-0 flex items-center transition-all duration-300 ease-in-out ${billingCycle === 'monthly' ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-                                <h3 className={"text-5xl font-bold text-white"}>$7,999<span
+                                <h3 className={"text-5xl font-bold text-white"}>$6,999<span
                                     className={"text-base text-white/80 font-normal"}>/project</span></h3>
                             </div>
                             {/*/!* 6-Month Price *!/*/}
