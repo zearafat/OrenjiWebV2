@@ -5,11 +5,11 @@ export default function CompHeroCTA() {
     return(
         <>
             {/*BUTTON CTA*/}
-            <div className={"sm:py-4"}>
+            <div className={"sm:py-4 py-2"}>
                 <Link href={"https://tally.so/r/wkNrkZ"} target={"_blank"}>
                     <CompButtonCTA label={"Start your dream project ✨"} />
                 </Link>
-                <p className={"pt-8"}>
+                <p className={"sm:pt-8 py-6"}>
                     <span className={"text-red-500"}>1 slot left. </span>
                     <span className={"text-slate-500"}>Want to talk first? </span>
                     <span className={"text-black"}>

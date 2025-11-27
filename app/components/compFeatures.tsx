@@ -1,85 +1,79 @@
 import Link from "next/link";
 
-import CompFeaturesCard from "@/app/components/compFeaturesCard";
+// Import your 3D character images
+// Replace these paths with your actual large 3D character illustrations
+import imgCharacterDriven from "@/public/assets/illustrations/imgCharacterDriven.webp"
+import imgFullTeam from "@/public/assets/illustrations/imgFullTeam.webp"
+import imgMemorableExp from "@/public/assets/illustrations/imgMemorableExp.webp"
+import CompFeatureStory from "@/app/components/compFeaturesCard";
 
-// Icons
-import iconUnlimitedDesign from "@/public/assets/illustrations/icons/icon-feature-1.png"
-import iconMonthlyFlat from "@/public/assets/illustrations/icons/icon-feature-2.png"
-import iconUnlimitedChanges from "@/public/assets/illustrations/icons/icon-feature-3.png"
-import iconDailyReports from "@/public/assets/illustrations/icons/icon-feature-4.png"
-import iconDailyTurnAround from "@/public/assets/illustrations/icons/icon-feature-5.png"
-import iconCustomAssets from "@/public/assets/illustrations/icons/icon-feature-6.png"
-
+/**
+ * CompFeatures Component
+ * Main section showcasing "What Makes Us Different"
+ * Uses vertical storytelling layout with large 3D character illustrations
+ * Alternates image position (left/right) for visual variety
+ */
 export default function CompFeatures() {
     return(
         <section id={"Features"}>
-            <div className={"sm:py-12 py-4"}>
-                <div className={"container mx-auto"}>
-                    {/*Header*/}
+            <div className={"sm:py-24 py-4"}>
+                <div className={"container mx-auto px-4"}>
+
+                    {/* Section Header */}
                     <div className={"text-center"}>
                         <div className={"py-4"}>
                             <h2 className={"sm:text-4xl text-2xl font-bold tracking-tighter"}>
-                                {"Great design, zero-hassle"}
+                                {"What Makes Us Different"}
                                 <span className={"text-orange-600"}>.</span>
                             </h2>
                         </div>
                         <div className={"py-4"}>
-                            <p className={"text-slate-600 sm:px-[450px] text-base px-4"}>
-                                {"When you hire us, you will get the whole team with all of our creative power. Not just 1-man-show with couple of outsourced designers like many others."}
+                            <p className={"text-slate-600 sm:px-[340px] text-base px-4"}>
+                                {"We're not another minimal, corporate design agency. We create interfaces with soul—full of character, personality, and delight."}
                             </p>
                         </div>
                     </div>
-                    {/*Cards*/}
-                    <div className={"sm:py-12 p-2"}>
-                        <div className={"grid sm:grid-cols-3 grid-cols-1 gap-4 p-2"}>
-                            <CompFeaturesCard
-                                image={iconUnlimitedDesign}
-                                imageAlt={"Unlimited design"}
-                                heading={"Unlimited design"}
-                                description={"Have lots of brilliant ideas that you want to realize? Leave it all to us. " +
-                                    "Request all the designs you want with unlimited design request! Go crazy!"}
+
+                    {/* Feature Stories - Vertical Layout with Large Images */}
+                    <div className={"sm:py-12 py-8"}>
+                        <div className={"space-y-8 sm:space-y-16"}>
+
+                            {/* Feature 1: Character-Driven Design - Image on LEFT */}
+                            <CompFeatureStory
+                                image={imgCharacterDriven}
+                                imageAlt={"3D character surrounded by colorful design elements shaped like an S"}
+                                heading={"Character-Driven Design"}
+                                description={"We create custom characters and 3D illustrations that become your brand identity, giving your product a personality users remember."}
+                                imagePosition="left"
                             />
-                            <CompFeaturesCard
-                                image={iconMonthlyFlat}
-                                imageAlt={"Fixed monthly rate"}
-                                heading={"Fixed monthly rate"}
-                                description={"Pay once every month, and get all our services. As simple as that. " +
-                                    "No overcomplicated pricing schemes with many pricing tables. Just 1 flat, monthly rate."}
+
+                            {/* Feature 2: Full Team - Image on RIGHT */}
+                            <CompFeatureStory
+                                image={imgFullTeam}
+                                imageAlt={"Team of 3D characters collaborating on design work"}
+                                heading={"Full team, not freelancers"}
+                                description={"Dedicated designers and illustrators working together on your project, ensuring consistency, quality, and cohesive creative vision."}
+                                imagePosition="right"
                             />
-                            <CompFeaturesCard
-                                image={iconUnlimitedChanges}
-                                imageAlt={"Unlimited changes"}
-                                heading={"Unlimited changes"}
-                                description={"Still not satisfied with the existing design? Ask for as many revisions " +
-                                    "and changes as you want. Until you are happy. No complaint. Promise."}
-                            />
-                            <CompFeaturesCard
-                                image={iconDailyReports}
-                                imageAlt={"Daily report & updates"}
-                                heading={"Daily report & updates"}
-                                description={"Get daily reports and updates. Never feel left out. We believe communication is a key and " +
-                                    "we want you to be part of us, from day one."}
-                            />
-                            <CompFeaturesCard
-                                image={iconDailyTurnAround}
-                                imageAlt={"1-2 days turnaround"}
-                                heading={"1-2 days turnaround"}
-                                description={"Get your designs delivered at an insane speed. Not just fast, but also looks " +
-                                    "beautiful, functional and consistent. And that's our expertise. "}
-                            />
-                            <CompFeaturesCard
-                                image={iconCustomAssets}
-                                imageAlt={"Custom-made assets"}
-                                heading={"Custom-made assets"}
-                                description={"We never use templates. We have in-house super talented illustrators and " +
-                                    "designers that will help make your product stand out among the rest."}
+
+                            {/* Feature 3: Memorable Experiences - Image on LEFT */}
+                            <CompFeatureStory
+                                image={imgMemorableExp}
+                                imageAlt={"Character playing with a friendly cat mascot and decorative elements"}
+                                heading={"Built for memorable experiences"}
+                                description={"We create products people want to open, not just need to use—through personality, color, and delight in every interaction."}
+                                imagePosition="left"
                             />
                         </div>
                     </div>
-                    {/*Why Us Link*/}
+
+                    {/* CTA Link - "Why Us" */}
                     <div className={"text-center py-4"}>
-                        <Link href={"/about"} target={"_blank"}
-                              className={"sm:text-xl text-base font-medium sm:p-6 p-4 duration-300 text-orange-500 hover:text-orange-700 py-4 hover:border-orange-700 duration-10 border border-orange-500 rounded-full"}>
+                        <Link
+                            href={"/about"}
+                            target={"_blank"}
+                            className={"sm:text-xl text-base font-medium sm:p-6 p-3 duration-300 text-orange-500 hover:text-orange-700 py-4 hover:border-orange-700 duration-10 border border-orange-500 rounded-full inline-block"}
+                        >
                             What makes us different from competitors ❯
                         </Link>
                     </div>

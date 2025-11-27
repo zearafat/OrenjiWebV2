@@ -1,30 +1,75 @@
-import Image, {StaticImageData} from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-interface IPropsFeatureCard {
+/**
+ * Props interface for the FeatureStory component
+ * @property image - Large 3D character illustration
+ * @property imageAlt - Descriptive alt text for accessibility
+ * @property heading - Feature title
+ * @property description - Feature explanation
+ * @property imagePosition - Controls layout direction (left or right)
+ */
+interface IPropsFeatureStory {
     image: StaticImageData | string;
     imageAlt: string;
     heading: string;
     description: string;
+    imagePosition?: 'left' | 'right';
 }
 
-export default function CompFeaturesCard(props: IPropsFeatureCard) {
-    return(
-        <div className={"sm:p-8 p-6 border rounded-xl hover:-translate-y-1 hover:border-orange-300 duration-300"}>
-            <div className={"flex flex-row"}>
-                <Image
-                    src={props.image}
-                    alt={props.imageAlt}
-                    width={50}
-                    height={50}
-                    quality={100}
-                />
-                <h3 className={"font-medium text-xl tracking-tight py-2 px-4"}>
-                    {props.heading}
-                </h3>
+/**
+ * CompFeatureStory Component
+ * Large feature section with 3D character illustration and text content
+ * Supports alternating left/right layouts for visual storytelling
+ * Responsive: Stacks vertically on mobile, horizontal on desktop
+ */
+export default function CompFeatureStory(props: IPropsFeatureStory) {
+    // Determine if image should be on left side (default) or right
+    const isImageLeft = props.imagePosition === 'left' || !props.imagePosition;
+
+    return (
+        <div className={`
+            flex flex-col gap-6
+            sm:flex-row sm:items-center
+            ${!isImageLeft ? 'sm:flex-row-reverse' : ''}
+        `}>
+
+            {/* 3D Character Illustration Side */}
+            <div className={"flex-1 flex justify-center"}>
+                {/* Image container with max width for proportional scaling */}
+                <div className={"relative w-full max-w-md sm:max-w-lg"}>
+                    <Image
+                        src={props.image}
+                        alt={props.imageAlt}
+                        width={700}
+                        height={700}
+                        quality={100}
+                        className={"w-full h-auto"}
+                        // Set priority={true} if this is above the fold
+                        priority={false}
+                    />
+                </div>
             </div>
-            <p className={"text-slate-600 pt-2"}>
+
+            {/* Text Content Side */}
+            <div className={"flex-1 max-w-xl"}>
+                {/* Feature Heading */}
+                <h3 className={`
+                    font-bold text-2xl sm:text-3xl
+                    tracking-tight
+                    mb-3 sm:mb-4
+                    `}>
+                {props.heading}
+                    </h3>
+
+                {/* Feature Description */}
+                <p className={`
+                    text-slate-600
+                    text-base sm:text-lg
+                    leading-relaxed
+                    `}>
                 {props.description}
-            </p>
-        </div>
-    )
-}
+                    </p>
+                    </div>
+                    </div>
+                    );
+                }

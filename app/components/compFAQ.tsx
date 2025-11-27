@@ -58,22 +58,16 @@ const Accordion: React.FC = () => {
                                         These will be handled sequentially, in alignment with your prioritization.
                                     </AccordionItem>
                                     <AccordionItem title={"How fast will I receive my designs?"}>
-                                        Updates will be provided within 1 to 3 business days, subject to the intricacy
-                                        of the design.
-                                        For instance, social media assets might be completed in 1 business day, whereas
-                                        a comprehensive
-                                        page design could require up to 3 days for the initial draft. Each design is
-                                        uniquely crafted to your
-                                        specifications, we never use pre-made templates.
+                                        Most designs are ready within 1-3 business days, depending on complexity.
+
+                                        Simple requests like social media posts? Usually done in a day.
+                                        Bigger projects like full page designs? Expect 2-3 days for the first draft.
+
+                                        We custom-create everything from scratch for you—no templates,
+                                        no shortcuts. Just your unique design.
                                     </AccordionItem>
-                                    <AccordionItem title={"Can we have regular meetings?"}>
-                                        No. They can take up a lot of time. All our interactions will be asynchronous
-                                        via the
-                                        Figma, Slack or Email to enhance workflow efficiency. However, should you require a
-                                        more
-                                        thorough explanation on any specific feature or feedback, feel free to create a
-                                        detailed
-                                        Loom video to delve into the particulars.
+                                    <AccordionItem title={"How do we communicate during the project?"}>
+                                        Slack, daily async, meetings when needed.
                                     </AccordionItem>
                                     <AccordionItem title={"How long does it take to complete a project?"}>
                                         It is really depends on the project&apos;s scope and complexity.
@@ -88,56 +82,81 @@ const Accordion: React.FC = () => {
                                         project and the need for perfection, we are committed to doing whatever it takes
                                         to achieve that.
                                     </AccordionItem>
-                                    <AccordionItem title={"What services do you offer?"}>
-                                        We offer UI/UX design (Both mobile and/or web), custom illustrations (Both 2D
-                                        and/or 3D),
-                                        branding and visual identity design, logo design, icon design, graphic design,
-                                        and social media design. All with
-                                        dedicated Project Manager and Creative Director in charge.
+                                    <AccordionItem title={"Is there any refund?"}>
+                                        <p>Due to the nature of custom creative work, we have a
+                                        no-refund policy once a project has started.</p>
+                                        <br />
+                                        Here&apos;s why:
+                                            <p>Once we begin working on your project, our team invests
+                                        significant time in research, strategy, and custom design
+                                        work specifically for you. This work cannot be resold or
+                                        reused, which is why refunds aren&apos;t possible after we start.</p>
+                                        <br />
+                                        <p>HOWEVER, we ensure your satisfaction through:</p>
+                                        <ul>
+                                            <li>✓ Clear project scope before starting</li>
+                                            <li>✓ Regular check-ins and feedback sessions</li>
+                                            <li>✓ Revision rounds to get it right</li>
+                                            <li>✓ Direct communication with your designer</li>
+                                            <li>✓ Approval at each milestone</li>
+                                        </ul>
+                                        <br />
+                                        <p>We&apos;re confident in our work quality, and our process
+                                        ensures you get exactly what you need.</p>
                                     </AccordionItem>
-                                    <AccordionItem title={"Do you also offer Development services?"}>
-                                        Yes we do. We offer website development and mobile app development
-                                        service,
-                                        <strong> with an additional fee</strong>. Please talk to us for more info.
+                                    <AccordionItem title={"Is there any guarantee that your work will bring results?"}>
+                                        <p><strong>Let&apos;s be honest:</strong> Design alone doesn&apos;t guarantee business results.</p>
+                                        <br />
+                                        <p>
+                                            Design alone won&apos;t magically increase your sales or make your app go viral. There are many factors at play like your product,
+                                            market fit, pricing, marketing, and timing.
+                                        </p>
+                                        <br />
+                                        <strong>What design CAN do:</strong>
+                                        <ul>
+                                            <li>- Build credibility and trust</li>
+                                            <li>- Make a strong first impression</li>
+                                            <li>- Create better user experiences</li>
+                                            <li>- Help you stand out from competitors</li>
+                                            <li>- Create emotional bonding with your users</li>
+                                        </ul>
+                                        <br />
+                                        <strong>What we guarantee:</strong>
+                                        <ul>
+                                            <li>✓ High-quality, professional work</li>
+                                            <li>✓ Strategic design thinking</li>
+                                            <li>✓ Honest feedback and collaboration</li>
+                                            <li>✓ Designs that make you look good</li>
+                                        </ul>
+                                        <br />
+                                        <p>
+                                            You&apos;re not alone in figuring out the best way to present your
+                                            product. We&apos;re your partners in making it look and feel amazing!
+                                        </p>
                                     </AccordionItem>
-                                    <AccordionItem title={"Why not hire a freelancer, or a full-time designer?"}>
-                                        Employing a designer can be both costly and time-intensive. It involves
-                                        attracting
-                                        suitable candidates, sifting through numerous applications, providing a
-                                        competitive
-                                        salary, benefits, and covering various recruitment expenses.
-                                        <br/>
-                                        <br/>
-                                        Orenji Studio offers a streamlined alternative, bypassing the cumbersome hiring
-                                        process.
-                                        This approach saves you thousands of dollars monthly and enables immediate
-                                        commencement of
-                                        your required design work, ensuring progress from day one rather than enduring
-                                        weeks or months of delay.
-                                    </AccordionItem>
-                                    <AccordionItem title={"What design software do you use?"}>
-                                        We use mainly Figma for UI/UX design, Blender for 3D illustrations, and Adobe
-                                        Suites for everything else.
-                                    </AccordionItem>
-                                    <AccordionItem title={"Do you accept crypto or company shares/stock as payment method?"}>
-                                        No. We only accept USD via PayPal and/or direct bank transfer.
-                                    </AccordionItem>
-                                    <AccordionItem title={"Can I pause or cancel my subscription?"}>
-                                        Yes. You can pause the subscription at any point of the project.
-                                        As for cancellation, absolutely. No question asked.
-                                    </AccordionItem>
-                                    <AccordionItem title={"Can I ask for a refund?"}>
-                                        No. We are unable to provide any money-back guarantee. The significant
-                                        creative effort
-                                        and research required to deliver top-quality designs in a brief timeframe mean
-                                        we must ensure
-                                        compensation for our time and effort.
-                                        <br/>
-                                        <br/>
-                                        However, if you find yourself dissatisfied with our service
-                                        (though such cases are exceedingly rare), we encourage you to tell us and we
-                                        will strive
-                                        to address your concerns to the best of our ability.
+                                    <AccordionItem title={"Why choose Orenji Studio over hiring in-house or freelancers?"}>
+                                        <p>
+                                            Finding a talented designer who can handle both creative work AND understand your business
+                                            goals is incredibly difficult, whether you&apos;re hiring full-time or freelance.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Many designers claim expertise in UI/UX design, but you only discover
+                                            their true capabilities after weeks of onboarding. If it doesn&apos;t work out, you&apos;re back to
+                                            square one: <strong>recruiting, interviewing, and waiting.</strong>
+                                        </p>
+                                        <br />
+                                        <p>
+                                            With Orenji Studio, you skip the painful hiring process entirely. You get a full team of
+                                            specialists: UI/UX designers, 3D artists, and developers who&apos;ve already proven their skills
+                                            through our portfolio. No recruitment costs, no management overhead, no risk of someone quitting.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            <strong>The result?</strong> You save thousands in hiring costs, get access to multiple skill
+                                            sets for less than one designer&apos;s salary, and can start immediately. Plus, you can
+                                            pause or cancel anytime if your needs change.
+                                        </p>
                                     </AccordionItem>
                                 </div>
                             </div>

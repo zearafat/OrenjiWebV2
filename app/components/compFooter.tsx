@@ -10,7 +10,7 @@ export default function CompFooter() {
                 <div className={"bg-black"}>
                     <div className={"sm:p-24 py-14 px-6"}>
                         {/*Header*/}
-                        <h1 className={"sm:text-[68px] text-[24px] sm:px-52 font-bold tracking-tighter text-center text-white justify-center"}>
+                        <h1 className={"sm:text-[48px] text-[24px] sm:px-52 font-bold tracking-tighter text-center text-white justify-center"}>
                             {"Your own dedicated design team, just one click away"}
                             <span className={"text-orange-600"}>.</span>
                         </h1>

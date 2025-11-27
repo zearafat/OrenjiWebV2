@@ -9,6 +9,9 @@ import CompPricing from "@/app/components/compPricing";
 import CompFAQ from '@/app/components/compFAQ';
 import CompFooter from '@/app/components/compFooter';
 import CompNavMenu from "@/app/components/compNavMenu";
+import CompFloatingToaster from "@/app/components/compFloatingToaster";
+import CompPortfolio from "@/app/components/compPortfolio";
+import CompServices from "@/app/components/compServices";
 
 export default function Home() {
   return(
@@ -25,21 +28,26 @@ export default function Home() {
               {/*SECTION FEATURES*/}
               <CompFeatures/>
               {/*SECTION HOW DOES IT WORK*/}
-              <CompHowDoesItWork/>
+              {/*<CompHowDoesItWork/>*/}
               {/*SECTION TESTIMONIALS*/}
-              <CompTestimonials/>
+              {/*<CompTestimonials/>*/}
               {/*SECTION 3D GLTF*/}
-              <CompGLTFLoader/>
+              {/*<CompGLTFLoader/>*/}
               {/*SECTION PRICING*/}
-              <section id={"Pricing"}>
-                  <div className={"sm:-mt-64 sm:py-12 py-4"}>
-                      <CompPricing/>
-                  </div>
-              </section>
+              {/*<section id={"Pricing"}>*/}
+              {/*    <div className={"sm:-mt-64 sm:py-12 py-4"}>*/}
+              {/*        <CompPricing/>*/}
+              {/*    </div>*/}
+              {/*</section>*/}
+              <CompPortfolio/>
+              <CompServices />
+              <CompPricing/>
               {/*SECTION FAQ*/}
               <CompFAQ/>
               {/*SECTION FOOTER*/}
               <CompFooter/>
+              {/*SECTION FLOATING TOASTER*/}
+              <CompFloatingToaster label={"🤖🦄 Building AI Product? See how we can help"} url={"/ai"} />
           </div>
       </section>
   )
