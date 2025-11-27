@@ -16,6 +16,15 @@ img {
     }
 }
 
+.obotjetpack {
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 120% !important;
+    height: 120% !important;
+}
+
 .animate-marquee-top {
     display: flex;
     animation: marquee-porto 60s linear infinite;
@@ -28,7 +37,7 @@ img {
 
 @layer components {
     .btn-gradient-orenji {
-        @apply text-white bg-gradient-to-b from-customOrange1 to-customOrange2 rounded-xl
+        @apply bg-gradient-to-b from-customOrangeBg1 to-customOrangeBg2
     }
 }
 

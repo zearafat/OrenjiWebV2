@@ -1,13 +1,14 @@
+import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import howItWork1 from "@/public/assets/illustrations/how-it-work-1.png"
 import howItWork2 from "@/public/assets/illustrations/how-it-work-2.png"
 import howItWork3 from "@/public/assets/illustrations/how-it-work-3.png"
 import howItWork4 from "@/public/assets/illustrations/how-it-work-4.png"
-import Link from "next/link";
-import React from "react";
 
 
-export default function compHowDoesItWork() {
+
+export default function CompHowDoesItWork() {
     return(
         <section id={"HowItWork"}>
             <div className={"sm:py-12 py-4"}>

@@ -17,8 +17,11 @@ const config: Config = {
         sans: ['var(--font-geist-sans)']
       },
       colors: {
-        customOrange1: '#FF622F',
-        customOrange2: '#F45235'
+        customOrangeBg1: '#FF7716',
+        customOrangeBg2: '#FF5B00',
+        customOrangeBorder: '#E84A00',
+        customOrangeDropShadow: '#FFDDC5',
+        customOrangeInnerShadow: '#FFC5A1',
       },
     },
   },

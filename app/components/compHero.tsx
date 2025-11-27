@@ -2,7 +2,7 @@ import CompHeroHeader from "@/app/components/compHeroHeader";
 import CompBulletFeatures from "@/app/components/compBulletFeatures";
 import CompHeroCTA from "@/app/components/compHeroCTA";
 
-export default function compHero() {
+export default function CompHero() {
     return(
         <section id={"Hero"}>
             {/*HEADER*/}

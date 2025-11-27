@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/assets/images/etc/logo-dark.svg";
 
-export default function compFooter() {
+export default function CompFooter() {
     return(
         <section id={"Footer"}>
             <footer>

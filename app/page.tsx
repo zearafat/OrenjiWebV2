@@ -1,13 +1,13 @@
-import CompHero from "@/app/components/compHero";
-import CompHeroImages from "@/app/components/compHeroImages";
-import CompClientsLogo from"@/app/components/compClientsLogo";
-import CompFeatures from "@/app/components/compFeatures";
-import CompHowDoesItWork from "@/app/components/compHowDoesItWork";
-import CompTestimonials from "@/app/components/compTestimonials";
-import CompGLTFLoader from "@/app/components/compGLTFLoader";
+import CompHero from '@/app/components/compHero';
+import CompHeroImages from '@/app/components/compHeroImages';
+import CompClientsLogo from '@/app/components/compClientsLogo';
+import CompFeatures from '@/app/components/compFeatures';
+import CompHowDoesItWork from '@/app/components/compHowDoesItWork';
+import CompTestimonials from '@/app/components/compTestimonials';
+import CompGLTFLoader from '@/app/components/compGLTFLoader';
 import CompPricing from "@/app/components/compPricing";
-import CompFAQ from "@/app/components/compFAQ";
-import CompFooter from "@/app/components/compFooter";
+import CompFAQ from '@/app/components/compFAQ';
+import CompFooter from '@/app/components/compFooter';
 import CompNavMenu from "@/app/components/compNavMenu";
 
 export default function Home() {
@@ -31,7 +31,11 @@ export default function Home() {
               {/*SECTION 3D GLTF*/}
               <CompGLTFLoader/>
               {/*SECTION PRICING*/}
-              <CompPricing/>
+              <section id={"Pricing"}>
+                  <div className={"sm:-mt-64 sm:py-12 py-4"}>
+                      <CompPricing/>
+                  </div>
+              </section>
               {/*SECTION FAQ*/}
               <CompFAQ/>
               {/*SECTION FOOTER*/}

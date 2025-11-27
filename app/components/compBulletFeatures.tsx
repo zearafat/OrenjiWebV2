@@ -1,4 +1,4 @@
-export default function compBulletFeatures() {
+export default function CompBulletFeatures() {
     return(
         <>
             {/*BULLETS FEATURE*/}
